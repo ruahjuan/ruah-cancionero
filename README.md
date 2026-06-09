@@ -1,22 +1,33 @@
-# RUAH — Cancionero
 
-Herramienta para músicos que sirven. Cancionero con acordes, transposición, setlists y oraciones del músico.
+# FIAT — Modularización inicial automática
 
-## Funciones
+Este paquete contiene una primera separación automática del proyecto original.
 
-- 196 canciones con acordes y letra en formato ChordPro
-- Transposición en tiempo real
-- Favoritas y setlists
-- Filtros por tag, artista y compositor
-- Oraciones del músico
-- Editor con guardado automático
-- Modo oscuro automático
-- Optimizado para móvil
+## Incluye
 
-## Tecnología
+- renderer.js
+- parser.js
+- editor.js
+- mobile.js
+- misc.js
+- CSS separado
+- data/
 
-Vanilla HTML, CSS y JavaScript. Sin frameworks ni backend. Funciona offline desde el navegador.
+## IMPORTANTE
 
-## Uso
+La extracción fue heurística.
+Necesita revisión manual.
 
-Abrí `index.html` en el navegador, o visitá la versión publicada.
+Objetivo:
+- reducir complejidad
+- permitir trabajo modular con Claude
+- facilitar debugging
+- preparar arquitectura mantenible
+
+## Próximo paso recomendado
+
+1. Revisar renderer.js
+2. Revisar parser.js
+3. Probar funcionalidad básica
+4. Limpiar duplicados
+5. Eliminar funciones huérfanas

@@ -1,3 +1,4 @@
+const ADMIN_MODE = false;
 /**
  * app.js — FIAT
  * Orquestador principal de la aplicación.
@@ -275,15 +276,24 @@ function doSearch() {
 // ═══════════════════════════════════════════════════════
 
 function showView(v) {
+  // Bloquear acceso al panel admin cuando está desactivado
+  if (v === 'admin' && !ADMIN_MODE) {
+    return;
+  }
+
   document.querySelectorAll('.view').forEach(el => el.classList.remove('on'));
   document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('on'));
+
   document.getElementById('v-' + v).classList.add('on');
   document.getElementById('nb-' + v).classList.add('on');
-  if (v === 'admin') adminRenderTable();
+
+  if (v === 'admin') {
+    adminRenderTable();
+  }
+
   const hb = document.getElementById('hamburger');
   if (hb) hb.style.display = 'none';
 }
-
 // ═══════════════════════════════════════════════════════
 // EDITOR
 // ═══════════════════════════════════════════════════════
@@ -335,6 +345,7 @@ function buildChordToolbar() {
 }
 
 function editorSave() {
+  if (!ADMIN_MODE) return;
   const title = document.getElementById('ed-title').value.trim().toUpperCase();
   if (!title) {
     toast('El título es obligatorio');
@@ -395,6 +406,7 @@ function editorSave() {
 }
 
 function editorDelete() {
+  if (!ADMIN_MODE) return;
   const s = songs.find(x => x.id === edSongId);
   if (!s) return;
   if (!confirm(`¿Eliminar "${s.title}"?`)) return;
@@ -508,6 +520,7 @@ function adminSort(key) {
 }
 
 function adminDelRow(id) {
+  if (!ADMIN_MODE) return;
   const s = songs.find(x => x.id === id);
   if (!s) return;
   if (!confirm(`¿Eliminar "${s.title}"?`)) return;
@@ -532,6 +545,7 @@ function markUnsaved() {
 }
 
 function adminSaveLS() {
+  if (!ADMIN_MODE) return;
   try {
     localStorage.setItem(LS_KEY, JSON.stringify(songs));
     document.getElementById('admin-changed').style.display = 'none';
@@ -542,6 +556,7 @@ function adminSaveLS() {
 }
 
 function adminExport() {
+  if (!ADMIN_MODE) return;
   const blob = new Blob([JSON.stringify(songs, null, 2)], { type: 'application/json' });
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
@@ -552,6 +567,7 @@ function adminExport() {
 }
 
 function adminImport(ev) {
+  if (!ADMIN_MODE) return;
   const file = ev.target.files[0];
   if (!file) return;
   const r = new FileReader();
@@ -579,6 +595,7 @@ function adminImport(ev) {
 }
 
 function adminResetConfirm() {
+  if (!ADMIN_MODE) return;
   if (!confirm('¿Restaurar cancionero original? Se perderán los cambios guardados en este navegador.')) return;
   localStorage.removeItem(LS_KEY);
   songs = [...SD].map(s => ({ ...s, tags: s.tags || [] }));

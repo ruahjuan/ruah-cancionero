@@ -139,6 +139,7 @@ function edIns(tag) {
 // ── Abrir / cerrar editor ─────────────────────────────────
 
 function editorOpen(id) {
+  if (!ADMIN_MODE) return;
   edSongId = id;
   if (id) {
     const s = songs.find(x => x.id === id);
