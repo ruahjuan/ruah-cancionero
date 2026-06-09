@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RUAH</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./css/app.css">
+  <link rel="stylesheet" href="./css/chords.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════
+       TOPBAR
+  ══════════════════════════════════════════ -->
+  <header id="topbar">
+    <div id="logo" onclick="showView('home')">
+      <div class="logo-name">RUAH</div>
+      <div class="logo-sub">Cancionero</div>
+    </div>
+
+    <nav id="nav">
+      <button class="nav-btn on" id="nb-home" onclick="showView('home')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+        <span>Inicio</span>
+      </button>
+      <button class="nav-btn" id="nb-songs" onclick="showView('songs')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 18V5l12-2v13"/>
+          <circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+        </svg>
+        <span>Canciones</span>
+      </button>
+      <button class="nav-btn" id="nb-prayers" onclick="showView('prayers')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/>
+          <path d="M12 6v6l4 2"/>
+        </svg>
+        <span>Oraciones</span>
+      </button>
+      <button class="nav-btn" id="nb-admin" onclick="showView('admin')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="3"/>
+          <path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/>
+        </svg>
+        <span>Admin</span>
+      </button>
+    </nav>
+
+    <!-- Hamburger (solo mobile, en vista canciones) -->
+    <button id="hamburger" onclick="toggleDrawer()" aria-label="Abrir lista"
+      style="display:none;align-items:center;justify-content:center;width:38px;height:38px;border-radius:8px;border:1px solid var(--bord);background:var(--surf2)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </header>
+
+
+  <!-- ══════════════════════════════════════════
+       VISTA: HOME
+  ══════════════════════════════════════════ -->
+  <div class="view on" id="v-home">
+    <div class="hero">
+      <div class="hero-name">RUAH</div>
+      <p class="hero-tagline">Cancionero · Música de Dios</p>
+      <p class="hero-verse">«Cantad al Señor un cántico nuevo,<br>cantad al Señor, toda la tierra.»</p>
+      <p class="hero-ref">Salmo 96, 1</p>
+      <div class="hero-btns">
+        <button class="hero-cta" onclick="showView('songs')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+            <path d="M9 18V5l12-2v13"/>
+            <circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+          </svg>
+          Canciones
+        </button>
+        <button class="hero-cta hero-cta-sec" onclick="showView('prayers')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+            <path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/>
+            <path d="M12 6v6l4 2"/>
+          </svg>
+          Oraciones
+        </button>
+      </div>
+    </div>
+
+    <div class="home-wrap">
+      <!-- Oraciones del músico -->
+      <div class="home-section-header">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18">
+          <path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/>
+          <path d="M12 6v6l4 2"/>
+        </svg>
+        <h2 class="home-h2">Oraciones del músico</h2>
+      </div>
+      <div class="prayer-tabs" id="ptabs"></div>
+      <div id="prayer-panels"></div>
+
+      <!-- Acerca de RUAH -->
+      <div class="home-section-header" style="margin-top:36px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="12" y1="8" x2="12" y2="12"/>
+          <line x1="12" y1="16" x2="12.01" y2="16"/>
+        </svg>
+        <h2 class="home-h2">Acerca de RUAH</h2>
+      </div>
+      <div class="vision-box">
+        <p>Una herramienta para músicos que sirven. No para mostrar la voz ni los acordes, sino para abrir una puerta.</p>
+        <p>Cada canción tiene acordes, letra y tonalidad. Podés transponer, guardar favoritas, armar un setlist para la celebración y copiar la letra.</p>
+        <p><em>Ruah — soplo de Dios, Espíritu que mueve. Que la música que hagamos sea tuya, Señor.</em></p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════
+       VISTA: CANCIONES
+  ══════════════════════════════════════════ -->
+  <div class="view" id="v-songs">
+
+    <!-- Barra de búsqueda y filtros principales -->
+    <div id="ctrl-bar">
+      <div id="sw">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input id="si" type="search" placeholder="Buscar canción, artista…" oninput="doSearch()" autocomplete="off" spellcheck="false">
+      </div>
+
+      <button class="pill on" onclick="setFilt('all', this)">Todas</button>
+      <button class="pill"    onclick="setFilt('fav', this)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+        </svg>
+        Favoritas
+      </button>
+      <button class="pill" id="pill-sl" onclick="toggleSL()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/>
+          <line x1="8" y1="18" x2="21" y2="18"/>
+          <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/>
+          <line x1="3" y1="18" x2="3.01" y2="18"/>
+        </svg>
+        Setlist
+      </button>
+      <button class="pill" id="pill-print" onclick="togglePrint()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6 9 6 2 18 2 18 9"/>
+          <path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/>
+          <rect x="6" y="14" width="12" height="8"/>
+        </svg>
+        Letra
+      </button>
+    </div>
+
+    <!-- Chips de ordenamiento y tags -->
+    <div id="filter-bar">
+      <span class="filter-label">Orden</span>
+      <span class="chip on" data-sort="alpha"    onclick="setSort('alpha', this)">A–Z</span>
+      <span class="chip"    data-sort="artist"   onclick="setSort('artist', this)">Artista</span>
+      <span class="chip"    data-sort="composer" onclick="setSort('composer', this)">Compositor</span>
+      <span class="chip"    data-sort="random"   onclick="setSort('random', this)">Aleatorio</span>
+      <div class="filter-sep"></div>
+      <span class="filter-label">Tags</span>
+      <span class="chip on" data-tag="all" onclick="setTag('all', this)">Todas</span>
+      <!-- Los chips de tags se insertan dinámicamente por buildTagChips() -->
+    </div>
+
+    <!-- Split: lista izquierda + detalle derecho -->
+    <div id="split">
+
+      <!-- Panel lista (drawer en mobile) -->
+      <div id="list-panel">
+        <div id="list-hd">
+          <span id="cnt">— canciones</span>
+          <span id="sort-disp"></span>
+        </div>
+        <div id="list-body"></div>
+      </div>
+
+      <!-- Overlay para cerrar el drawer en mobile -->
+      <div id="drawer-overlay" onclick="closeDrawer()"></div>
+
+      <!-- Panel detalle -->
+      <div id="detail">
+
+        <!-- Botón volver (solo mobile) -->
+        <div id="mobile-back" onclick="mobileCerrarDetalle()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="15 18 9 12 15 6"/>
+          </svg>
+          Volver a canciones
+        </div>
+        <div id="empty">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+               width="48" height="48" style="color:var(--muted2);margin-bottom:16px">
+            <path d="M9 18V5l12-2v13"/>
+            <circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+          </svg>
+          <p style="font-size:14px;color:var(--muted)">Seleccioná una canción</p>
+        </div>
+
+        <!-- Vista de canción -->
+        <div id="song-view">
+
+          <!-- Header fijo de la canción -->
+          <div id="shdr">
+            <div id="shdr-top">
+              <div id="song-info">
+                <div id="s-title"></div>
+                <div id="s-artist"></div>
+                <div id="s-composer"></div>
+                <div id="s-tags-row"></div>
+              </div>
+              <div id="cover-wrap">
+                <div id="cover-loader"></div>
+                <img id="cover-img" alt="Portada">
+              </div>
+            </div>
+
+            <!-- Botones de acción -->
+            <div class="act-row" style="margin-top:10px">
+              <button class="abtn" id="btn-fav" onclick="toggleFav()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+                <span id="fav-lbl">Guardar</span>
+              </button>
+              <button class="abtn" onclick="addToSL()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
+                  <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+                Setlist
+              </button>
+              <button class="abtn" onclick="copySong()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
+                  <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/>
+                </svg>
+                Copiar
+              </button>
+              <button class="abtn" onclick="editorOpen(curId)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
+                  <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/>
+                  <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                </svg>
+                Editar
+              </button>
+            </div>
+
+            <!-- Transposición -->
+            <div id="tp">
+              <label>Tonalidad</label>
+              <button class="tpb" onclick="doTp(-1)" title="Bajar semitono">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+              </button>
+              <span id="td">—</span>
+              <button class="tpb" onclick="doTp(1)" title="Subir semitono">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+              </button>
+              <div class="tp-right">
+                <button class="abtn" id="tp-rst" onclick="doTpRst()" style="display:none">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
+                    <polyline points="1 4 1 10 7 10"/>
+                    <path d="M3.51 15a9 9 0 102.13-9.36L1 10"/>
+                  </svg>
+                  Reset
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Links externos -->
+          <div id="slinks"></div>
+
+          <!-- Cuerpo de la canción (acordes + letra) -->
+          <div id="sbody"></div>
+
+        </div><!-- /song-view -->
+      </div><!-- /detail -->
+
+      <!-- Setlist lateral -->
+      <div id="sl-panel">
+        <div class="sl-hd">
+          <span>Setlist</span>
+          <button class="abtn" onclick="toggleSL()" style="padding:3px 8px;font-size:11px">✕</button>
+        </div>
+        <div class="sl-scroll" id="sl-scroll">
+          <div class="sl-empty">Sin canciones aún.</div>
+        </div>
+        <div class="sl-foot">
+          <button class="sl-clr" onclick="clearSL()">Vaciar setlist</button>
+        </div>
+      </div>
+
+    </div><!-- /split -->
+  </div><!-- /v-songs -->
+
+
+  <!-- ══════════════════════════════════════════
+       VISTA: ORACIONES
+  ══════════════════════════════════════════ -->
+  <div class="view" id="v-prayers">
+    <div style="max-width:700px;margin:0 auto;width:100%;padding:32px 24px 60px;overflow-y:auto">
+      <h2 class="home-h2" style="margin-bottom:16px">Oraciones</h2>
+      <div class="prayer-tabs" id="ptabs-p"></div>
+      <div id="prayer-panels-p"></div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════
+       VISTA: ADMIN
+  ══════════════════════════════════════════ -->
+  <div class="view" id="v-admin" style="overflow-y:auto">
+    <div style="max-width:960px;margin:0 auto;width:100%;padding:24px 20px 60px">
+
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:18px">
+        <h2 class="home-h2" style="margin:0">Admin</h2>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <span id="admin-changed" style="display:none;font-size:11px;color:var(--f4);align-self:center">● Cambios sin guardar</span>
+          <button class="abtn" onclick="adminSaveLS()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
+              <path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/>
+              <polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/>
+            </svg>
+            Guardar
+          </button>
+          <button class="abtn" onclick="adminExport()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Exportar JSON
+          </button>
+          <label class="abtn" style="cursor:pointer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+              <polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/>
+            </svg>
+            Importar JSON
+            <input type="file" accept=".json" onchange="adminImport(event)" style="display:none">
+          </label>
+          <button class="abtn" onclick="adminResetConfirm()" style="color:var(--muted)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
+              <polyline points="1 4 1 10 7 10"/>
+              <path d="M3.51 15a9 9 0 102.13-9.36L1 10"/>
+            </svg>
+            Restaurar
+          </button>
+          <button class="abtn" onclick="editorOpen(null)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
+              <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+            Nueva canción
+          </button>
+        </div>
+      </div>
+
+      <!-- Buscador admin -->
+      <div style="position:relative;max-width:340px;margin-bottom:14px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             style="position:absolute;left:10px;top:50%;transform:translateY(-50%);width:14px;height:14px;color:var(--muted)">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input id="admin-si" type="search" placeholder="Buscar canciones…"
+               oninput="adminRenderTable()"
+               style="width:100%;padding:7px 12px 7px 32px;border:1.5px solid var(--bord);border-radius:20px;font-size:13px;background:var(--bg);color:var(--text)">
+      </div>
+      <p id="admin-count" style="font-size:11px;color:var(--muted);margin-bottom:10px"></p>
+
+      <!-- Tabla de canciones -->
+      <div style="overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;font-size:12.5px">
+          <thead>
+            <tr style="background:var(--surf2);border-bottom:2px solid var(--bord)">
+              <th style="padding:8px 12px;text-align:left;cursor:pointer;font-weight:600" onclick="adminSort('title')">Título / Artista</th>
+              <th style="padding:8px 12px;text-align:left;cursor:pointer;font-weight:600" onclick="adminSort('composer')">Compositor</th>
+              <th style="padding:8px 8px;text-align:left;cursor:pointer;font-weight:600;width:50px" onclick="adminSort('key')">Ton.</th>
+              <th style="padding:8px 12px;text-align:left;font-weight:600">Tags</th>
+              <th style="padding:8px 12px;text-align:left;font-weight:600;width:80px">Links</th>
+              <th style="padding:8px 12px;width:100px"></th>
+            </tr>
+          </thead>
+          <tbody id="admin-tbody"></tbody>
+        </table>
+      </div>
+
+    </div>
+  </div><!-- /v-admin -->
+
+
+  <!-- ══════════════════════════════════════════
+       EDITOR (modal overlay, todas las vistas)
+  ══════════════════════════════════════════ -->
+  <div id="song-editor">
+    <div class="ed-modal">
+
+      <!-- ① HEADER fijo -->
+      <div class="ed-header">
+        <div>
+          <div class="ed-label">Editor</div>
+          <div id="editor-title-disp" class="ed-title-disp">Nueva canción</div>
+        </div>
+        <button class="btn-icon" onclick="editorClose()" title="Cerrar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- ② METADATA fija -->
+      <div class="ed-meta">
+        <div class="ed-meta-grid">
+          <div class="ed-field">
+            <label class="ed-field-label">Título *</label>
+            <input id="ed-title" type="text" class="ed-input" placeholder="NOMBRE DE LA CANCIÓN"
+                   oninput="this.value=this.value.toUpperCase()">
+          </div>
+          <div class="ed-field">
+            <label class="ed-field-label">Artista</label>
+            <input id="ed-artist" type="text" class="ed-input" placeholder="Intérprete">
+          </div>
+          <div class="ed-field">
+            <label class="ed-field-label">Compositor</label>
+            <input id="ed-composer" type="text" class="ed-input" placeholder="Compositor">
+          </div>
+          <div class="ed-field">
+            <label class="ed-field-label">Tonalidad</label>
+            <input id="ed-key" type="text" class="ed-input ed-input-mono" placeholder="Am, G, F#m…"
+                   oninput="syncKeyChip()">
+          </div>
+          <div class="ed-field">
+            <label class="ed-field-label">Spotify URL</label>
+            <input id="ed-spotify" type="url" class="ed-input" placeholder="https://open.spotify.com/track/…">
+          </div>
+          <div class="ed-field">
+            <label class="ed-field-label">YouTube URL</label>
+            <input id="ed-youtube" type="url" class="ed-input" placeholder="https://youtube.com/watch?v=…">
+          </div>
+        </div>
+        <div class="ed-tags-row">
+          <label class="ed-field-label">Tags</label>
+          <div id="tag-picker" class="ed-tag-picker"></div>
+        </div>
+      </div>
+
+      <!-- ③ ÁREA PRINCIPAL flexible: editor | preview -->
+      <div class="ed-body">
+
+        <!-- Panel izquierdo: editor -->
+        <div class="ed-pane ed-pane-left">
+          <div class="ed-pane-header">
+            <div class="ed-pane-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12">
+                <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4 12.5-12.5z"/>
+              </svg>
+              ChordPro
+            </div>
+            <span id="ed-status"></span>
+          </div>
+          <div id="chord-toolbar"></div>
+          <div class="insert-btns">
+            <button class="ins-btn" onclick="edIns('[VERSO]')">VERSO</button>
+            <button class="ins-btn" onclick="edIns('[ESTRIBILLO]')">ESTRIBILLO</button>
+            <button class="ins-btn" onclick="edIns('[PUENTE]')">PUENTE</button>
+            <button class="ins-btn" onclick="edIns('[INTRO]')">INTRO</button>
+            <button class="ins-btn" onclick="edIns('[CODA]')">CODA</button>
+          </div>
+          <textarea id="ed-content"
+                    placeholder="G           C           Em          D
+Sumergido en las aguas busco tu paz"
+                    oninput="edPreviewUpdate()"
+                    spellcheck="false"></textarea>
+        </div>
+
+        <!-- Divisor -->
+        <div class="ed-divider"></div>
+
+        <!-- Panel derecho: preview -->
+        <div class="ed-pane ed-pane-right">
+          <div class="ed-pane-header">
+            <div class="ed-pane-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>
+              </svg>
+              Vista previa
+            </div>
+          </div>
+          <div id="ed-preview" class="ed-preview-scroll">
+            <div id="ed-preview-body"></div>
+          </div>
+        </div>
+
+      </div><!-- /ed-body -->
+
+      <!-- ④ FOOTER fijo -->
+      <div class="ed-footer">
+        <div class="ed-footer-left">
+          <button class="btn-cancel" onclick="editorClose()">Cancelar</button>
+          <button class="btn-del" id="ed-del-btn" onclick="editorDelete()">Eliminar</button>
+        </div>
+        <button class="btn-save" onclick="editorSave()">Guardar canción</button>
+      </div>
+
+    </div>
+  </div><!-- /song-editor -->
+
+
+  <!-- ══════════════════════════════════════════
+       TOAST
+  ══════════════════════════════════════════ -->
+  <div id="toast"></div>
+
+
+  <!-- ══════════════════════════════════════════
+       SCRIPTS (orden de carga crítico)
+  ══════════════════════════════════════════ -->
+  <script src="./js/songs_data.js"></script>
+  <script src="./js/state.js"></script>
+  <script src="./js/transposer.js"></script>
+  <script src="./js/migrator.js"></script>
+  <script src="./js/parser.js"></script>
+  <script src="./js/renderer.js"></script>
+  <script src="./js/misc.js"></script>
+  <script src="./js/mobile.js"></script>
+  <script src="./js/editor.js"></script>
+  <script src="./js/prayers.js"></script>
+  <script src="./js/app.js"></script>
+
+</body>
+</html>
