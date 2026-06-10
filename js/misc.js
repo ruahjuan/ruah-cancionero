@@ -118,9 +118,13 @@ async function loadCover(song) {
 
   try {
     let thumbUrl = null;
-    if (sp && location.protocol !== 'file:') {
-      const res = await fetch(`https://open.spotify.com/oembed?url=https://open.spotify.com/track/${sp}`);
-      if (res.ok) { const j = await res.json(); thumbUrl = j.thumbnail_url; }
+    if (sp) {
+      try {
+        // oEmbed via proxy CORS
+        const spotifyUrl = encodeURIComponent(`https://open.spotify.com/track/${sp}`);
+        const res = await fetch(`https://corsproxy.io/?https://open.spotify.com/oembed?url=${spotifyUrl}`);
+        if (res.ok) { const j = await res.json(); thumbUrl = j.thumbnail_url; }
+      } catch(e) { /* proxy falló, intentar YouTube */ }
     }
     if (!thumbUrl && yt) {
       thumbUrl = `https://img.youtube.com/vi/${yt}/mqdefault.jpg`;

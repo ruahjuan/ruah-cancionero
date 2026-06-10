@@ -55,20 +55,42 @@ a{color:inherit;text-decoration:none}
 .hero{flex-shrink:0}
 .hero{
   padding:56px 40px 48px;text-align:center;position:relative;overflow:hidden;
-  background:linear-gradient(160deg,#f5ede0 0%,#faf6ef 60%,#eff5f9 100%);
+  background:var(--surf);
   border-bottom:1px solid var(--bord);
 }
-@media(prefers-color-scheme:dark){.hero{background:linear-gradient(160deg,#1a1408 0%,#12100e 60%,#0d1217 100%)}}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 50% 0%,rgba(180,80,0,.08),transparent);pointer-events:none}
-.hero-name{font-family:var(--font-d);font-size:clamp(42px,8vw,72px);font-weight:700;letter-spacing:.04em;color:var(--f4);line-height:1;margin-bottom:10px}
-.hero-tagline{font-size:clamp(10px,1.4vw,12px);text-transform:uppercase;letter-spacing:.2em;color:var(--muted);margin-bottom:22px}
-.hero-verse{font-family:var(--font-d);font-size:clamp(14px,1.8vw,17px);color:var(--text);font-style:italic;margin-bottom:6px;line-height:1.6}
+/* Pentagrama SVG de fondo — se inyecta desde JS */
+.hero-staff{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;opacity:.07}
+/* RUAH fantasma dorado */
+.hero-ghost{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-48%);
+  font-family:var(--font-d);font-size:clamp(120px,22vw,200px);font-weight:700;
+  color:#c9a84c;opacity:.055;letter-spacing:.04em;
+  pointer-events:none;white-space:nowrap;line-height:1;
+  user-select:none;
+}
+.hero-tagline{font-size:clamp(10px,1.4vw,11px);text-transform:uppercase;letter-spacing:.2em;color:var(--muted);margin-bottom:10px}
+.hero-name{font-family:var(--font-d);font-size:clamp(48px,8vw,72px);font-weight:700;letter-spacing:.05em;line-height:1;margin-bottom:4px}
+.hero-name .r1{color:#c9a84c}
+.hero-name .r2{color:#a07828}
+.hero-sub{font-size:clamp(9px,1.2vw,11px);text-transform:uppercase;letter-spacing:.18em;color:var(--muted);margin-bottom:18px}
+.hero-divider{width:48px;height:2px;background:#c9a84c;margin:0 auto 18px;border-radius:2px;opacity:.7}
+.hero-verse{font-family:var(--font-d);font-size:clamp(14px,1.8vw,16px);color:var(--text);font-style:italic;margin-bottom:4px;line-height:1.65}
 .hero-ref{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:28px}
 .hero-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.hero-cta{display:inline-flex;align-items:center;gap:8px;background:var(--f4);color:#fff;padding:11px 26px;border-radius:30px;font-size:13.5px;font-weight:500;cursor:pointer;box-shadow:0 4px 20px rgba(180,80,0,.28);transition:all .2s}
-.hero-cta:hover{background:var(--f5);transform:translateY(-2px)}
-.hero-cta-sec{background:transparent;color:var(--f4);border:1.5px solid var(--f3);box-shadow:none}
-.hero-cta-sec:hover{background:var(--f1);transform:translateY(-2px)}
+.hero-cta{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#c9a84c;color:#fff;
+  padding:11px 26px;border-radius:30px;
+  font-family:var(--font-d);font-size:14px;font-weight:500;
+  letter-spacing:.03em;cursor:pointer;transition:all .2s;
+}
+.hero-cta:hover{background:#a07828;transform:translateY(-2px)}
+.hero-cta-sec{
+  background:transparent;color:#c9a84c;
+  border:1.5px solid #c9a84c;
+  font-family:var(--font-d);font-size:14px;letter-spacing:.03em;
+}
+.hero-cta-sec:hover{background:rgba(201,168,76,.08);transform:translateY(-2px)}
 .hero-cta svg{width:16px;height:16px}
 .home-wrap{max-width:840px;margin:0 auto;width:100%;padding:36px 32px 56px}
 .home-section-header{display:flex;align-items:center;gap:9px;margin-bottom:14px;color:var(--f4)}

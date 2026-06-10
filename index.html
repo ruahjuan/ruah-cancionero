@@ -49,7 +49,8 @@
         </svg>
         <span>Oraciones</span>
       </button>
-      <button style="display:none" class="nav-btn" id="nb-admin" onclick="showView('admin')">
+      <button class="nav-btn" id="nb-admin" onclick="adminAccess()"
+        style="display:none">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="12" cy="12" r="3"/>
           <path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/>
@@ -75,8 +76,45 @@
   ══════════════════════════════════════════ -->
   <div class="view on" id="v-home">
     <div class="hero">
-      <div class="hero-name">RUAH</div>
+      <!-- Pentagrama SVG de fondo -->
+      <svg class="hero-staff" viewBox="0 0 680 280" preserveAspectRatio="none">
+        <line x1="0" y1="54"  x2="680" y2="54"  stroke="#c9a84c" stroke-width="1.2"/>
+        <line x1="0" y1="70"  x2="680" y2="70"  stroke="#c9a84c" stroke-width="1.2"/>
+        <line x1="0" y1="86"  x2="680" y2="86"  stroke="#c9a84c" stroke-width="1.2"/>
+        <line x1="0" y1="102" x2="680" y2="102" stroke="#c9a84c" stroke-width="1.2"/>
+        <line x1="0" y1="118" x2="680" y2="118" stroke="#c9a84c" stroke-width="1.2"/>
+        <line x1="0" y1="170" x2="680" y2="170" stroke="#c9a84c" stroke-width="1.2"/>
+        <line x1="0" y1="186" x2="680" y2="186" stroke="#c9a84c" stroke-width="1.2"/>
+        <line x1="0" y1="202" x2="680" y2="202" stroke="#c9a84c" stroke-width="1.2"/>
+        <line x1="0" y1="218" x2="680" y2="218" stroke="#c9a84c" stroke-width="1.2"/>
+        <line x1="0" y1="234" x2="680" y2="234" stroke="#c9a84c" stroke-width="1.2"/>
+        <ellipse cx="60"  cy="102" rx="9" ry="7" transform="rotate(-15,60,102)"  fill="#c9a84c"/>
+        <ellipse cx="140" cy="70"  rx="9" ry="7" transform="rotate(-15,140,70)"  fill="#c9a84c"/>
+        <ellipse cx="220" cy="118" rx="9" ry="7" transform="rotate(-15,220,118)" fill="#c9a84c"/>
+        <ellipse cx="310" cy="86"  rx="9" ry="7" transform="rotate(-15,310,86)"  fill="#c9a84c"/>
+        <ellipse cx="400" cy="54"  rx="9" ry="7" transform="rotate(-15,400,54)"  fill="#c9a84c"/>
+        <ellipse cx="490" cy="102" rx="9" ry="7" transform="rotate(-15,490,102)" fill="#c9a84c"/>
+        <ellipse cx="580" cy="70"  rx="9" ry="7" transform="rotate(-15,580,70)"  fill="#c9a84c"/>
+        <ellipse cx="640" cy="118" rx="9" ry="7" transform="rotate(-15,640,118)" fill="#c9a84c"/>
+        <ellipse cx="90"  cy="202" rx="9" ry="7" transform="rotate(-15,90,202)"  fill="#c9a84c"/>
+        <ellipse cx="200" cy="170" rx="9" ry="7" transform="rotate(-15,200,170)" fill="#c9a84c"/>
+        <ellipse cx="330" cy="218" rx="9" ry="7" transform="rotate(-15,330,218)" fill="#c9a84c"/>
+        <ellipse cx="450" cy="186" rx="9" ry="7" transform="rotate(-15,450,186)" fill="#c9a84c"/>
+        <ellipse cx="570" cy="234" rx="9" ry="7" transform="rotate(-15,570,234)" fill="#c9a84c"/>
+        <line x1="69"  y1="102" x2="69"  y2="66" stroke="#c9a84c" stroke-width="1"/>
+        <line x1="149" y1="70"  x2="149" y2="34" stroke="#c9a84c" stroke-width="1"/>
+        <line x1="229" y1="118" x2="229" y2="82" stroke="#c9a84c" stroke-width="1"/>
+        <line x1="319" y1="86"  x2="319" y2="50" stroke="#c9a84c" stroke-width="1"/>
+        <line x1="409" y1="54"  x2="409" y2="18" stroke="#c9a84c" stroke-width="1"/>
+        <line x1="499" y1="102" x2="499" y2="66" stroke="#c9a84c" stroke-width="1"/>
+      </svg>
+      <!-- RUAH fantasma de fondo -->
+      <div class="hero-ghost">RUAH</div>
+      <!-- Contenido -->
       <p class="hero-tagline">Cancionero · Música de Dios</p>
+      <h1 class="hero-name"><span class="r1">R</span><span class="r2">UAH</span></h1>
+      <p class="hero-sub">Soplo de Dios · Espíritu que mueve</p>
+      <div class="hero-divider"></div>
       <p class="hero-verse">«Cantad al Señor un cántico nuevo,<br>cantad al Señor, toda la tierra.»</p>
       <p class="hero-ref">Salmo 96, 1</p>
       <div class="hero-btns">
