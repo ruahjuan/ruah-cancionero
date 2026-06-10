@@ -73,6 +73,8 @@ function openSong(id) {
 
   curId = id;
   sem = 0;
+  capo = 0;
+  _pauseAutoscroll();
 
   // Mostrar el detalle inmediatamente (mobile: pantalla completa)
   document.getElementById('empty').style.display     = 'none';
@@ -89,6 +91,12 @@ function openSong(id) {
     .join('');
   document.getElementById('td').textContent         = s.key || '—';
   document.getElementById('tp-rst').style.display   = 'none';
+  // Resetear capo display
+  if (document.getElementById('capo-disp')) {
+    document.getElementById('capo-disp').textContent = 'Sin capo';
+    document.getElementById('capo-dec').disabled = true;
+    document.getElementById('capo-inc').disabled = false;
+  }
 
   updateFavBtn();
 
@@ -104,10 +112,13 @@ function openSong(id) {
 function renderBody() {
   const container = document.getElementById('sbody');
   container.innerHTML = '';
-  container.appendChild(Renderer.render(blocks, sem, printMode));
+  // sem = transposición manual; capo = traste del capo (resta semitonos visibles)
+  const effectiveSem = ((sem - capo) % 12 + 12) % 12;
+  container.appendChild(Renderer.render(blocks, effectiveSem, printMode));
   printMode
     ? container.classList.add('print-mode')
     : container.classList.remove('print-mode');
+  applyFontSize();
 }
 
 // ── Links externos (Spotify / YouTube) ───────────────────
@@ -179,8 +190,101 @@ function togglePrint() {
 }
 
 // ═══════════════════════════════════════════════════════
-// COPIAR LETRA
+// TAMAÑO DE FUENTE
 // ═══════════════════════════════════════════════════════
+
+function applyFontSize() {
+  document.getElementById('sbody').style.fontSize = fontSize + 'em';
+  document.getElementById('fs-disp').textContent = Math.round(fontSize * 100) + '%';
+  document.getElementById('fs-dec').disabled = fontSize <= FONT_MIN;
+  document.getElementById('fs-inc').disabled = fontSize >= FONT_MAX;
+}
+
+function changeFontSize(dir) {
+  fontSize = Math.min(FONT_MAX, Math.max(FONT_MIN, fontSize + dir * FONT_STEP));
+  applyFontSize();
+}
+
+// ═══════════════════════════════════════════════════════
+// AUTOSCROLL
+// ═══════════════════════════════════════════════════════
+
+let _scrollInterval = null;
+let scrollSpeed = 1; // px por tick (ajustable)
+
+function toggleAutoscroll() {
+  const btn = document.getElementById('btn-scroll');
+  if (_scrollInterval) {
+    clearInterval(_scrollInterval);
+    _scrollInterval = null;
+    btn.classList.remove('on');
+    btn.title = 'Autoscroll';
+  } else {
+    const detail = document.getElementById('detail');
+    _scrollInterval = setInterval(() => {
+      detail.scrollTop += scrollSpeed;
+      // Parar si llegó al final
+      if (detail.scrollTop + detail.clientHeight >= detail.scrollHeight - 2) {
+        clearInterval(_scrollInterval);
+        _scrollInterval = null;
+        btn.classList.remove('on');
+      }
+    }, 50);
+    btn.classList.add('on');
+    btn.title = 'Detener scroll';
+  }
+}
+
+function changeScrollSpeed(dir) {
+  scrollSpeed = Math.min(5, Math.max(0.5, scrollSpeed + dir * 0.5));
+  document.getElementById('scroll-spd').textContent = scrollSpeed.toFixed(1) + '×';
+}
+
+// Pausar autoscroll al abrir otra canción
+function _pauseAutoscroll() {
+  if (_scrollInterval) {
+    clearInterval(_scrollInterval);
+    _scrollInterval = null;
+    const btn = document.getElementById('btn-scroll');
+    if (btn) btn.classList.remove('on');
+  }
+}
+
+// ═══════════════════════════════════════════════════════
+// CAPO
+// ═══════════════════════════════════════════════════════
+
+function changeCapo(dir) {
+  capo = Math.min(11, Math.max(0, capo + dir));
+  document.getElementById('capo-disp').textContent = capo === 0 ? 'Sin capo' : 'Capo ' + capo;
+  document.getElementById('capo-dec').disabled = capo <= 0;
+  document.getElementById('capo-inc').disabled = capo >= 11;
+  // El capo baja los acordes mostrados: si capo=2, se muestran 2 semitonos menos
+  // La tonalidad SONORA no cambia, pero los acordes que ve el guitarrista sí
+  renderBody();
+  // Actualizar display de tonalidad
+  const s = songs.find(x => x.id === curId);
+  if (s) {
+    const effectiveSem = ((sem - capo) % 12 + 12) % 12;
+    const capoLabel = capo > 0 ? ` [Capo ${capo}]` : '';
+    document.getElementById('td').textContent = Transposer.displayKey(s.key, sem) + capoLabel;
+  }
+}
+
+// ═══════════════════════════════════════════════════════
+// CIFRADO AMERICANO / EUROPEO
+// ═══════════════════════════════════════════════════════
+
+function toggleNotation() {
+  chordNotation = chordNotation === 'american' ? 'european' : 'american';
+  const btn = document.getElementById('btn-notation');
+  btn.textContent = chordNotation === 'american' ? 'A–B–C' : 'Do–Re';
+  btn.title = chordNotation === 'american' ? 'Cifrado americano (C D E…)' : 'Cifrado europeo (Do Re Mi…)';
+  if (curId) renderBody();
+  toast(chordNotation === 'american' ? 'Cifrado americano' : 'Cifrado europeo (Do Re Mi…)');
+}
+
+
 
 function copySong() {
   const s = songs.find(x => x.id === curId);

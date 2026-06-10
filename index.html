@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RUAH</title>
+  <link rel="icon" type="image/svg+xml" href="./icon.svg">
+  <link rel="apple-touch-icon" href="./icon.svg">
 
   <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,8 +25,19 @@
   ══════════════════════════════════════════ -->
   <header id="topbar">
     <div id="logo" onclick="showView('home')">
-      <div class="logo-name">RUAH</div>
-      <div class="logo-sub">Cancionero</div>
+      <svg class="logo-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="512" height="512" rx="108" fill="#1c1510"/>
+        <line x1="60" y1="180" x2="452" y2="180" stroke="#c9a84c" stroke-width="6" opacity="0.22"/>
+        <line x1="60" y1="210" x2="452" y2="210" stroke="#c9a84c" stroke-width="6" opacity="0.22"/>
+        <line x1="60" y1="240" x2="452" y2="240" stroke="#c9a84c" stroke-width="6" opacity="0.22"/>
+        <line x1="60" y1="270" x2="452" y2="270" stroke="#c9a84c" stroke-width="6" opacity="0.22"/>
+        <line x1="60" y1="300" x2="452" y2="300" stroke="#c9a84c" stroke-width="6" opacity="0.22"/>
+        <text x="256" y="360" text-anchor="middle" font-family="Georgia,'Palatino Linotype',serif" font-size="300" font-weight="700" fill="#c9a84c">R</text>
+      </svg>
+      <div>
+        <div class="logo-name">RUAH</div>
+        <div class="logo-sub">Cancionero</div>
+      </div>
     </div>
 
     <nav id="nav">
@@ -297,31 +310,82 @@
                 </svg>
                 Editar
               </button>
+              <button class="abtn" id="btn-scroll" onclick="toggleAutoscroll()" title="Autoscroll">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
+                  <polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/>
+                </svg>
+                Scroll
+              </button>
+              <button class="abtn" id="btn-notation" onclick="toggleNotation()" title="Cifrado americano (C D E…)">A–B–C</button>
             </div>
 
-            <!-- Transposición -->
-            <div id="tp">
-              <label>Tonalidad</label>
-              <button class="tpb" onclick="doTp(-1)" title="Bajar semitono">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <line x1="5" y1="12" x2="19" y2="12"/>
-                </svg>
-              </button>
-              <span id="td">—</span>
-              <button class="tpb" onclick="doTp(1)" title="Subir semitono">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
-                </svg>
-              </button>
-              <div class="tp-right">
-                <button class="abtn" id="tp-rst" onclick="doTpRst()" style="display:none">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
-                    <polyline points="1 4 1 10 7 10"/>
-                    <path d="M3.51 15a9 9 0 102.13-9.36L1 10"/>
-                  </svg>
+            <!-- Panel de controles unificado -->
+            <div id="controls-panel">
+
+              <!-- Fila 1: Tonalidad -->
+              <div class="ctrl-row">
+                <span class="ctrl-label">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="11" height="11" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                  Tonalidad
+                </span>
+                <button class="tpb" onclick="doTp(-1)" title="Bajar semitono">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+                <span id="td">—</span>
+                <button class="tpb" onclick="doTp(1)" title="Subir semitono">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+                <button class="abtn ctrl-reset" id="tp-rst" onclick="doTpRst()" style="display:none">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="11" height="11"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg>
                   Reset
                 </button>
               </div>
+
+              <!-- Fila 2: Capo -->
+              <div class="ctrl-row">
+                <span class="ctrl-label">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="11" height="11" aria-hidden="true"><rect x="2" y="7" width="20" height="10" rx="2"/><line x1="6" y1="7" x2="6" y2="17"/><line x1="10" y1="7" x2="10" y2="17"/><line x1="14" y1="7" x2="14" y2="17"/><line x1="18" y1="7" x2="18" y2="17"/></svg>
+                  Capo
+                </span>
+                <button class="tpb" id="capo-dec" onclick="changeCapo(-1)" disabled title="Bajar capo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+                <span id="capo-disp" class="ctrl-val">Sin capo</span>
+                <button class="tpb" id="capo-inc" onclick="changeCapo(1)" title="Subir capo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+              </div>
+
+              <div class="ctrl-divider"></div>
+
+              <!-- Fila 3: Letra + Scroll -->
+              <div class="ctrl-row ctrl-row-split">
+                <div class="ctrl-group">
+                  <span class="ctrl-label">Letra</span>
+                  <button class="tpb" id="fs-dec" onclick="changeFontSize(-1)" title="Reducir">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </button>
+                  <span id="fs-disp" class="ctrl-val ctrl-val-sm">100%</span>
+                  <button class="tpb" id="fs-inc" onclick="changeFontSize(1)" title="Agrandar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </button>
+                </div>
+                <div class="ctrl-sep-v"></div>
+                <div class="ctrl-group">
+                  <span class="ctrl-label">Scroll</span>
+                  <button class="tpb" onclick="changeScrollSpeed(-1)" title="Más lento">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </button>
+                  <span id="scroll-spd" class="ctrl-val ctrl-val-sm">1.0×</span>
+                  <button class="tpb" onclick="changeScrollSpeed(1)" title="Más rápido">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </button>
+                  <button class="tpb ctrl-scroll-btn" id="btn-scroll" onclick="toggleAutoscroll()" title="Autoscroll" style="margin-left:2px">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg>
+                  </button>
+                </div>
+              </div>
+
             </div>
           </div>
 

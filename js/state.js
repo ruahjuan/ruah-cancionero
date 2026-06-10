@@ -60,6 +60,24 @@ let edPreviewOpen = true;
 // true = solo letra visible (sin acordes), para imprimir/proyectar
 let printMode = false;
 
+// ─── TAMAÑO DE FUENTE ────────────────────────────────────────────────────
+
+// Factor de escala del cuerpo de la canción (1 = normal, 1.2 = grande, etc.)
+let fontSize = 1;
+const FONT_MIN  = 0.75;
+const FONT_MAX  = 1.75;
+const FONT_STEP = 0.125;
+
+// ─── CAPO ────────────────────────────────────────────────────────────────
+
+// Traste del capo (0 = sin capo). Afecta la visualización de acordes.
+let capo = 0;
+
+// ─── CIFRADO ─────────────────────────────────────────────────────────────
+
+// 'american' = C D E F G A B  |  'european' = Do Re Mi Fa Sol La Si
+let chordNotation = 'american';
+
 // ─── ESTADO DEL ADMIN ────────────────────────────────────────────────────
 
 // Columna por la que está ordenada la tabla del admin
