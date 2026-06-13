@@ -71,6 +71,8 @@ function openSong(id) {
   const s = songs.find(x => x.id === id);
   if (!s) return;
 
+  if (location.hash !== '#' + id) location.hash = id;
+
   curId = id;
   sem = 0;
   capo = 0;
@@ -319,6 +321,12 @@ function toggleSL() {
   document.getElementById('pill-sl').classList.toggle('on', slOpen);
 }
 
+function toggleMobileSL() {
+  const sheet = document.getElementById('mobile-sl-sheet');
+  if (!sheet) return;
+  sheet.classList.toggle('open');
+}
+
 function addToSL() {
   if (!curId) return;
   if (setlist.includes(curId)) { toast('Ya está en el setlist'); return; }
@@ -338,20 +346,29 @@ function clearSL() {
 }
 
 function renderSL() {
+  const html = !setlist.length
+    ? '<div class="sl-empty">Sin canciones aún.</div>'
+    : setlist.map((id, i) => {
+        const s = songs.find(x => x.id === id);
+        if (!s) return '';
+        return `<div class="sl-row" onclick="openSong('${id}')">` +
+               `<span class="sl-num">${i + 1}</span>` +
+               `<span style="flex:1;font-size:11.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(s.title)}</span>` +
+               `<button class="sl-del" onclick="event.stopPropagation();removeFromSL('${id}')">✕</button>` +
+               `</div>`;
+      }).join('');
+
+  // Sincronizar ambos paneles (desktop y mobile)
   const sc = document.getElementById('sl-scroll');
-  if (!setlist.length) {
-    sc.innerHTML = '<div class="sl-empty">Sin canciones aún.</div>';
-    return;
-  }
-  sc.innerHTML = setlist.map((id, i) => {
-    const s = songs.find(x => x.id === id);
-    if (!s) return '';
-    return `<div class="sl-row" onclick="openSong('${id}')">` +
-           `<span class="sl-num">${i + 1}</span>` +
-           `<span style="flex:1;font-size:11.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(s.title)}</span>` +
-           `<button class="sl-del" onclick="event.stopPropagation();removeFromSL('${id}')">✕</button>` +
-           `</div>`;
-  }).join('');
+  const msc = document.getElementById('mobile-sl-scroll');
+  if (sc)  sc.innerHTML  = html;
+  if (msc) msc.innerHTML = html;
+
+  // Botón mobile: mostrar solo si hay canciones, con contador
+  const btn   = document.getElementById('pill-sl-mobile');
+  const count = document.getElementById('pill-sl-count');
+  if (btn) btn.style.display = setlist.length ? '' : 'none';
+  if (count) count.textContent = setlist.length ? `(${setlist.length})` : '';
 }
 
 // ═══════════════════════════════════════════════════════
@@ -767,14 +784,26 @@ function toggleGearPanel() {
 function shareSong() {
   const s = songs.find(x => x.id === curId);
   if (!s) return;
+  const url  = location.origin + location.pathname + '#' + s.id;
   const text = s.title + (s.artist ? ' — ' + s.artist : '');
   if (navigator.share) {
-    navigator.share({ title: 'RUAH · ' + s.title, text }).catch(() => {});
+    navigator.share({ title: 'RUAH · ' + s.title, text, url }).catch(() => {});
   } else {
-    navigator.clipboard.writeText(text).catch(() => {});
-    toast('Título copiado');
+    navigator.clipboard.writeText(url).catch(() => {});
+    toast('Enlace copiado');
   }
 }
+
+// Navegación con botón Atrás / Adelante del navegador
+window.addEventListener('hashchange', () => {
+  const hashId = location.hash.replace('#', '').trim();
+  if (!hashId) {
+    showView('home');
+  } else {
+    const exists = songs.find(s => s.id === hashId);
+    if (exists) openSong(hashId);
+  }
+});
 
 // Cerrar menú ⋮ al hacer clic fuera
 document.addEventListener('click', e => {
@@ -858,6 +887,13 @@ function init() {
     buildHomeStats();         // stats: canciones, categorías, oraciones
     buildSotW();              // canción de la semana
     buildHomeCats();          // chips de categorías
+
+    // Deep link: si la URL trae un hash, abrir esa canción directamente
+    const hashId = location.hash.replace('#', '').trim();
+    if (hashId) {
+      const exists = songs.find(s => s.id === hashId);
+      if (exists) { showView('songs'); openSong(hashId); }
+    }
   } catch (e) {
     console.error('[RUAH] Error al cargar:', e);
   }

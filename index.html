@@ -221,6 +221,16 @@
         </svg>
         Favoritas
       </button>
+      <!-- Botón ver setlist (solo mobile, se muestra cuando hay canciones) -->
+      <button class="pill" id="pill-sl-mobile" onclick="toggleMobileSL()" style="display:none">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/>
+          <line x1="8" y1="18" x2="21" y2="18"/>
+          <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/>
+          <line x1="3" y1="18" x2="3.01" y2="18"/>
+        </svg>
+        Ver setlist <span id="pill-sl-count"></span>
+      </button>
       <button class="pill" id="pill-sl" onclick="toggleSL()">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/>
@@ -451,6 +461,24 @@
           <div id="sbody"></div>
 
         </div><!-- /song-view -->
+
+        <!-- Bottom sheet setlist (solo mobile) -->
+        <div id="mobile-sl-sheet">
+          <div id="mobile-sl-backdrop" onclick="toggleMobileSL()"></div>
+          <div id="mobile-sl-panel">
+            <div class="mobile-sl-hd">
+              <span>Setlist</span>
+              <button class="abtn" onclick="toggleMobileSL()" style="padding:3px 8px;font-size:11px">✕</button>
+            </div>
+            <div class="sl-scroll" id="mobile-sl-scroll">
+              <div class="sl-empty">Sin canciones aún.</div>
+            </div>
+            <div class="sl-foot">
+              <button class="sl-clr" onclick="clearSL()">Vaciar setlist</button>
+            </div>
+          </div>
+        </div>
+
       </div><!-- /detail -->
 
       <!-- Setlist lateral -->
