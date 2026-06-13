@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="./css/app.css">
   <link rel="stylesheet" href="./css/chords.css">
   <link rel="stylesheet" href="./css/mobile.css">
+  <link rel="stylesheet" href="./css/home.css">
 </head>
 
 <body>
@@ -88,8 +89,9 @@
        VISTA: HOME
   ══════════════════════════════════════════ -->
   <div class="view on" id="v-home">
+
+    <!-- Hero compacto -->
     <div class="hero">
-      <!-- Pentagrama SVG de fondo -->
       <svg class="hero-staff" viewBox="0 0 680 280" preserveAspectRatio="none">
         <line x1="0" y1="54"  x2="680" y2="54"  stroke="#c9a84c" stroke-width="1.2"/>
         <line x1="0" y1="70"  x2="680" y2="70"  stroke="#c9a84c" stroke-width="1.2"/>
@@ -121,37 +123,71 @@
         <line x1="409" y1="54"  x2="409" y2="18" stroke="#c9a84c" stroke-width="1"/>
         <line x1="499" y1="102" x2="499" y2="66" stroke="#c9a84c" stroke-width="1"/>
       </svg>
-      <!-- RUAH fantasma de fondo -->
       <div class="hero-ghost">RUAH</div>
-      <!-- Contenido -->
       <p class="hero-tagline">Cancionero · Música de Dios</p>
       <h1 class="hero-name"><span class="r1">R</span><span class="r2">UAH</span></h1>
       <p class="hero-sub">Soplo de Dios · Espíritu que mueve</p>
       <div class="hero-divider"></div>
       <p class="hero-verse">«Cantad al Señor un cántico nuevo,<br>cantad al Señor, toda la tierra.»</p>
       <p class="hero-ref">Salmo 96, 1</p>
-      <div class="hero-btns">
-        <button class="hero-cta" onclick="showView('songs')">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
-            <path d="M9 18V5l12-2v13"/>
-            <circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
-          </svg>
-          Canciones
-        </button>
-        <button class="hero-cta hero-cta-sec" onclick="showView('prayers')">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
-            <path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/>
-            <path d="M12 6v6l4 2"/>
-          </svg>
-          Oraciones
-        </button>
-      </div>
     </div>
 
     <div class="home-wrap">
-      <!-- Oraciones del músico -->
+
+      <!-- Stats -->
+      <div class="home-stats" id="home-stats">
+        <div class="hstat">
+          <span class="hstat-n" id="stat-songs">—</span>
+          <span class="hstat-l">canciones</span>
+        </div>
+        <div class="hstat-sep"></div>
+        <div class="hstat">
+          <span class="hstat-n" id="stat-tags">—</span>
+          <span class="hstat-l">categorías</span>
+        </div>
+        <div class="hstat-sep"></div>
+        <div class="hstat">
+          <span class="hstat-n" id="stat-prayers">—</span>
+          <span class="hstat-l">oraciones</span>
+        </div>
+      </div>
+
+      <!-- Canción de la semana -->
       <div class="home-section-header">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="16" height="16" aria-hidden="true">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+        </svg>
+        <h2 class="home-h2">Canción de la semana</h2>
+      </div>
+      <div class="sotw-card" id="sotw-card">
+        <div class="sotw-info">
+          <div class="sotw-title" id="sotw-title">—</div>
+          <div class="sotw-artist" id="sotw-artist">—</div>
+          <div class="sotw-tags" id="sotw-tags"></div>
+        </div>
+        <button class="sotw-btn" id="sotw-btn" onclick="">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13" aria-hidden="true">
+            <polygon points="5 3 19 12 5 21 5 3"/>
+          </svg>
+          Abrir
+        </button>
+      </div>
+
+      <!-- Explorar por categoría -->
+      <div class="home-section-header" style="margin-top:28px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="16" height="16" aria-hidden="true">
+          <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/>
+          <rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>
+        </svg>
+        <h2 class="home-h2">Explorar por categoría</h2>
+      </div>
+      <div class="home-cat-chips" id="home-cat-chips">
+        <!-- Se rellena dinámicamente por buildHomeCats() -->
+      </div>
+
+      <!-- Oraciones del músico -->
+      <div class="home-section-header" style="margin-top:28px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="16" height="16" aria-hidden="true">
           <path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/>
           <path d="M12 6v6l4 2"/>
         </svg>
@@ -160,20 +196,6 @@
       <div class="prayer-tabs" id="ptabs"></div>
       <div id="prayer-panels"></div>
 
-      <!-- Acerca de RUAH -->
-      <div class="home-section-header" style="margin-top:36px">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18">
-          <circle cx="12" cy="12" r="10"/>
-          <line x1="12" y1="8" x2="12" y2="12"/>
-          <line x1="12" y1="16" x2="12.01" y2="16"/>
-        </svg>
-        <h2 class="home-h2">Acerca de RUAH</h2>
-      </div>
-      <div class="vision-box">
-        <p>Una herramienta para músicos que sirven. No para mostrar la voz ni los acordes, sino para abrir una puerta.</p>
-        <p>Cada canción tiene acordes, letra y tonalidad. Podés transponer, guardar favoritas, armar un setlist para la celebración y copiar la letra.</p>
-        <p><em>Ruah — soplo de Dios, Espíritu que mueve. Que la música que hagamos sea tuya, Señor.</em></p>
-      </div>
     </div>
   </div>
 
@@ -268,126 +290,159 @@
         <!-- Vista de canción -->
         <div id="song-view">
 
-          <!-- Header fijo de la canción -->
+          <!-- Header fijo de la canción — nuevo diseño -->
           <div id="shdr">
-            <div id="shdr-top">
-              <div id="song-info">
-                <div id="s-title"></div>
-                <div id="s-artist"></div>
-                <div id="s-composer"></div>
-                <div id="s-tags-row"></div>
-              </div>
+
+            <!-- Fila 1: título + artista + tonalidad + ☆ + ⋮ -->
+            <div id="shdr-row1">
               <div id="cover-wrap">
                 <div id="cover-loader"></div>
                 <img id="cover-img" alt="Portada">
               </div>
+              <div id="song-info">
+                <div id="s-title"></div>
+                <div id="s-meta">
+                  <span id="s-artist-inline"></span>
+                  <span id="s-dot" style="color:var(--muted2)"> · </span>
+                  <span id="td">—</span>
+                </div>
+              </div>
+              <div id="shdr-icons">
+                <button class="shdr-icon-btn" id="btn-fav" onclick="toggleFav()" title="Favorita" aria-label="Favorita">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                  </svg>
+                </button>
+                <div id="dot-menu-wrap">
+                  <button class="shdr-icon-btn" id="btn-dot-menu" onclick="toggleDotMenu()" title="Más opciones" aria-label="Más opciones" aria-haspopup="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true">
+                      <circle cx="12" cy="5" r="1.2" fill="currentColor"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/><circle cx="12" cy="19" r="1.2" fill="currentColor"/>
+                    </svg>
+                  </button>
+                  <div id="dot-menu" role="menu" aria-hidden="true">
+                    <button class="dot-item" onclick="copySong();closeDotMenu()" role="menuitem">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                      Copiar letra
+                    </button>
+                    <button class="dot-item" onclick="shareSong();closeDotMenu()" role="menuitem">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                      Compartir
+                    </button>
+                    <button class="dot-item" onclick="addToSL();closeDotMenu()" role="menuitem">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                      Guardar en setlist
+                    </button>
+                    <button class="dot-item" id="dot-yt-btn" onclick="openYoutube();closeDotMenu()" role="menuitem" style="display:none">
+                      <svg viewBox="0 0 24 24" fill="#FF0000" width="14" height="14" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                      Ver en YouTube
+                    </button>
+                    <button class="dot-item" id="dot-sp-btn" onclick="openSpotify();closeDotMenu()" role="menuitem" style="display:none">
+                      <svg viewBox="0 0 24 24" fill="#1DB954" width="14" height="14" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                      Ver en Spotify
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <!-- Botones de acción -->
-            <div class="act-row" style="margin-top:10px">
-              <button class="abtn" id="btn-fav" onclick="toggleFav()">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
-                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-                </svg>
-                <span id="fav-lbl">Guardar</span>
+            <!-- Fila 2: transposición + scroll + cifrado -->
+            <div id="shdr-row2">
+              <button class="tpb" onclick="doTp(-1)" title="Bajar semitono" aria-label="Bajar semitono">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/></svg>
               </button>
-              <button class="abtn" onclick="addToSL()">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
-                  <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
-                </svg>
-                Setlist
+              <span id="tp-key-disp">—</span>
+              <button class="tpb" onclick="doTp(1)" title="Subir semitono" aria-label="Subir semitono">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
               </button>
-              <button class="abtn" onclick="copySong()">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
-                  <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/>
-                </svg>
-                Copiar
+              <button class="abtn ctrl-reset" id="tp-rst" onclick="doTpRst()" style="display:none" aria-label="Resetear tonalidad">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="11" height="11" aria-hidden="true"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg>
+                Reset
               </button>
-              <button class="abtn" onclick="editorOpen(curId)">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
-                  <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/>
-                  <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/>
-                </svg>
-                Editar
-              </button>
-              <button class="abtn" id="btn-scroll" onclick="toggleAutoscroll()" title="Autoscroll">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
-                  <polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/>
-                </svg>
+              <div class="shdr-sep"></div>
+              <button class="shdr-pill" id="btn-scroll" onclick="toggleAutoscroll()" title="Autoscroll">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12" aria-hidden="true"><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg>
                 Scroll
               </button>
-              <button class="abtn" id="btn-notation" onclick="toggleNotation()" title="Cifrado americano (C D E…)">A–B–C</button>
+              <button class="shdr-pill" id="btn-notation" onclick="toggleNotation()" title="Cifrado americano">A–B–C</button>
             </div>
 
-            <!-- Panel de controles unificado -->
-            <div id="controls-panel">
+            <!-- Fila 3: ⚙ Más opciones (colapsable) -->
+            <div id="shdr-row3">
+              <button id="btn-gear" onclick="toggleGearPanel()" aria-expanded="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13" aria-hidden="true">
+                  <circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/>
+                </svg>
+                Más opciones
+                <svg id="gear-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="11" height="11" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
 
-              <!-- Fila 1: Tonalidad -->
-              <div class="ctrl-row">
-                <span class="ctrl-label">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="11" height="11" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
-                  Tonalidad
-                </span>
-                <button class="tpb" onclick="doTp(-1)" title="Bajar semitono">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                </button>
-                <span id="td">—</span>
-                <button class="tpb" onclick="doTp(1)" title="Subir semitono">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                </button>
-                <button class="abtn ctrl-reset" id="tp-rst" onclick="doTpRst()" style="display:none">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="11" height="11"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg>
-                  Reset
-                </button>
-              </div>
+            <!-- Panel colapsable ⚙ -->
+            <div id="gear-panel" aria-hidden="true">
 
-              <!-- Fila 2: Capo -->
-              <div class="ctrl-row">
-                <span class="ctrl-label">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="11" height="11" aria-hidden="true"><rect x="2" y="7" width="20" height="10" rx="2"/><line x1="6" y1="7" x2="6" y2="17"/><line x1="10" y1="7" x2="10" y2="17"/><line x1="14" y1="7" x2="14" y2="17"/><line x1="18" y1="7" x2="18" y2="17"/></svg>
+              <div class="gear-row">
+                <span class="gear-label">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12" aria-hidden="true"><rect x="2" y="7" width="20" height="10" rx="2"/><line x1="6" y1="7" x2="6" y2="17"/><line x1="10" y1="7" x2="10" y2="17"/><line x1="14" y1="7" x2="14" y2="17"/><line x1="18" y1="7" x2="18" y2="17"/></svg>
                   Capo
                 </span>
-                <button class="tpb" id="capo-dec" onclick="changeCapo(-1)" disabled title="Bajar capo">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                </button>
-                <span id="capo-disp" class="ctrl-val">Sin capo</span>
-                <button class="tpb" id="capo-inc" onclick="changeCapo(1)" title="Subir capo">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                </button>
+                <div class="gear-ctrl">
+                  <button class="tpb" id="capo-dec" onclick="changeCapo(-1)" disabled aria-label="Bajar capo">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </button>
+                  <span id="capo-disp" class="ctrl-val ctrl-val-sm">Sin capo</span>
+                  <button class="tpb" id="capo-inc" onclick="changeCapo(1)" aria-label="Subir capo">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </button>
+                </div>
               </div>
 
-              <div class="ctrl-divider"></div>
-
-              <!-- Fila 3: Letra + Scroll -->
-              <div class="ctrl-row ctrl-row-split">
-                <div class="ctrl-group">
-                  <span class="ctrl-label">Letra</span>
-                  <button class="tpb" id="fs-dec" onclick="changeFontSize(-1)" title="Reducir">
+              <div class="gear-row">
+                <span class="gear-label">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12" aria-hidden="true"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
+                  Tamaño letra
+                </span>
+                <div class="gear-ctrl">
+                  <button class="tpb" id="fs-dec" onclick="changeFontSize(-1)" aria-label="Reducir texto">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/></svg>
                   </button>
                   <span id="fs-disp" class="ctrl-val ctrl-val-sm">100%</span>
-                  <button class="tpb" id="fs-inc" onclick="changeFontSize(1)" title="Agrandar">
+                  <button class="tpb" id="fs-inc" onclick="changeFontSize(1)" aria-label="Agrandar texto">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                  </button>
-                </div>
-                <div class="ctrl-sep-v"></div>
-                <div class="ctrl-group">
-                  <span class="ctrl-label">Scroll</span>
-                  <button class="tpb" onclick="changeScrollSpeed(-1)" title="Más lento">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                  </button>
-                  <span id="scroll-spd" class="ctrl-val ctrl-val-sm">1.0×</span>
-                  <button class="tpb" onclick="changeScrollSpeed(1)" title="Más rápido">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                  </button>
-                  <button class="tpb ctrl-scroll-btn" id="btn-scroll" onclick="toggleAutoscroll()" title="Autoscroll" style="margin-left:2px">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg>
                   </button>
                 </div>
               </div>
 
-            </div>
-          </div>
+              <div class="gear-row">
+                <span class="gear-label">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12" aria-hidden="true"><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg>
+                  Vel. scroll
+                </span>
+                <div class="gear-ctrl">
+                  <button class="tpb" onclick="changeScrollSpeed(-1)" aria-label="Scroll más lento">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </button>
+                  <span id="scroll-spd" class="ctrl-val ctrl-val-sm">1.0×</span>
+                  <button class="tpb" onclick="changeScrollSpeed(1)" aria-label="Scroll más rápido">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="gear-row gear-row-tags">
+                <span class="gear-label">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12" aria-hidden="true"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+                  Etiquetas
+                </span>
+                <div id="s-tags-row" class="gear-tags"></div>
+              </div>
+
+            </div><!-- /gear-panel -->
+
+            <!-- Campos legacy ocultos (usados por JS existente) -->
+            <div id="s-artist" style="display:none"></div>
+            <div id="s-composer" style="display:none"></div>
+
+          </div><!-- /shdr -->
 
           <!-- Links externos -->
           <div id="slinks"></div>

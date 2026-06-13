@@ -1,11 +1,12 @@
 /**
- * misc.js — FIAT
+ * misc.js — RUAH
  * Helpers de UI, filtros, covers y utilidades varias.
  */
 
 // ── Extractores de ID ────────────────────────────────────
 
 function spId(url) {
+  // Se mantiene por compatibilidad con datos existentes (campo spotify en JSON)
   const m = (url || '').match(/track\/([A-Za-z0-9]+)/);
   return m ? m[1] : '';
 }
@@ -91,57 +92,47 @@ function sortedVisible() {
   return vis;
 }
 
-// ── Cover de la canción ──────────────────────────────────
+// ── Cover de la canción (solo YouTube) ──────────────────
 
 async function loadCover(song) {
   const ci = document.getElementById('cover-img');
   const cl = document.getElementById('cover-loader');
   const si = document.getElementById('song-info');
 
-  ci.style.display = 'none';
-  cl.style.display = 'none';
+  // Reset estado visual
+  ci.style.display  = 'none';
+  cl.style.display  = 'none';
   si.style.marginLeft = '0';
 
-  const sp = song.spId, yt = song.ytId;
-  if (!sp && !yt) return;
+  const yt = song.ytId;
+  if (!yt) return;
 
-  const cacheKey = sp || yt;
-  if (thumbCache[cacheKey]) {
-    ci.src = thumbCache[cacheKey];
-    ci.style.display = 'block';
+  // Cache hit
+  if (thumbCache[yt]) {
+    ci.src = thumbCache[yt];
+    ci.style.display    = 'block';
     si.style.marginLeft = '10px';
     return;
   }
 
-  cl.style.display = 'flex';
+  // Mostrar loader
+  cl.style.display    = 'flex';
   si.style.marginLeft = '10px';
 
-  try {
-    let thumbUrl = null;
-    if (sp) {
-      try {
-        // oEmbed via proxy CORS
-        const spotifyUrl = encodeURIComponent(`https://open.spotify.com/track/${sp}`);
-        const res = await fetch(`https://corsproxy.io/?https://open.spotify.com/oembed?url=${spotifyUrl}`);
-        if (res.ok) { const j = await res.json(); thumbUrl = j.thumbnail_url; }
-      } catch(e) { /* proxy falló, intentar YouTube */ }
-    }
-    if (!thumbUrl && yt) {
-      thumbUrl = `https://img.youtube.com/vi/${yt}/mqdefault.jpg`;
-    }
-    if (thumbUrl) {
-      thumbCache[cacheKey] = thumbUrl;
-      ci.src = thumbUrl;
-      ci.onload  = () => { cl.style.display = 'none'; ci.style.display = 'block'; };
-      ci.onerror = () => { cl.style.display = 'none'; ci.style.display = 'none'; si.style.marginLeft = '0'; };
-    } else {
-      cl.style.display = 'none';
-      si.style.marginLeft = '0';
-    }
-  } catch (e) {
-    cl.style.display = 'none';
+  // YouTube ofrece thumbnails directos — sin proxy, sin autenticación
+  // mqdefault = 320×180, hqdefault = 480×360
+  const thumbUrl = `https://img.youtube.com/vi/${yt}/mqdefault.jpg`;
+
+  thumbCache[yt] = thumbUrl;
+  ci.src = thumbUrl;
+
+  ci.onload  = () => { cl.style.display = 'none'; ci.style.display = 'block'; };
+  ci.onerror = () => {
+    cl.style.display    = 'none';
+    ci.style.display    = 'none';
     si.style.marginLeft = '0';
-  }
+    delete thumbCache[yt]; // limpiar cache si la imagen no existe
+  };
 }
 
 // ── Favorito ─────────────────────────────────────────────
@@ -149,8 +140,11 @@ async function loadCover(song) {
 function updateFavBtn() {
   const s = songs.find(x => x.id === curId);
   if (!s) return;
-  document.getElementById('btn-fav').classList.toggle('faved', s.fav);
-  document.getElementById('fav-lbl').textContent = s.fav ? 'Guardada' : 'Guardar';
+  const btn = document.getElementById('btn-fav');
+  if (btn) btn.classList.toggle('faved', s.fav);
+  // fav-lbl es opcional (nuevo header no lo tiene)
+  const lbl = document.getElementById('fav-lbl');
+  if (lbl) lbl.textContent = s.fav ? 'Guardada' : 'Guardar';
 }
 
 // ── Sync tonalidad en editor ─────────────────────────────

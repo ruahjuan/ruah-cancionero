@@ -83,14 +83,16 @@ function openSong(id) {
   mobileAbrirDetalle();
 
   // Rellenar datos
-  document.getElementById('s-title').textContent    = s.title;
-  document.getElementById('s-artist').textContent   = s.artist || '';
-  document.getElementById('s-composer').textContent = s.composer ? 'Composición: ' + s.composer : '';
-  document.getElementById('s-tags-row').innerHTML   = (s.tags || [])
+  document.getElementById('s-title').textContent         = s.title;
+  document.getElementById('s-artist').textContent        = s.artist || '';
+  document.getElementById('s-artist-inline').textContent = s.artist || '';
+  document.getElementById('s-composer').textContent      = s.composer ? 'Composición: ' + s.composer : '';
+  document.getElementById('s-tags-row').innerHTML        = (s.tags || [])
     .map(t => `<span class="s-tag" onclick="setTag('${t}',null)">${t}</span>`)
     .join('');
-  document.getElementById('td').textContent         = s.key || '—';
-  document.getElementById('tp-rst').style.display   = 'none';
+  document.getElementById('td').textContent              = s.key || '—';
+  document.getElementById('tp-key-disp').textContent     = s.key || '—';
+  document.getElementById('tp-rst').style.display        = 'none';
   // Resetear capo display
   if (document.getElementById('capo-disp')) {
     document.getElementById('capo-disp').textContent = 'Sin capo';
@@ -121,25 +123,36 @@ function renderBody() {
   applyFontSize();
 }
 
-// ── Links externos (Spotify / YouTube) ───────────────────
+// ── Links externos — controla el ítem YouTube del menú ⋮ ──
 
 function renderLinks(s) {
-  const el = document.getElementById('slinks');
-  const parts = [];
-  if (s.spotify) parts.push(
-    `<a class="lbadge sp" href="${s.spotify}" target="_blank">` +
-    `<svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12">` +
-    `<path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>` +
-    `</svg>Spotify</a>`
-  );
-  if (s.youtube) parts.push(
-    `<a class="lbadge yt" href="${s.youtube}" target="_blank">` +
-    `<svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12">` +
-    `<path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>` +
-    `</svg>YouTube</a>`
-  );
-  el.style.display = parts.length ? 'flex' : 'none';
-  el.innerHTML = parts.join('');
+  // Ocultar el slinks clásico (ya no se usa)
+  const slinks = document.getElementById('slinks');
+  if (slinks) { slinks.style.display = 'none'; slinks.innerHTML = ''; }
+
+  // Mostrar/ocultar el ítem "Ver en YouTube" del menú ⋮
+  const ytBtn = document.getElementById('dot-yt-btn');
+  if (ytBtn) {
+    ytBtn.style.display = s.youtube ? '' : 'none';
+    ytBtn.dataset.ytUrl = s.youtube || '';
+  }
+
+  // Mostrar/ocultar el ítem "Ver en Spotify" del menú ⋮
+  const spBtn = document.getElementById('dot-sp-btn');
+  if (spBtn) {
+    spBtn.style.display = s.spotify ? '' : 'none';
+    spBtn.dataset.spUrl = s.spotify || '';
+  }
+}
+
+function openYoutube() {
+  const btn = document.getElementById('dot-yt-btn');
+  if (btn && btn.dataset.ytUrl) window.open(btn.dataset.ytUrl, '_blank');
+}
+
+function openSpotify() {
+  const btn = document.getElementById('dot-sp-btn');
+  if (btn && btn.dataset.spUrl) window.open(btn.dataset.spUrl, '_blank');
 }
 
 // ═══════════════════════════════════════════════════════
@@ -150,9 +163,11 @@ function doTp(delta) {
   const s = songs.find(x => x.id === curId);
   if (!s) return;
   sem = ((sem + delta) % 12 + 12) % 12;
-  if (sem > 6) sem -= 12; // preferir el camino más corto
-  document.getElementById('td').textContent         = Transposer.displayKey(s.key, sem);
-  document.getElementById('tp-rst').style.display   = sem !== 0 ? 'flex' : 'none';
+  if (sem > 6) sem -= 12;
+  const key = Transposer.displayKey(s.key, sem);
+  document.getElementById('td').textContent          = key;
+  document.getElementById('tp-key-disp').textContent = key;
+  document.getElementById('tp-rst').style.display    = sem !== 0 ? 'flex' : 'none';
   renderBody();
 }
 
@@ -160,8 +175,9 @@ function doTpRst() {
   const s = songs.find(x => x.id === curId);
   if (!s) return;
   sem = 0;
-  document.getElementById('td').textContent       = s.key || '—';
-  document.getElementById('tp-rst').style.display = 'none';
+  document.getElementById('td').textContent          = s.key || '—';
+  document.getElementById('tp-key-disp').textContent = s.key || '—';
+  document.getElementById('tp-rst').style.display    = 'none';
   renderBody();
 }
 
@@ -716,6 +732,118 @@ document.addEventListener('keydown', e => {
 });
 
 // ═══════════════════════════════════════════════════════
+// HEADER DE CANCIÓN — Menú ⋮ y panel ⚙
+// ═══════════════════════════════════════════════════════
+
+let _dotMenuOpen  = false;
+let _gearPanelOpen = false;
+
+function toggleDotMenu() {
+  _dotMenuOpen = !_dotMenuOpen;
+  const panel = document.getElementById('dot-menu');
+  const btn   = document.getElementById('btn-dot-menu');
+  if (panel) { panel.classList.toggle('open', _dotMenuOpen); panel.setAttribute('aria-hidden', !_dotMenuOpen); }
+  if (btn)   btn.setAttribute('aria-expanded', _dotMenuOpen);
+}
+
+function closeDotMenu() {
+  _dotMenuOpen = false;
+  const panel = document.getElementById('dot-menu');
+  const btn   = document.getElementById('btn-dot-menu');
+  if (panel) { panel.classList.remove('open'); panel.setAttribute('aria-hidden', 'true'); }
+  if (btn)   btn.setAttribute('aria-expanded', 'false');
+}
+
+function toggleGearPanel() {
+  _gearPanelOpen = !_gearPanelOpen;
+  const panel   = document.getElementById('gear-panel');
+  const btn     = document.getElementById('btn-gear');
+  const chevron = document.getElementById('gear-chevron');
+  if (panel)   { panel.classList.toggle('open', _gearPanelOpen); panel.setAttribute('aria-hidden', !_gearPanelOpen); }
+  if (btn)     btn.setAttribute('aria-expanded', _gearPanelOpen);
+  if (chevron) chevron.style.transform = _gearPanelOpen ? 'rotate(180deg)' : '';
+}
+
+function shareSong() {
+  const s = songs.find(x => x.id === curId);
+  if (!s) return;
+  const text = s.title + (s.artist ? ' — ' + s.artist : '');
+  if (navigator.share) {
+    navigator.share({ title: 'RUAH · ' + s.title, text }).catch(() => {});
+  } else {
+    navigator.clipboard.writeText(text).catch(() => {});
+    toast('Título copiado');
+  }
+}
+
+// Cerrar menú ⋮ al hacer clic fuera
+document.addEventListener('click', e => {
+  if (_dotMenuOpen && !document.getElementById('dot-menu-wrap')?.contains(e.target)) {
+    closeDotMenu();
+  }
+});
+
+// ═══════════════════════════════════════════════════════
+// HOME — Stats, Canción de la semana, Categorías
+// ═══════════════════════════════════════════════════════
+
+function buildHomeStats() {
+  const nSongs    = songs.length;
+  const allTags   = new Set(songs.flatMap(s => s.tags || []));
+  const nPrayers  = (typeof PRAYERS !== 'undefined') ? PRAYERS.length : 5;
+
+  const el = (id, val) => { const e = document.getElementById(id); if (e) e.textContent = val; };
+  el('stat-songs',   nSongs);
+  el('stat-tags',    allTags.size);
+  el('stat-prayers', nPrayers);
+}
+
+function buildSotW() {
+  if (!songs.length) return;
+
+  // Determinar canción de la semana: rotar por número de semana del año
+  const now       = new Date();
+  const startYear = new Date(now.getFullYear(), 0, 1);
+  const weekNum   = Math.floor((now - startYear) / (7 * 24 * 3600 * 1000));
+  const s         = songs[weekNum % songs.length];
+
+  const el = (id, val) => { const e = document.getElementById(id); if (e) e.textContent = val; };
+  el('sotw-title',  s.title);
+  el('sotw-artist', s.artist || '—');
+
+  const tagsEl = document.getElementById('sotw-tags');
+  if (tagsEl) {
+    tagsEl.innerHTML = (s.tags || [])
+      .map(t => `<span class="sotw-tag">${esc(t)}</span>`)
+      .join('');
+  }
+
+  const btn = document.getElementById('sotw-btn');
+  if (btn) btn.onclick = () => { showView('songs'); openSong(s.id); };
+}
+
+function buildHomeCats() {
+  const wrap = document.getElementById('home-cat-chips');
+  if (!wrap) return;
+
+  const allTags = [...new Set(songs.flatMap(s => s.tags || []))].sort();
+  wrap.innerHTML = allTags
+    .map(t => `<button class="home-cat-chip" onclick="goCat(${JSON.stringify(t)})">${esc(t)}</button>`)
+    .join('');
+}
+
+function goCat(tag) {
+  showView('songs');
+  // Activar el chip de tag correspondiente en la vista canciones
+  const chips = document.querySelectorAll('#filter-bar .chip[data-tag]');
+  chips.forEach(c => {
+    const isTarget = c.dataset.tag === tag;
+    c.classList.toggle('on', isTarget);
+    if (isTarget) setTag(tag, c);
+  });
+}
+
+// ═══════════════════════════════════════════════════════
 // INIT
 // ═══════════════════════════════════════════════════════
 
@@ -727,6 +855,9 @@ function init() {
     renderList();             // lista inicial
     showView('home');         // vista de inicio (primero mostrar)
     buildPrayers();           // sección de oraciones (después de mostrar el DOM)
+    buildHomeStats();         // stats: canciones, categorías, oraciones
+    buildSotW();              // canción de la semana
+    buildHomeCats();          // chips de categorías
   } catch (e) {
     console.error('[RUAH] Error al cargar:', e);
   }
