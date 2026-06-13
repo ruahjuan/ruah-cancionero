@@ -219,7 +219,7 @@ function applyFontSize() {
 }
 
 function changeFontSize(dir) {
-  fontSize = Math.min(FONT_MAX, Math.max(FONT_MIN, fontSize + dir * FONT_STEP));
+  fontSize = Math.min(FONT_MAX, Math.max(FONT_MIN, fontSize + Number(dir) * FONT_STEP));
   applyFontSize();
 }
 
@@ -333,6 +333,11 @@ function addToSL() {
   setlist.push(curId);
   renderSL();
   toast('Agregada al setlist ✓');
+  // En mobile, abrir el sheet automáticamente para que el usuario lo vea
+  const sheet = document.getElementById('mobile-sl-sheet');
+  if (sheet && window.innerWidth < 768 && !sheet.classList.contains('open')) {
+    sheet.classList.add('open');
+  }
 }
 
 function removeFromSL(id) {
@@ -343,6 +348,41 @@ function removeFromSL(id) {
 function clearSL() {
   setlist = [];
   renderSL();
+  // Limpiar parámetro ?sl= de la URL sin recargar
+  const url = new URL(location.href);
+  if (url.searchParams.has('sl')) {
+    url.searchParams.delete('sl');
+    history.replaceState(null, '', url.pathname + (location.hash || ''));
+  }
+}
+
+function shareSetlist() {
+  if (!setlist.length) { toast('El setlist está vacío'); return; }
+
+  // Construir URL con ?sl=id1,id2,...
+  const url = new URL(location.href);
+  url.searchParams.set('sl', setlist.join(','));
+  url.hash = '';
+  const shareUrl = url.toString();
+
+  // Texto plano para clipboard/share
+  const text = setlist.map((id, i) => {
+    const s = songs.find(x => x.id === id);
+    return s ? `${i + 1}. ${s.title}${s.key ? ' (' + s.key + ')' : ''}` : '';
+  }).filter(Boolean).join('\n');
+
+  const shareData = {
+    title: 'RUAH · Setlist',
+    text: 'Setlist:\n' + text,
+    url: shareUrl
+  };
+
+  if (navigator.share) {
+    navigator.share(shareData).catch(() => {});
+  } else {
+    navigator.clipboard.writeText(shareUrl + '\n\n' + text).catch(() => {});
+    toast('Setlist copiado al portapapeles');
+  }
 }
 
 function renderSL() {
@@ -887,6 +927,18 @@ function init() {
     buildHomeStats();         // stats: canciones, categorías, oraciones
     buildSotW();              // canción de la semana
     buildHomeCats();          // chips de categorías
+
+    // Setlist compartido: ?sl=id1,id2,...
+    const slParam = new URLSearchParams(location.search).get('sl');
+    if (slParam) {
+      const ids = slParam.split(',').map(x => x.trim()).filter(x => songs.find(s => s.id === x));
+      if (ids.length) {
+        setlist = ids;
+        renderSL();
+        showView('songs');
+        toast(`Setlist cargado (${ids.length} canciones)`);
+      }
+    }
 
     // Deep link: si la URL trae un hash, abrir esa canción directamente
     const hashId = location.hash.replace('#', '').trim();
