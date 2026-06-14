@@ -3,7 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RUAH</title>
+  <title>RUAH Cancionero</title>
+  <meta name="description" content="Cancionero litúrgico para músicos. Letras, acordes, transposición y más.">
+
+  <!-- Open Graph (WhatsApp, redes sociales) -->
+  <meta property="og:type"        content="website">
+  <meta property="og:site_name"   content="RUAH Cancionero">
+  <meta property="og:title"       content="RUAH Cancionero">
+  <meta property="og:description" content="Cancionero litúrgico para músicos. Letras, acordes, transposición y más.">
+  <meta property="og:url"         content="https://ruah-cancionero.netlify.app/">
+  <meta property="og:image"       content="https://ruah-cancionero.netlify.app/og-image.png">
+  <meta name="twitter:card"       content="summary">
+
+  <!-- Canónica -->
+  <link rel="canonical" href="https://ruah-cancionero.netlify.app/">
+
   <link rel="icon" type="image/svg+xml" href="./icon.svg">
   <link rel="apple-touch-icon" href="./icon.svg">
 
@@ -73,6 +87,20 @@
           <path d="M12 6v6l4 2"/>
         </svg>
         <span>Oraciones</span>
+      </button>
+      <button id="btn-dark" onclick="toggleDark()" title="Modo oscuro" aria-label="Alternar modo oscuro">
+        <!-- ícono sol (modo claro activo) -->
+        <svg id="icon-dark-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+        <!-- ícono luna (modo oscuro activo) -->
+        <svg id="icon-dark-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+        </svg>
       </button>
       <button class="nav-btn" id="nb-admin" onclick="adminAccess()"
         style="display:none">
@@ -208,6 +236,16 @@
       <div id="prayer-panels"></div>
 
     </div>
+
+    <!-- ── Footer ── -->
+    <footer id="app-footer">
+      <span class="footer-brand">RUAH Cancionero</span>
+      <span class="footer-sep">·</span>
+      <button class="footer-link" onclick="openContactModal()">Contacto &amp; sugerencias</button>
+      <span class="footer-sep">·</span>
+      <span class="footer-copy">Hecho con <span aria-label="amor" style="color:var(--f3)">♥</span> para la comunidad</span>
+    </footer>
+
   </div>
 
 
@@ -729,6 +767,71 @@ Sumergido en las aguas busco tu paz"
 
 
   <!-- ══════════════════════════════════════════
+       MODAL CONTACTO
+  ══════════════════════════════════════════ -->
+  <div id="contact-modal" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title" onclick="if(event.target===this)closeContactModal()">
+    <div class="ctm-box">
+
+      <!-- Header -->
+      <div class="ctm-header">
+        <div>
+          <div class="ctm-label">RUAH Cancionero</div>
+          <h2 class="ctm-title" id="contact-modal-title">Contacto &amp; sugerencias</h2>
+        </div>
+        <button class="btn-icon" onclick="closeContactModal()" aria-label="Cerrar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Tipo de mensaje -->
+      <div class="ctm-types">
+        <button class="ctm-type on" data-type="song" onclick="ctmSetType(this,'song')">
+          <span class="ctm-type-icon">🎵</span>
+          <span>Sugerir canción</span>
+        </button>
+        <button class="ctm-type" data-type="error" onclick="ctmSetType(this,'error')">
+          <span class="ctm-type-icon">🐛</span>
+          <span>Reportar error</span>
+        </button>
+        <button class="ctm-type" data-type="general" onclick="ctmSetType(this,'general')">
+          <span class="ctm-type-icon">✉️</span>
+          <span>Contacto general</span>
+        </button>
+      </div>
+
+      <!-- Formulario dinámico -->
+      <div class="ctm-body">
+
+        <!-- Campo principal: cambia según tipo -->
+        <div class="ctm-field">
+          <label class="ctm-field-label" id="ctm-main-label">¿Qué canción sugerís?</label>
+          <input id="ctm-main" type="text" class="ctm-input" placeholder="Nombre de la canción y artista…" autocomplete="off">
+        </div>
+
+        <!-- Campo mensaje: siempre visible -->
+        <div class="ctm-field">
+          <label class="ctm-field-label" id="ctm-msg-label">Detalles adicionales</label>
+          <textarea id="ctm-msg" class="ctm-textarea" rows="4" placeholder="¿Algo más que quieras contarnos?"></textarea>
+        </div>
+
+      </div>
+
+      <!-- Footer -->
+      <div class="ctm-footer">
+        <span class="ctm-hint">Se abrirá tu cliente de correo con el mensaje listo.</span>
+        <div style="display:flex;gap:8px">
+          <button class="btn-cancel" onclick="closeContactModal()">Cancelar</button>
+          <button class="btn-save" onclick="ctmSend()">Enviar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════
        TOAST
   ══════════════════════════════════════════ -->
   <div id="toast"></div>
@@ -737,6 +840,7 @@ Sumergido en las aguas busco tu paz"
   <!-- ══════════════════════════════════════════
        SCRIPTS (orden de carga crítico)
   ══════════════════════════════════════════ -->
+  <script src="./js/darkmode.js"></script>
   <script src="./js/songs_data.js"></script>
   <script src="./js/state.js"></script>
   <script src="./js/transposer.js"></script>

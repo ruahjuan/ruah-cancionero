@@ -71,7 +71,9 @@ function openSong(id) {
   const s = songs.find(x => x.id === id);
   if (!s) return;
 
-  if (location.hash !== '#' + id) history.pushState({ song: id }, '', '#' + id);
+  const newHash = '#cancion/' + id;
+  if (location.hash !== newHash) history.pushState({ song: id }, '', newHash);
+  updateMeta(s);
 
   curId = id;
   sem = 0;
@@ -461,6 +463,7 @@ function showView(v) {
   if (hb) hb.style.display = 'none';
   if (v === 'home' || v === 'songs' || v === 'prayers') {
     history.replaceState(null, '', location.pathname);
+    resetMeta();
   }
 }
 
@@ -839,13 +842,19 @@ function shareSong() {
 
 // Navegación con botón Atrás / Adelante del navegador
 function handleNavigation() {
-  const hashId = location.hash.replace('#', '').trim();
-  if (!hashId) {
+  const hash = location.hash;
+  if (!hash) {
     showView('home');
-  } else {
-    const exists = songs.find(s => s.id === hashId);
-    if (exists) openSong(hashId);
+    return;
   }
+  // Soporta #cancion/id (nuevo) y #id (legacy, por si hay links viejos guardados)
+  const match = hash.match(/^#(?:cancion\/)?(.+)$/);
+  const songId = match ? match[1].trim() : null;
+  if (songId) {
+    const exists = songs.find(s => s.id === songId);
+    if (exists) { showView('songs'); openSong(songId); return; }
+  }
+  showView('home');
 }
 
 window.addEventListener('hashchange', handleNavigation);
@@ -947,14 +956,164 @@ function init() {
     }
 
     // Deep link: si la URL trae un hash, abrir esa canción directamente
-    const hashId = location.hash.replace('#', '').trim();
-    if (hashId) {
-      const exists = songs.find(s => s.id === hashId);
-      if (exists) { showView('songs'); openSong(hashId); }
+    // Soporta #cancion/id (nuevo) y #id (legacy)
+    const initHash = location.hash;
+    if (initHash) {
+      const m = initHash.match(/^#(?:cancion\/)?(.+)$/);
+      const initId = m ? m[1].trim() : null;
+      if (initId) {
+        const exists = songs.find(s => s.id === initId);
+        if (exists) { showView('songs'); openSong(initId); }
+      }
     }
   } catch (e) {
     console.error('[RUAH] Error al cargar:', e);
   }
 }
 
+// ═══════════════════════════════════════════════════════
+// SEO: META DINÁMICO POR CANCIÓN
+// ═══════════════════════════════════════════════════════
+
+function updateMeta(s) {
+  const title = toTitleCase(s.title);
+  const artist = s.artist ? toTitleCase(s.artist) : '';
+  const key = s.key || '';
+
+  const pageTitle = artist
+    ? `${title} — ${artist} | Letra y acordes | RUAH Cancionero`
+    : `${title} | Letra y acordes | RUAH Cancionero`;
+
+  const desc = artist
+    ? `Letra y acordes de "${title}" de ${artist}${key ? ' (tono ' + key + ')' : ''}. Cancionero litúrgico RUAH.`
+    : `Letra y acordes de "${title}"${key ? ' (tono ' + key + ')' : ''}. Cancionero litúrgico RUAH.`;
+
+  const url = location.origin + location.pathname + '#cancion/' + s.id;
+
+  document.title = pageTitle;
+  _setMeta('name', 'description', desc);
+  _setMeta('property', 'og:title', pageTitle);
+  _setMeta('property', 'og:description', desc);
+  _setMeta('property', 'og:url', url);
+  _setMeta('property', 'og:type', 'article');
+}
+
+function resetMeta() {
+  document.title = 'RUAH Cancionero';
+  _setMeta('name', 'description', 'Cancionero litúrgico para músicos. Letras, acordes, transposición y más.');
+  _setMeta('property', 'og:title', 'RUAH Cancionero');
+  _setMeta('property', 'og:description', 'Cancionero litúrgico para músicos. Letras, acordes, transposición y más.');
+  _setMeta('property', 'og:url', location.origin + location.pathname);
+  _setMeta('property', 'og:type', 'website');
+}
+
+function _setMeta(attr, key, content) {
+  let el = document.querySelector(`meta[${attr}="${key}"]`);
+  if (!el) {
+    el = document.createElement('meta');
+    el.setAttribute(attr, key);
+    document.head.appendChild(el);
+  }
+  el.setAttribute('content', content);
+}
+
+function toTitleCase(str) {
+  if (!str) return '';
+  return str.toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
+}
+
 document.addEventListener('DOMContentLoaded', init);
+
+
+/* ══════════════════════════════════════════
+   MODAL CONTACTO
+══════════════════════════════════════════ */
+const CTM_CONFIG = {
+  song: {
+    mainLabel: '¿Qué canción sugerís?',
+    mainPlaceholder: 'Nombre de la canción y artista…',
+    msgLabel: 'Detalles adicionales (letra, acortes, tonalidad…)',
+    msgPlaceholder: '¿Algo más que quieras contarnos?',
+    subject: '[RUAH] Sugerencia de canción',
+  },
+  error: {
+    mainLabel: '¿En qué pantalla o función ocurrió el error?',
+    mainPlaceholder: 'Ej: "Al abrir la canción Kyrie", "El autoscroll se traba"…',
+    msgLabel: '¿Qué pasó exactamente? ¿Se repite?',
+    msgPlaceholder: 'Describí el error con el mayor detalle posible.',
+    subject: '[RUAH] Reporte de error',
+  },
+  general: {
+    mainLabel: 'Asunto',
+    mainPlaceholder: 'Un título breve para tu mensaje…',
+    msgLabel: 'Mensaje',
+    msgPlaceholder: 'Escribí lo que quieras hacernos llegar.',
+    subject: '[RUAH] Contacto general',
+  },
+};
+
+let ctmType = 'song';
+
+function openContactModal() {
+  const modal = document.getElementById('contact-modal');
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  // Reset
+  ctmSetTypeByKey('song');
+  document.getElementById('ctm-main').value = '';
+  document.getElementById('ctm-msg').value = '';
+}
+
+function closeContactModal() {
+  const modal = document.getElementById('contact-modal');
+  modal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function ctmSetType(btn, type) {
+  document.querySelectorAll('.ctm-type').forEach(b => b.classList.remove('on'));
+  btn.classList.add('on');
+  ctmType = type;
+  const cfg = CTM_CONFIG[type];
+  document.getElementById('ctm-main-label').textContent = cfg.mainLabel;
+  document.getElementById('ctm-main').placeholder = cfg.mainPlaceholder;
+  document.getElementById('ctm-msg-label').textContent = cfg.msgLabel;
+  document.getElementById('ctm-msg').placeholder = cfg.msgPlaceholder;
+}
+
+function ctmSetTypeByKey(type) {
+  const btn = document.querySelector(`.ctm-type[data-type="${type}"]`);
+  if (btn) ctmSetType(btn, type);
+}
+
+function ctmSend() {
+  const cfg = CTM_CONFIG[ctmType];
+  const main = document.getElementById('ctm-main').value.trim();
+  const msg  = document.getElementById('ctm-msg').value.trim();
+
+  if (!main && !msg) {
+    toast('Completá al menos un campo antes de enviar.');
+    document.getElementById('ctm-main').focus();
+    return;
+  }
+
+  const bodyLines = [];
+  if (main) bodyLines.push(`${cfg.mainLabel}\n${main}`);
+  if (msg)  bodyLines.push(`\n${cfg.msgLabel}\n${msg}`);
+  bodyLines.push('\n— Enviado desde RUAH Cancionero');
+
+  const mailtoUrl =
+    'mailto:ruah.cancionero@gmail.com' +
+    '?subject=' + encodeURIComponent(cfg.subject) +
+    '&body='    + encodeURIComponent(bodyLines.join('\n'));
+
+  window.location.href = mailtoUrl;
+  closeContactModal();
+}
+
+// Cerrar con Escape
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && document.getElementById('contact-modal').classList.contains('open')) {
+    closeContactModal();
+  }
+});

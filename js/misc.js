@@ -24,9 +24,9 @@ function esc(s) {
 
 function deacc(s) {
   return (s || '')
-    .replace(/[áàä]/g, 'a').replace(/[éèë]/g, 'e')
-    .replace(/[íìï]/g, 'i').replace(/[óòö]/g, 'o')
-    .replace(/[úùü]/g, 'u').replace(/ñ/g, 'n')
+    .replace(/[áàäÁÀÄ]/g, 'a').replace(/[éèëÉÈË]/g, 'e')
+    .replace(/[íìïÍÌÏ]/g, 'i').replace(/[óòöÓÒÖ]/g, 'o')
+    .replace(/[úùüÚÙÜ]/g, 'u').replace(/[ñÑ]/g, 'n')
     .toLowerCase();
 }
 

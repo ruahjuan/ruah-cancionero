@@ -5,7 +5,7 @@ const SONGS_DATA = [
     "artist": "TUYO",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/1KKzqz1pmM516c1xAK84pd?si=1583e15f194849c5",
-    "youtube": "https://www.youtube.com/watch?v=p8QxbcrB5j0",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -16,9 +16,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "ALABANZA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "1KKzqz1pmM516c1xAK84pd",
-    "ytId": "p8QxbcrB5j0"
+    "ytId": ""
   },
   {
     "id": "a-la-medida-de-tu-abrazo",
@@ -48,7 +48,7 @@ const SONGS_DATA = [
     "artist": "MAXI LARGHI",
     "composer": "MAXI LARGHI",
     "spotify": "https://open.spotify.com/intl-es/track/60MYOOyRyAmclePXYxVhdr?si=fcfe8ba279bc47f8",
-    "youtube": "https://www.youtube.com/watch?v=kynXV1Coeqg&pp=ygUUYSBsYSBtZXNhIGRlbCBzZcOxb3I%3D",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -60,9 +60,9 @@ const SONGS_DATA = [
       "ANIMACIÓN",
       "ENTRADA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "60MYOOyRyAmclePXYxVhdr",
-    "ytId": "kynXV1Coeqg"
+    "ytId": ""
   },
   {
     "id": "a-quien-ire-senor",
@@ -92,7 +92,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "MARTÍN DUARTE",
     "spotify": "https://open.spotify.com/intl-es/track/3cYCF0QsgH9vyS4NMj2iQk?si=28f69e7fec2846d1",
-    "youtube": "https://www.youtube.com/watch?v=I7bTNluyayE",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -103,9 +103,9 @@ const SONGS_DATA = [
       "MARÍA",
       "PASCUA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "3cYCF0QsgH9vyS4NMj2iQk",
-    "ytId": "I7bTNluyayE"
+    "ytId": ""
   },
   {
     "id": "a-ti-siempre-ire",
@@ -114,7 +114,7 @@ const SONGS_DATA = [
     "composer": "VERÓNICA SANFILIPPO",
     "key": "Am",
     "spotify": "https://open.spotify.com/intl-es/track/2XVCKoJaorCjfurf21HOva?si=e1973899dcc1474a",
-    "youtube": "https://www.youtube.com/watch?v=UJekyHW9GU4&list=OLAK5uy_n4ppCjZ-3LsNJ2p_tb73jyt_87QoNEDRw&index=3&pp=8AUB0gcJCToLAYcqIYzv",
+    "youtube": "",
     "content": "@@C                          Am                   \nHoy quiero elevar esta oración \n@@         F              G        \npara mi Padre, para mi Dios.\n\n@@C                                    Am\nCon ella quiero pedirte un nuevo corazón.\n@@             F   C               G\nQue pueda verte y escuchar Tu voz.\n\n@@          Am \nQuiero abrirme al misterio de Tu amor. \n@@              F\nSentir Tu presencia en mi corazón.\n@@                C                       G \nQue reveles Tu gloria y majestad en mi alma.\n\n\n@@         Am\nDame la gracia de Tu pequeñez \n@@         F \npara buscarte y poderte ver \n@@                  C\ny en Ti encontrar mi paz, \n@@                     G \nen Ti descansar mi corazón.\n\n@@ Am \nQuiero abrirme al misterio de Tu amor. \n@@              F\nSentir Tu presencia en mi corazón.\n@@                C                       G \nQue reveles Tu gloria y majestad en mi alma.\n\n\n@@         Am\nDame la gracia de Tu pequeñez \n@@         F \npara buscarte y poderte ver \n@@                  C\ny en Ti encontrar mi paz, \n@@                     G \nen Ti descansar mi corazón.\n\n\n@@Am                            F\nA Ti siempre iré, contigo me quedaré\n@@            C\ntengo la certeza de que me amas\n@@                    G\nen Ti pongo mi confianza.\n@@               Am\nA Ti siempre iré.\n",
     "srcTag": "base",
     "source": "",
@@ -125,9 +125,9 @@ const SONGS_DATA = [
       "VOCACIONAL",
       "ALABANZA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "2XVCKoJaorCjfurf21HOva",
-    "ytId": "UJekyHW9GU4"
+    "ytId": ""
   },
   {
     "id": "a-t-te-alabo",
@@ -135,7 +135,7 @@ const SONGS_DATA = [
     "artist": "HAKUNA GROUP MUSIC",
     "composer": "HAKUNA GROUP MUSIC",
     "spotify": "https://open.spotify.com/intl-es/track/6XLPxmYdva9RIwEDYL2YHt?si=4b1b591763f34ff2",
-    "youtube": "https://www.youtube.com/watch?v=3UM4mgW5lFc",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -146,9 +146,9 @@ const SONGS_DATA = [
       "ALABANZA",
       "ANIMACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "6XLPxmYdva9RIwEDYL2YHt",
-    "ytId": "3UM4mgW5lFc"
+    "ytId": ""
   },
   {
     "title": "ABRE",
@@ -157,8 +157,8 @@ const SONGS_DATA = [
     "key": "A",
     "spotify": "https://open.spotify.com/intl-es/track/7i7346NOuoSdOAq6xsBWeS?si=9d3bf715daab4f9e",
     "spId": "7i7346NOuoSdOAq6xsBWeS",
-    "youtube": "https://www.youtube.com/watch?v=Rxu03WaZBMo",
-    "ytId": "Rxu03WaZBMo",
+    "youtube": "",
+    "ytId": "",
     "content": "(Original: B mayor, transporte en 2do)\n@@A                         D\nSi has sido sumergido en el torrente\n@@        A\nDe una vida\n@@                E\nque mueve a vivir\n\n@@A                             D\nSi has sentido que te abraza una paz\n@@          A         E\nQue parecía inalcanzable\n\n@@       D         E\nSi cautivo por amor\n@@            A      E\nHas encontrado libertad\n\n\n@@A D A D\n¡Abre!\n@@       A D   F#m E  D\nEs Jesús a tu puerta\n\n\n@@A\nSi en el silencio \n@@            D                 A\nencuentras una armonía que llena\n@@          D\nY en la belleza sentido \n@@         A          D\na cada paso que das\n@@   A                           D\nSi por servir sin nada que esperar a cambio\n@@    A                        E\nTe inunda una alegría inexplicable\n@@        D                     E\nSi te atraen lo simple y lo sencillo\n@@      D                        E\nSi te basta con amar a tus hermanos\n\n@@A D A D\n¡Abre!\n@@       A D   F#m E  D\nEs Jesús a tu puerta\n@@    A D    A    D\nÉl vive y trae la luz\n@@   A  D F#m E   D\nÉl vive y trae la luz\n@@   A              D\n¡Vive Dios! (vive Dios)\n@@           A  D\n¡Vive el amor!\n@@         A          D\n¡Vive la luz! (vive la luz)\n@@F#m E      D\n¡Vive el amor!\n@@       A         D\n¡Vive Dios! (vive Dios)\n@@        A  D\n¡Vive la luz!\n@@F#m E      D\n¡Vive el amor!",
     "tags": [
       "ADORACIÓN",
@@ -178,7 +178,7 @@ const SONGS_DATA = [
     "artist": "PASTORAL DE MÚSICA SAN ISIDRO",
     "composer": "PAUL BALOCHE",
     "spotify": "https://open.spotify.com/intl-es/track/4OZAfgGdRuTIxOZ60MrMWo?si=703efda5728744e0",
-    "youtube": "https://www.youtube.com/watch?v=gGWBjKQGRJc",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -189,9 +189,9 @@ const SONGS_DATA = [
       "ANIMACIÓN",
       "ALABANZA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "4OZAfgGdRuTIxOZ60MrMWo",
-    "ytId": "gGWBjKQGRJc"
+    "ytId": ""
   },
   {
     "id": "acu-rdate-siempre",
@@ -199,7 +199,7 @@ const SONGS_DATA = [
     "artist": "P. EDUARDO MEANA",
     "composer": "P. EDUARDO MEANA",
     "spotify": "https://open.spotify.com/intl-es/track/2VjIzC4qgl0iTPJkmLnXwu?si=843eb945a23f46a5",
-    "youtube": "https://www.youtube.com/watch?v=NiyFs4ChYXs&pp=ygUYQWN1w6lyZGF0ZSBzaWVtcHJlIG1lc25h",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -209,9 +209,9 @@ const SONGS_DATA = [
     "tags": [
       "MARÍA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "2VjIzC4qgl0iTPJkmLnXwu",
-    "ytId": "NiyFs4ChYXs"
+    "ytId": ""
   },
   {
     "id": "al-contemplarte-en-la-cruz",
@@ -219,7 +219,7 @@ const SONGS_DATA = [
     "artist": "ATHENAS",
     "composer": "ATHENAS, TOBÍAS BUTELER",
     "spotify": "https://open.spotify.com/intl-es/track/5ypx0XeX2PkjifXMnJRzGh?si=ab1b164d1cbf4303",
-    "youtube": "https://www.youtube.com/watch?v=Edo-aLuOL5o",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -231,9 +231,9 @@ const SONGS_DATA = [
       "PASCUA",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "5ypx0XeX2PkjifXMnJRzGh",
-    "ytId": "Edo-aLuOL5o"
+    "ytId": ""
   },
   {
     "id": "al-sagrado-corazon",
@@ -242,7 +242,7 @@ const SONGS_DATA = [
     "composer": "MAXI LARGHI",
     "key": "E",
     "spotify": "https://open.spotify.com/intl-es/track/5iXeyYoHDjKVbBGYOCbAe1?si=134f20f07cd74a88",
-    "youtube": "https://www.youtube.com/watch?v=AB8l2d-a_UU",
+    "youtube": "",
     "content": "(Original: G mayor)\n@@  E                 B\nConfío en Vos Corazón en Belén\n@@ A                  E         B\nConfío en Vos Corazón de mi Rey\n@@C#m                 A\nConfío en Vos Corazón en la Cruz\n@@ B                  E              C#m\nConfío en Vos Corazón en Getsemaní\n\n\n@@        A        B\nComo tanto amor\n@@         E            C#m\nPudo estar en un solo latir\n@@        A        B\nComo tanto amor\n@@           E\nSolo para mí. (x2)",
     "srcTag": "base",
     "source": "",
@@ -251,9 +251,9 @@ const SONGS_DATA = [
     "tags": [
       "ADORACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "5iXeyYoHDjKVbBGYOCbAe1",
-    "ytId": "AB8l2d-a_UU"
+    "ytId": ""
   },
   {
     "title": "ALELUYA",
@@ -299,7 +299,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "FERNANDO MOSER, SAN IGNACIO DE LOYOLA",
     "spotify": "https://open.spotify.com/intl-es/track/0qKsUsNqXCALrMT4SJGkGk?si=0cbbde97d8f74ad8",
-    "youtube": "https://www.youtube.com/watch?v=K8cFoqwUKBY",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -310,9 +310,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "ACCIÓN DE GRACIAS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "0qKsUsNqXCALrMT4SJGkGk",
-    "ytId": "K8cFoqwUKBY"
+    "ytId": ""
   },
   {
     "id": "alma-misionera",
@@ -320,7 +320,7 @@ const SONGS_DATA = [
     "artist": "ATHENAS",
     "composer": "ENRIQUE GARCÍA VÉLEZ",
     "spotify": "https://open.spotify.com/intl-es/track/6f7mT8i8Yg4ZwVAkTCq0D7?si=32536dba9770419f",
-    "youtube": "https://www.youtube.com/watch?v=sNYI9ksztC0",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -334,9 +334,9 @@ const SONGS_DATA = [
       "COMUNIÓN",
       "COMUNIDAD"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "6f7mT8i8Yg4ZwVAkTCq0D7",
-    "ytId": "sNYI9ksztC0"
+    "ytId": ""
   },
   {
     "id": "al-benlo",
@@ -344,7 +344,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/6FhR37NwUJEtmxx2TBplPE?si=efee0f1add6a44ed",
-    "youtube": "https://www.youtube.com/watch?v=dPPVWYJOR2U",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -354,9 +354,9 @@ const SONGS_DATA = [
     "tags": [
       "ADORACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "6FhR37NwUJEtmxx2TBplPE",
-    "ytId": "dPPVWYJOR2U"
+    "ytId": ""
   },
   {
     "id": "animate",
@@ -365,7 +365,7 @@ const SONGS_DATA = [
     "composer": "VERÓNICA SANFILIPPO",
     "key": "Bm",
     "spotify": "https://open.spotify.com/intl-es/track/4dMYl4dShGEUzgPlAhfcjQ?si=53b873a80d6248b9",
-    "youtube": "https://www.youtube.com/watch?v=LPux6jiWVsA",
+    "youtube": "",
     "content": "@@Bm       A            D\nYa confesé mi fe ante Ti \n@@Bm         A         D           G\nHoy me revelas el camino que elegí \n@@Bm            A          D\nQue es renunciar a todo lo que un día fui \n@@Bm          A        D            G\nCargar mi cruz y seguirte hasta el fin.\n\n@@Bm        A         D\nY en esta vida junto a Ti \n@@Bm          A            D           G\nMe enseñas que no solo se trata de mí \n@@Bm         A              D\nMe invitas a que abra el corazón \n@@Bm      A            D         G\nPara mirar al otro y ver en su interior \n@@                Bm                   G\nLo que lo hace sufrir, lo que hiere su sentir, \n@@                  D                      A\nLo que le quita la paz, lo que no puede cargar.\n\n\n@@                Bm A  D    G             A\nY Tú me dices: anímate, a salir de ti, a morir a ti.\n@@      Bm A D       G                 A\n¡Oh, anímate! a cargar tu cruz, ven y sígueme \n@@      Bm A D        G                 A\n¡Oh, anímate! a perderte en Mi una y otra vez\n@@       Bm A D          G            A          Bm \n¡Oh, anímate! a que tu vida sea respuesta de amor.\n@@ A  D        G     A \nOh oh oh oh oh oh oh \n\n@@                        Bm A D    G       \nY con Tu gracia yo me animaré a salir de mí, \n@@     A\na morir a mi \n@@        Bm A D        G               A\nYo, me animaré: Cargaré mi cruz y te seguiré\n@@        Bm A D        G                  A\nYo me animaré: A perderme en Ti, una y otra vez\n@@        Bm A D           G            A          Bm\nYo me animaré a que mi vida sea respuesta de amor.\n@@ A  D        G     A \nOh oh oh oh oh oh oh \n@@                  Bm           A           D  \nYo quiero que mi vida sea respuesta de amor.\n",
     "srcTag": "base",
     "source": "",
@@ -376,9 +376,9 @@ const SONGS_DATA = [
       "JESÚS",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "4dMYl4dShGEUzgPlAhfcjQ",
-    "ytId": "LPux6jiWVsA"
+    "ytId": ""
   },
   {
     "id": "aqu-hay-un-muchacho",
@@ -386,7 +386,7 @@ const SONGS_DATA = [
     "artist": "JÉSED",
     "composer": "JÉSED",
     "spotify": "https://open.spotify.com/intl-es/track/1aFPjtn7zUhWn2vsdkJ7pE?si=349bdd24157146e9",
-    "youtube": "https://www.youtube.com/watch?v=PLOHXPSfctM",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -396,9 +396,9 @@ const SONGS_DATA = [
     "tags": [
       "OFRENDA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "1aFPjtn7zUhWn2vsdkJ7pE",
-    "ytId": "PLOHXPSfctM"
+    "ytId": ""
   },
   {
     "title": "ARDE (SAN JOSÉ)",
@@ -426,7 +426,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN ROSARIO",
     "composer": "BELÉN ZULIANI",
     "spotify": "https://open.spotify.com/intl-es/track/29irAEzNp6qIEaFkWoEoG6?si=3941f17c495e4991",
-    "youtube": "https://www.youtube.com/watch?v=sWB1L9UyB1o",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -438,9 +438,9 @@ const SONGS_DATA = [
       "PASCUA",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "29irAEzNp6qIEaFkWoEoG6",
-    "ytId": "sWB1L9UyB1o"
+    "ytId": ""
   },
   {
     "id": "baila-y-d-jate-de-historias",
@@ -448,7 +448,7 @@ const SONGS_DATA = [
     "artist": "HAKUNA GROUP MUSIC",
     "composer": "HAKUNA GROUP MUSIC",
     "spotify": "https://open.spotify.com/intl-es/track/1mrKM9bYFC4glEO3E6EXG7?si=83288d911f2c4d3b",
-    "youtube": "https://www.youtube.com/watch?v=yJa2_jbe0yc",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -459,9 +459,9 @@ const SONGS_DATA = [
       "ANIMACIÓN",
       "COMUNIDAD"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "1mrKM9bYFC4glEO3E6EXG7",
-    "ytId": "yJa2_jbe0yc"
+    "ytId": ""
   },
   {
     "id": "bienvenida-tu-misericordia",
@@ -469,7 +469,7 @@ const SONGS_DATA = [
     "artist": "PABLO MARTÍNEZ",
     "composer": "PABLO MARTÍNEZ",
     "spotify": "https://open.spotify.com/intl-es/track/3zVgQHk8b42FTMvULy8lxN?si=19c68ffe9b61486c",
-    "youtube": "https://www.youtube.com/watch?v=idQtFf7m4xw",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -481,9 +481,9 @@ const SONGS_DATA = [
       "DIOS PADRE",
       "ACCIÓN DE GRACIAS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "3zVgQHk8b42FTMvULy8lxN",
-    "ytId": "idQtFf7m4xw"
+    "ytId": ""
   },
   {
     "id": "calma-la-tempestad",
@@ -491,7 +491,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN ROSARIO",
     "composer": "GABRIEL ROMERO",
     "spotify": "https://open.spotify.com/intl-es/track/3TPF2HgA1HfhSgBQGc1RhM?si=1095ad0e4e1147ff",
-    "youtube": "https://www.youtube.com/watch?v=ipOEdunJXpE",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -503,9 +503,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "PASCUA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "3TPF2HgA1HfhSgBQGc1RhM",
-    "ytId": "ipOEdunJXpE"
+    "ytId": ""
   },
   {
     "id": "canciones-del-esp-ritu-santo",
@@ -513,7 +513,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/6jACPQkJywtEF4MLUhRjx1?si=e0e137a033354607",
-    "youtube": "https://www.youtube.com/watch?v=bSPQ9Z2AL_Q",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -524,9 +524,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "ESPÍRITU SANTO"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "6jACPQkJywtEF4MLUhRjx1",
-    "ytId": "bSPQ9Z2AL_Q"
+    "ytId": ""
   },
   {
     "id": "canci-n-de-madrugada",
@@ -534,7 +534,7 @@ const SONGS_DATA = [
     "artist": "P. EDUARDO MEANA",
     "composer": "P. EDUARDO MEANA",
     "spotify": "https://open.spotify.com/intl-es/track/7MOQv4HuNNslNyKdK7nvfR?si=635e1d00f8254aad",
-    "youtube": "https://www.youtube.com/watch?v=stfQDJM1_y0",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -547,9 +547,9 @@ const SONGS_DATA = [
       "ACCIÓN DE GRACIAS",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "7MOQv4HuNNslNyKdK7nvfR",
-    "ytId": "stfQDJM1_y0"
+    "ytId": ""
   },
   {
     "title": "CANCIÓN DE ZAQUEO",
@@ -577,7 +577,7 @@ const SONGS_DATA = [
     "artist": "VERÓNICA SANFILIPPO",
     "composer": "VERÓNICA SANFILIPPO, AUGUSTO WEISS, JONATAN NARVÁEZ",
     "spotify": "https://open.spotify.com/intl-es/track/0loolAUwrDE1P1fJdVnJ5r?si=8ce6e74756144667",
-    "youtube": "https://www.youtube.com/watch?v=DSmCBa19YiM&list=OLAK5uy_lrMq4GkuToLgRNh55vvldBS4rLMOTOCew&index=9&pp=8AUB",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -588,9 +588,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "ALABANZA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "0loolAUwrDE1P1fJdVnJ5r",
-    "ytId": "DSmCBa19YiM"
+    "ytId": ""
   },
   {
     "id": "cara-a-cara",
@@ -598,7 +598,7 @@ const SONGS_DATA = [
     "artist": "VERSIÓN PASCUA JOVEN SAN ISIDRO",
     "composer": "MARCOS VIDAL",
     "spotify": "https://open.spotify.com/intl-es/track/2jw9SN8WtiDhWmcflMgcf2?si=2770f26438b340b7",
-    "youtube": "https://www.youtube.com/watch?v=fzr-jLNnuAI&pp=ygUYY2FyYSBhIGNhcmEgcGFzY3VhIGpvdmVu",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -608,9 +608,9 @@ const SONGS_DATA = [
     "tags": [
       "ADORACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "2jw9SN8WtiDhWmcflMgcf2",
-    "ytId": "fzr-jLNnuAI"
+    "ytId": ""
   },
   {
     "id": "cinco-panes-y-dos-peces",
@@ -641,7 +641,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN ROSARIO",
     "composer": "PADRE MATÍAS",
     "spotify": "https://open.spotify.com/intl-es/track/7mqOb6b6DFIqCqjeh9XsRq?si=afbc6c3ca6844381",
-    "youtube": "https://www.youtube.com/watch?v=ju9tPlzSikI&pp=ygUoQ29tIGVsbGEgeSBjb24gdm9zIHBhc2N1YSBqb3ZlbiByb3NhcmlvIA%3D%3D",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -652,9 +652,9 @@ const SONGS_DATA = [
       "ANIMACIÓN",
       "MARÍA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "7mqOb6b6DFIqCqjeh9XsRq",
-    "ytId": "ju9tPlzSikI"
+    "ytId": ""
   },
   {
     "id": "con-vos",
@@ -662,7 +662,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/03K8vuHB10eexSIsxO8iIW?si=d5098eaba6e4458e",
-    "youtube": "https://www.youtube.com/watch?v=Jx28ZJdnO0c",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -673,9 +673,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "PENITENCIAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "03K8vuHB10eexSIsxO8iIW",
-    "ytId": "Jx28ZJdnO0c"
+    "ytId": ""
   },
   {
     "id": "confesion-de-fe",
@@ -684,7 +684,7 @@ const SONGS_DATA = [
     "composer": "VERÓNICA SANFILIPPO",
     "key": "Bm",
     "spotify": "https://open.spotify.com/intl-es/track/2Xuq17sX2Q8zy665iulfgv?si=82742bb18d5f4f57",
-    "youtube": "https://www.youtube.com/watch?v=tG21u43gJGU",
+    "youtube": "",
     "content": "@@Bm       A                 D\nMuchas cosas me han contado de Ti\n@@Bm     A                D\nTus milagros y lo que hiciste por mí\n@@Bm       A         D\nSin embargo no supe de Ti, Señor\n@@               Bm     A               D\nHasta que por fin tu amor me conquistó\n\n\n@@                 Bm   A    D\nY si preguntan quién eres Tú\n@@    Bm  A    D\n¿Quién es Jesús?\n@@              Bm           A     D\nEs quien me salva, me da vida y paz,\n@@                Bm         A             D\nel Hijo del Dios vivo, mi Camino y mi Verdad.\n\n\n@@           Bm           A     D\nEs esta mi confesión de fe, Señor\n@@          Bm          A  D\nSe que habitas en mi corazón\n@@                 Bm           A            D\nMe has dado un nombre que marca mi misión\n@@                  Bm               A         D\nY quieres que se cumpla en mí Tu plan de amor\n",
     "srcTag": "base",
     "source": "",
@@ -694,9 +694,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "2Xuq17sX2Q8zy665iulfgv",
-    "ytId": "tG21u43gJGU"
+    "ytId": ""
   },
   {
     "id": "conozco-tu-coraz-n",
@@ -704,7 +704,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/5n5QjsyI7IdomhllHhwbKY?si=c75513c3a66a4ba6",
-    "youtube": "https://www.youtube.com/watch?v=ZAr8bfP-7LY",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -715,9 +715,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "5n5QjsyI7IdomhllHhwbKY",
-    "ytId": "ZAr8bfP-7LY"
+    "ytId": ""
   },
   {
     "title": "CORDERO",
@@ -745,7 +745,7 @@ const SONGS_DATA = [
     "composer": "VERÓNICA SANFILIPPO",
     "key": "D",
     "spotify": "https://open.spotify.com/intl-es/track/4xTBYIqI5s65WWnAZiFK7V?si=dfd5d29e01054553",
-    "youtube": "https://www.youtube.com/watch?v=myNLTnirEVM&list=OLAK5uy_n4ppCjZ-3LsNJ2p_tb73jyt_87QoNEDRw&index=4&pp=8AUB",
+    "youtube": "",
     "content": "@@D                  G\nContigo quiero caminar, \n@@D                        G \nde Tu mano siempre andar.\n@@Em            G                  A\nEscuchar Tu voz que habla al corazón, \n@@Em           G                    D \npreparar mi tierra para recibir tu don.\n\n@@D                        G\nEsa semilla que hoy quieres sembrar \n@@D                  G\nla recibo en mi humanidad. \n@@Em          G                A \nQuiero que crezca en mi interior \n@@Em    G           D\niluminada por Tu amor.\n\n\n@@                G                              D\nHoy te abro mi corazón para que siembres en mi. \n@@          G                                   D \nQue Tu Palabra me alimente y renueve mi existir. \n@@           G                 D \nY así crecerá, la semilla crecerá, \n@@               Em                 G             D\ny se verán los frutos de gozo, de amor, de felicidad.\n\n\n@@          Em        G              D\nCuánto poder tiene Tu Palabra, Jesús. (x4)\n",
     "srcTag": "base",
     "source": "",
@@ -756,9 +756,9 @@ const SONGS_DATA = [
       "JESÚS",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "4xTBYIqI5s65WWnAZiFK7V",
-    "ytId": "myNLTnirEVM"
+    "ytId": ""
   },
   {
     "id": "creo",
@@ -766,7 +766,7 @@ const SONGS_DATA = [
     "artist": "VERÓNICA SANFILIPPO",
     "composer": "VERÓNICA SANFILIPPO",
     "spotify": "https://open.spotify.com/intl-es/track/1zOpsH6WXLEXabVC0Uii2S?si=3c4807e9f8cd4d20",
-    "youtube": "https://www.youtube.com/watch?v=jNW7WlDwfIw&list=OLAK5uy_lrMq4GkuToLgRNh55vvldBS4rLMOTOCew&index=8&pp=8AUB",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -779,9 +779,9 @@ const SONGS_DATA = [
       "ALABANZA",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "1zOpsH6WXLEXabVC0Uii2S",
-    "ytId": "jNW7WlDwfIw"
+    "ytId": ""
   },
   {
     "id": "creo-en-el-amor",
@@ -789,7 +789,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN ROSARIO",
     "composer": "PASCUA JOVEN ROSARIO",
     "spotify": "https://open.spotify.com/intl-es/track/2mUgAvG5fdFGzjWqTRtghX?si=1c485ccc88e84a55",
-    "youtube": "https://www.youtube.com/watch?v=98W4yJyFbYc",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -801,9 +801,9 @@ const SONGS_DATA = [
       "PASCUA",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "2mUgAvG5fdFGzjWqTRtghX",
-    "ytId": "98W4yJyFbYc"
+    "ytId": ""
   },
   {
     "id": "cristo-calla",
@@ -811,7 +811,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/0cMlhLZI2LGoBzaqe20zpA?si=74ad475f6dca4e47",
-    "youtube": "https://www.youtube.com/watch?v=DbKwT9FXsF4",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -821,9 +821,9 @@ const SONGS_DATA = [
     "tags": [
       "ADORACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "0cMlhLZI2LGoBzaqe20zpA",
-    "ytId": "DbKwT9FXsF4"
+    "ytId": ""
   },
   {
     "id": "cristo-rey",
@@ -832,7 +832,7 @@ const SONGS_DATA = [
     "composer": "MANUEL LÓPEZ NAÓN",
     "key": "D",
     "spotify": "https://open.spotify.com/intl-es/track/476pmrp66in0iXJbgQFj8k?si=2c92421c569e4726",
-    "youtube": "https://www.youtube.com/watch?v=cjpg6OqLI2s",
+    "youtube": "",
     "content": "@@   D       A           \nJesús, te alabo\n@@       G                Em      A\nPues quiero en Ti encontrar la paz.\n@@   D       A\nJesús te adoro.\n@@          G             Em           A\nPues por Ti es todo el amor que yo siento.\n\n@@     Bm              F#m\nPor favor regálame la sencillez de tu alma.\n@@    G    Em      A \nEl fuego de tu amor.\n\n\n@@            D    A     Bm\nTú eres mi Rey, a Ti te alabo.\n@@     G           Em       A \nEres mi Pastor, a Ti me entrego.\n@@     D            F#7     Bm           E\nTu cuerpo me da vida, tu sangre salvación.\n@@  G        A        D\nEres mi Señor, mi Dios.\n\n\nJesús, te alabo, pues en Ti me hago hijo.\nJesús, te adoro, déjame cantarte hoy.\nEl amor que yo siento por Ti.\nEl amor que hoy te entrego a Ti.\n\n\nJesús, te alabo.\nPues a Ti te pertenece todo lo que puedo dar.\nJesús, te adoro, hoy te entrego el corazón.\nY nueva vida así me das.\n\n\n@@            D    A     Bm\nTú eres mi Rey, a Ti te alabo.\n@@     G           Em       A \nEres mi Pastor, a Ti me entrego.\n@@     D            F#7     Bm           E\nTu cuerpo me da vida, tu sangre salvación.\n@@ G        A        Bm\nEres mi Señor, mi Dios.\n@@ G        A        Bm\nEres mi Señor, mi Dios.\n@@G          A        D\nEres mi Señor, mi Dios.",
     "srcTag": "base",
     "source": "",
@@ -842,9 +842,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "476pmrp66in0iXJbgQFj8k",
-    "ytId": "cjpg6OqLI2s"
+    "ytId": ""
   },
   {
     "id": "cuatro-vientos",
@@ -852,7 +852,7 @@ const SONGS_DATA = [
     "artist": "HAKUNA GROUP MUSIC",
     "composer": "HAKUNA GROUP MUSIC",
     "spotify": "https://open.spotify.com/intl-es/track/7wc2c9rMKY0D4QxILBptUU?si=56435cd4eb7b4047",
-    "youtube": "https://www.youtube.com/watch?v=ONwax9iCO0U",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -863,9 +863,9 @@ const SONGS_DATA = [
       "ESPÍRITU SANTO",
       "ADORACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "7wc2c9rMKY0D4QxILBptUU",
-    "ytId": "ONwax9iCO0U"
+    "ytId": ""
   },
   {
     "id": "cuidas-de-mi",
@@ -874,7 +874,7 @@ const SONGS_DATA = [
     "composer": "VERÓNICA SANFILIPPO",
     "key": "G",
     "spotify": "https://open.spotify.com/intl-es/track/2jXBBV24GYXqJ7ZKp2mUTK?si=0886e835bc6c4885",
-    "youtube": "https://www.youtube.com/watch?v=Gn6lv3vMxX8&list=OLAK5uy_n4ppCjZ-3LsNJ2p_tb73jyt_87QoNEDRw&index=1&pp=8AUB",
+    "youtube": "",
     "content": "@@G                    Em\nDame Dios un nuevo corazón\n@@            C             D\nque sepa amarte y escuchar tu voz.\n\n@@G                Em \nSolo Tu amor va dándole sentido \n@@       C          D\ny plenitud a mi existir.\n\n\n@@      G            Em\nTu conoces los detalles más profundos\n@@       C           D\nde mi vida, cuidas de mí.\n@@      G           Em\nTu conoces los anhelos más profundos\n@@       C        D        G\nde mi alma, cuidas de mí.\n\n@@G                    Em\nDame Dios un nuevo corazón\n@@              C                    D\nque quiera hablar de Ti y darte a compartir.\n@@          G            Em              C        D\nNo temeré, se que Tu amor me sostendrá, me guiará.\n\n\n@@G                      Em\nPorque conoces los detalles más profundos\n@@       C            D\nde mi vida, cuidas de mí.\n@@      G           Em\nTu conoces los anhelos más profundos\n@@       C        D\nde mi alma, cuidas de mí.\n@@          C  G\nCuidas de mí \n@@              C  G\nTú cuidas de mí.",
     "srcTag": "base",
     "source": "",
@@ -884,9 +884,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "DIOS PADRE"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "2jXBBV24GYXqJ7ZKp2mUTK",
-    "ytId": "Gn6lv3vMxX8"
+    "ytId": ""
   },
   {
     "id": "dame",
@@ -894,7 +894,7 @@ const SONGS_DATA = [
     "artist": "MARTÍN VALVERDE",
     "composer": "MARTÍN VALVERDE",
     "spotify": "https://open.spotify.com/intl-es/track/6N5lvvVjpdw11Uo7uX6XJc?si=1868d33a99724790",
-    "youtube": "https://www.youtube.com/watch?v=jPYi4zZM5tI&pp=ygUURGFtZSBtYXJ0aW4gdmFsdmVyZGU%3D",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -905,9 +905,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "6N5lvvVjpdw11Uo7uX6XJc",
-    "ytId": "jPYi4zZM5tI"
+    "ytId": ""
   },
   {
     "id": "dame-tus-ojos",
@@ -915,7 +915,7 @@ const SONGS_DATA = [
     "artist": "BIENAVENTURADOS",
     "composer": "JESÚS ADRIÁN ROMERO",
     "spotify": "https://open.spotify.com/intl-es/track/0cvjEZUUUSWxPbaHILWA4K?si=6e49d910ad03495b",
-    "youtube": "https://www.youtube.com/watch?v=AdVkLoDKDHo",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -925,9 +925,9 @@ const SONGS_DATA = [
     "tags": [
       "ADORACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "0cvjEZUUUSWxPbaHILWA4K",
-    "ytId": "AdVkLoDKDHo"
+    "ytId": ""
   },
   {
     "id": "darme",
@@ -935,7 +935,7 @@ const SONGS_DATA = [
     "artist": "PABLO MARTÍNEZ",
     "composer": "PABLO MARTÍNEZ",
     "spotify": "https://open.spotify.com/intl-es/track/3Y9BFlcKkNjbDeCnZYUZZd?si=e399fcdc971e42a0",
-    "youtube": "https://www.youtube.com/watch?v=VvLgPt_dunk",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -946,9 +946,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "ENTREGA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "3Y9BFlcKkNjbDeCnZYUZZd",
-    "ytId": "VvLgPt_dunk"
+    "ytId": ""
   },
   {
     "id": "de-cirene",
@@ -956,7 +956,7 @@ const SONGS_DATA = [
     "artist": "BERIT",
     "composer": "P. MANUEL LÓPEZ NAÓN",
     "spotify": "https://open.spotify.com/intl-es/track/4uNvBgPkZmcmU8Z0IpKPOz?si=d36cf4e696ee4bb7",
-    "youtube": "https://www.youtube.com/watch?v=TKGoubd_qEQ",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -967,9 +967,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "PASCUA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "4uNvBgPkZmcmU8Z0IpKPOz",
-    "ytId": "TKGoubd_qEQ"
+    "ytId": ""
   },
   {
     "id": "de-tal-manera",
@@ -977,7 +977,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "JESÚS ADRIÁN ROMERO",
     "spotify": "https://open.spotify.com/intl-es/track/679QWdniiIncgLKLE16ecH?si=095665675c9c4e96",
-    "youtube": "https://www.youtube.com/watch?v=7ocYrL-W8Dk",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -989,9 +989,9 @@ const SONGS_DATA = [
       "PASCUA",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "679QWdniiIncgLKLE16ecH",
-    "ytId": "7ocYrL-W8Dk"
+    "ytId": ""
   },
   {
     "id": "diario-de-mar-a",
@@ -999,7 +999,7 @@ const SONGS_DATA = [
     "artist": "ATHENAS",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/358oNz4XvHEmSEny4vzw0b?si=32f3399ddad54f43",
-    "youtube": "https://www.youtube.com/watch?v=UiMUcaQqiAg",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1010,9 +1010,9 @@ const SONGS_DATA = [
       "MARÍA",
       "PASCUA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "358oNz4XvHEmSEny4vzw0b",
-    "ytId": "UiMUcaQqiAg"
+    "ytId": ""
   },
   {
     "id": "digno-de-alabar",
@@ -1020,7 +1020,7 @@ const SONGS_DATA = [
     "artist": "ATHENAS",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/1u86k7s4hRjEirJT3v0IiW?si=635f9564fda54623",
-    "youtube": "https://www.youtube.com/watch?v=3SgFCoRwP4A",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1032,9 +1032,9 @@ const SONGS_DATA = [
       "ALABANZA",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "1u86k7s4hRjEirJT3v0IiW",
-    "ytId": "3SgFCoRwP4A"
+    "ytId": ""
   },
   {
     "id": "dijiste-si",
@@ -1043,7 +1043,7 @@ const SONGS_DATA = [
     "composer": "LUISPO",
     "key": "C",
     "spotify": "https://open.spotify.com/intl-es/track/5kjnSo0BuNliMsG8SpRrVO?si=4efe0e58c1bb4346",
-    "youtube": "https://www.youtube.com/watch?v=IaJHD3LTufY",
+    "youtube": "",
     "content": "@@       C                          F\nDijiste Sí y la tierra estallo de alegría\n@@       G                       C             G\nDijiste Sí y en tu vientre latía divina, la Salvación.\n@@            F          G           Em         Am\nHágase en mí, de corazón, la voluntad de mi Señor.\n@@         D                                  G\nQue se cumplan en mí cada día los sueños de Dios.\n\n@@    C                             Am \nMaría, las tinieblas se harán mediodía\n@@                        F \na una sola palabra que digas,\n@@       Dm             G\nen tus labios alumbra ya el Sol.\n@@   C                             Am\nMaría, la doncella que Dios prometía,\n@@                       F\nun volcán de ternura divina,\n@@                         G   A7\nprimavera de Dios Redentor.\n\n@@            D                            G\nGabriel tembló, conmovido con tanta belleza\n@@           A                               D                  A\nMadre de Dios, cuélame en tu mirada de amor de la Anunciación.\n\n@@           G           A          F#m          Bm\nHágase en mí, de corazón, la voluntad de mi Señor.\n@@         E                                  A\nQue se cumplan en mí cada día los sueños de Dios.\n\n@@    D                             Bm \nMaría, las tinieblas se harán mediodía\n@@                        G \na una sola palabra que digas,\n@@       Em             A\nen tus labios alumbra ya el Sol.\n@@   D                             Bm\nMaría, la doncella que Dios prometía,\n@@                       G\nun volcán de ternura divina,\n@@               A          D\nprimavera de Dios Redentor.\n",
     "srcTag": "base",
     "source": "",
@@ -1053,9 +1053,9 @@ const SONGS_DATA = [
       "MARÍA",
       "ANIMACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "5kjnSo0BuNliMsG8SpRrVO",
-    "ytId": "IaJHD3LTufY"
+    "ytId": ""
   },
   {
     "id": "dime-padre",
@@ -1063,7 +1063,7 @@ const SONGS_DATA = [
     "artist": "HAKUNA GROUP MUSIC",
     "composer": "HAKUNA GROUP MUSIC",
     "spotify": "https://open.spotify.com/intl-es/track/5edDuXRCMuA6gxeld0SdtB?si=67a56e713adf40e9",
-    "youtube": "https://www.youtube.com/watch?v=b_POvLgDP1o&list=OLAK5uy_lAQR2b8MYXlYj7NpfUAe9eI6VOx5yXFHQ&index=10&pp=8AUB",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1074,9 +1074,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "DIOS PADRE"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "5edDuXRCMuA6gxeld0SdtB",
-    "ytId": "b_POvLgDP1o"
+    "ytId": ""
   },
   {
     "id": "dime-rey",
@@ -1084,7 +1084,7 @@ const SONGS_DATA = [
     "artist": "HELENA",
     "composer": "HELENA Y TERESA PÉREZ MENDOZA",
     "spotify": "https://open.spotify.com/intl-es/track/6pu8hHaPnU9h86EXcehDxz?si=6d5ce0d0f8994be3",
-    "youtube": "https://www.youtube.com/watch?v=FfO0rfKNSto",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1096,9 +1096,9 @@ const SONGS_DATA = [
       "JESÚS",
       "PASCUA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "6pu8hHaPnU9h86EXcehDxz",
-    "ytId": "FfO0rfKNSto"
+    "ytId": ""
   },
   {
     "id": "dios-te-salve",
@@ -1106,7 +1106,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "PABLO COLOMA",
     "spotify": "https://open.spotify.com/intl-es/track/3Lb6AOekXpgGtbBc0YptAC?si=12af15197be141a6",
-    "youtube": "https://www.youtube.com/watch?v=Sok1ND4yaIA",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1116,9 +1116,9 @@ const SONGS_DATA = [
     "tags": [
       "MARÍA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "3Lb6AOekXpgGtbBc0YptAC",
-    "ytId": "Sok1ND4yaIA"
+    "ytId": ""
   },
   {
     "id": "d-jate",
@@ -1126,7 +1126,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN MORÓN",
     "composer": "TERE LARRAÍN",
     "spotify": "https://open.spotify.com/intl-es/track/29OcmVM7stm8UkwtLzbVAC?si=22714788ccae4686",
-    "youtube": "https://www.youtube.com/watch?v=oTDvi_fc4TE",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1138,9 +1138,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "29OcmVM7stm8UkwtLzbVAC",
-    "ytId": "oTDvi_fc4TE"
+    "ytId": ""
   },
   {
     "id": "el-abrazo",
@@ -1148,7 +1148,7 @@ const SONGS_DATA = [
     "artist": "HAKUNA GROUP MUSIC",
     "composer": "HAKUNA GROUP MUSIC",
     "spotify": "https://open.spotify.com/intl-es/track/7f4dVqztHzgbFmRmij5Ank?si=a0d3ce971b964f71",
-    "youtube": "https://www.youtube.com/watch?v=Otc-hxw3jzQ",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1160,9 +1160,9 @@ const SONGS_DATA = [
       "VOCACIONAL",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "7f4dVqztHzgbFmRmij5Ank",
-    "ytId": "Otc-hxw3jzQ"
+    "ytId": ""
   },
   {
     "id": "el-amor-de-mi-dios",
@@ -1170,7 +1170,7 @@ const SONGS_DATA = [
     "artist": "INÉS DE LA CRUZ",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/3i9R9Kp4K69tlzYCyKTK0Q?si=85710b6836b146b5",
-    "youtube": "https://www.youtube.com/watch?v=ot2-CeuNdl0&pp=ygUiRWwgYW1vciBkZSBtaSBkaW9zIHVuZXMgZGUgSmVzw7pzIA%3D%3D",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1182,9 +1182,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "ACCIÓN DE GRACIAS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "3i9R9Kp4K69tlzYCyKTK0Q",
-    "ytId": "ot2-CeuNdl0"
+    "ytId": ""
   },
   {
     "id": "el-barro-que-amo",
@@ -1192,7 +1192,7 @@ const SONGS_DATA = [
     "artist": "CUV MINISTERIO DE MÚSICA",
     "composer": "P. EDUARDO MEANA",
     "spotify": "https://open.spotify.com/intl-es/track/5usXjo8MysZUwuakRRFndm?si=c4080dc034b940c5",
-    "youtube": "https://www.youtube.com/watch?v=EmCsW8XibtE",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1204,9 +1204,9 @@ const SONGS_DATA = [
       "COMUNIDAD",
       "DIOS PADRE"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "5usXjo8MysZUwuakRRFndm",
-    "ytId": "EmCsW8XibtE"
+    "ytId": ""
   },
   {
     "id": "el-camino-la-verdad-y-la-vida",
@@ -1214,7 +1214,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN ROSARIO",
     "composer": "PASCUA JOVEN ROSARIO",
     "spotify": "https://open.spotify.com/intl-es/track/51I7vjAfStf7a0yIySWnyb?si=0fb7d34138a541c9",
-    "youtube": "https://www.youtube.com/watch?v=6RVe-2B9yYY",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1224,9 +1224,9 @@ const SONGS_DATA = [
     "tags": [
       "PASCUA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "51I7vjAfStf7a0yIySWnyb",
-    "ytId": "6RVe-2B9yYY"
+    "ytId": ""
   },
   {
     "id": "el-cazador",
@@ -1234,7 +1234,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "P. EDUARDO MEANA",
     "spotify": "https://open.spotify.com/intl-es/track/0nMQijN0zenpAjLXkp9Rk1?si=289db98aeafd4639",
-    "youtube": "https://www.youtube.com/watch?v=LKQ7lLxzyng",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1245,9 +1245,9 @@ const SONGS_DATA = [
       "VOCACIONAL",
       "SALIDA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "0nMQijN0zenpAjLXkp9Rk1",
-    "ytId": "LKQ7lLxzyng"
+    "ytId": ""
   },
   {
     "id": "el-dios-de-la-vida",
@@ -1255,7 +1255,7 @@ const SONGS_DATA = [
     "artist": "DANIEL POLI",
     "composer": "DANIEL POLI",
     "spotify": "https://open.spotify.com/intl-es/track/0NhsqSPnMMzlGbbsfIX0eg?si=bd0b62e636d1417f",
-    "youtube": "https://www.youtube.com/watch?v=qy7NP2sZxwM&pp=ygUeZWwgZGlvcyBkZSBsYSB2aWRhIGRhbmllbCBwb2xp",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1268,9 +1268,9 @@ const SONGS_DATA = [
       "VOCACIONAL",
       "ENTRADA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "0NhsqSPnMMzlGbbsfIX0eg",
-    "ytId": "qy7NP2sZxwM"
+    "ytId": ""
   },
   {
     "id": "el-nombre-de-jes-s",
@@ -1278,7 +1278,7 @@ const SONGS_DATA = [
     "artist": "VERÓNICA SANFILIPPO",
     "composer": "VERÓNICA SAANFILIPPO, AUGUSTO WEISS, JONATAN NARVÁEZ",
     "spotify": "https://open.spotify.com/intl-es/track/24r7m9vBs3vQzM5rkT2fmY?si=4fd7180b9cbd4ac0",
-    "youtube": "https://www.youtube.com/watch?v=WBifDTQI52w&pp=ygUmZWwgbm9tYnJlIGRlIGplc3VzIHZlcm9uaWNhIHNhbmZpbGlwcG8%3D",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1290,9 +1290,9 @@ const SONGS_DATA = [
       "JESÚS",
       "ALABANZA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "24r7m9vBs3vQzM5rkT2fmY",
-    "ytId": "WBifDTQI52w"
+    "ytId": ""
   },
   {
     "id": "el-que-muere-por-m-pascua-joven-san-isidro",
@@ -1300,7 +1300,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/68RghHT1MpaBbSbsiqu86V?si=4426b0fa35af4907",
-    "youtube": "https://www.youtube.com/watch?v=chELSKIfgYQ",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1311,9 +1311,9 @@ const SONGS_DATA = [
       "PASCUA",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "68RghHT1MpaBbSbsiqu86V",
-    "ytId": "chELSKIfgYQ"
+    "ytId": ""
   },
   {
     "id": "emaus",
@@ -1322,7 +1322,7 @@ const SONGS_DATA = [
     "composer": "",
     "key": "D",
     "spotify": "https://open.spotify.com/intl-es/track/6u3GQ3rzhhbBfZXa7RpDV4?si=3a884c3a1834415e",
-    "youtube": "https://www.youtube.com/watch?v=_SEsUfOJMBw",
+    "youtube": "",
     "content": "@@D             Bm                    G \nAquí vamos Jesús, caminando con Vos,\n@@                                 A \ndando un paso, queriéndote elegir.\n@@D                Bm            G     A \n Y es la tierra que late cuando cae la luz.\n@@D               Bm                    G \nEs tu mirada radiante que descubre huellas\n@@         A         G \nde libertad, en nosotros\n\n@@       D                     A \nTus palabras dibujan la esperanza\n@@       G                              Em \ny nos dicen que aquel que está en camino\n@@              A \nse mantiene vivo.\n\n@@ D              A                    G \nPorque Tu corazón habló el nuestro cantará.\n@@Bm              A                    G    A \nPorque Tu corazón habló el nuestro cantará...\n\n\n@@        D        A \nQuédate con nosotros,\n@@       G                A \nno te vayas del mundo Jesús.\n@@      Bm         A \nQuédate con nosotros,\n@@ G        A \ndanos tu paz.\n\n\n@@ D                A            G \nPorque te reconocemos al partir el pan\n@@ Bm            A         G       A \nPorque nos envías al partir el pan...",
     "srcTag": "base",
     "source": "",
@@ -1334,9 +1334,9 @@ const SONGS_DATA = [
       "COMUNIÓN",
       "SALIDA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "6u3GQ3rzhhbBfZXa7RpDV4",
-    "ytId": "_SEsUfOJMBw"
+    "ytId": ""
   },
   {
     "title": "EN LA PALMA DE SU MANO",
@@ -1345,8 +1345,8 @@ const SONGS_DATA = [
     "key": "D",
     "spotify": "https://open.spotify.com/intl-es/track/45BgycfBvaZXVQSLtyVl2r?si=28604d0c0b4d4798",
     "spId": "45BgycfBvaZXVQSLtyVl2r",
-    "youtube": "https://www.youtube.com/watch?v=8r50DUtRB7A",
-    "ytId": "8r50DUtRB7A",
+    "youtube": "",
+    "ytId": "",
     "content": "@@ D                                  \nQue el camino \n@@ G                     D     G\nvenga siempre a tu encuentro\n@@ Bm                G               A\nCuando no sepas más dónde buscar.\n@@ D\nQue el viento sople \n@@  G             D\nsiempre a tu espalda\n@@ Bm                  G                A\nCuando no queden fuerzas para avanzar.\n\n\n@@      Bm         F#m\nY que la verdad guíe \n@@           G             D\ntus pensamientos y tus actos\n@@        G\nY que Dios \n@@              A             D\nte lleve en la palma de su mano.\n\n\n@@D\nQue el sol te dé \n@@  G            D  G\nsiempre en la cara\n@@    Bm            G          A\nY haga que tu sonrisa brille más.\n@@ D            G                    D   G\nQue la lluvia caiga siempre en tu campo\n@@      Bm            G       A\nY que le pierdas el miedo a llorar.\n\n@@      Bm                 F#m\nY que las personas que quieras \n@@        G          D\npermanezcan a tu lado\n@@        G\nY que Dios \n@@              A            D\nte lleve en la palma de su mano.\n\n@@         Bm             F#m\nY hasta que volvamos a vernos, \n@@ G              D\ncuídate mi hermano\n\n@@        G\nY que Dios \n@@              A            Bm\nte lleve en la palma de su mano.\n@@        G\nY que Dios \n@@              A            Bm\nte lleve en la palma de su mano.\n@@        G\nY que Dios \n@@              A            D\nte lleve en la palma de su mano.\n",
     "tags": [
       "ACCIÓN DE GRACIAS",
@@ -1366,7 +1366,7 @@ const SONGS_DATA = [
     "artist": "HAKUNA GROUP MUSIC",
     "composer": "HAKUNA GROUP MUSIC",
     "spotify": "https://open.spotify.com/intl-es/track/0GAKJ7Fj9NMf6refjr5kjV?si=722a03a5c9d0442d",
-    "youtube": "https://www.youtube.com/watch?v=6PSAJ8zPjAw",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1378,9 +1378,9 @@ const SONGS_DATA = [
       "JESÚS",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "0GAKJ7Fj9NMf6refjr5kjV",
-    "ytId": "6PSAJ8zPjAw"
+    "ytId": ""
   },
   {
     "title": "EN MEDIO DEL FUEGO",
@@ -1389,8 +1389,8 @@ const SONGS_DATA = [
     "key": "Am",
     "spotify": "https://open.spotify.com/intl-es/track/5Q5O60DtrxV1BRRXHSNhCq?si=dd154c8139134e7b",
     "spId": "5Q5O60DtrxV1BRRXHSNhCq",
-    "youtube": "https://www.youtube.com/watch?v=_zel1ySV9Lg",
-    "ytId": "_zel1ySV9Lg",
+    "youtube": "",
+    "ytId": "",
     "content": "(Original: G#m)\n@@        Am\nAlzo la voz\n@@              F\nEn medio del fuego\n@@                C\nDe pie en el dolor\n@@                 G\nSin miedo, te espero\n\n@@        Am\nAlzo la voz\n@@              F\nEn medio del fuego\n@@                C\nDe pie en el dolor\n@@                 G\nSin miedo, te espero\n\n\n@@ Am     G          C            F\nAhora que no hay tierra que pisar\n@@         Am      G      C          F\nAunque todo en mí me pida abandonar\n\n\n@@        C\nAlzo la voz\n@@              F\nEn medio del fuego\n@@             Am\nDe pie en el dolor\n@@                 G\nSin miedo, te espero\n\n@@        C\nAlzo la voz\n@@              F\nEn medio del fuego\n@@             Am\nDe pie en el dolor\n@@                 G\nSin miedo, te espero\n\n\n@@ F\nCielos, ejércitos\nLuz y tinieblas\n@@    Am\nLa noche y el día\nEl sol, las estrellas\n@@     C                  G\nCantad, bendecid al Señor\n@@      F\nQue rompan los mares\nLos ríos, que corran\n@@     Am\nQue naden los peces\nRetumben las olas\n@@     C                  G\nCantad, bendecid al Señor\n@@      F\nLos montes y cumbres\nLos fríos y heladas\n@@   Am\nGanados y fieras\nLas aves y plantas\n@@     C                  G\nCantad, bendecid al Señor\n@@ F\nHijos de hombres que rían y lloren\n@@       Am\nQue abracen que corran\nQue griten y adoren\n@@     C                  G\nCantad, bendecid al Señor\n\n\n@@        Am\nAlzo la voz\n@@              F\nEn medio del fuego\n@@                C\nDe pie en el dolor\n@@                 G\nSin miedo, te espero\n\n@@        Am\nAlzo la voz\n@@              F\nEn medio del fuego\n@@                C\nDe pie en el dolor\n@@                 G\nSin miedo, te espero\n\n@@        C\nAlzo la voz (alzo la voz)\n@@              F\nEn medio del fuego (en medio del fuego)\n@@               Am\nDe pie en el dolor (de pie en el dolor)\n@@                 G\nSin miedo, te espero (sin miedo, te espero)\n\n@@        C\nAlzo la voz (alzo la voz)\n@@              F\nEn medio del fuego (en medio del fuego)\n@@               Am\nDe pie en el dolor (de pie en el dolor)\n@@                 G\nSin miedo, te espero.",
     "tags": [
       "ADORACIÓN",
@@ -1412,7 +1412,7 @@ const SONGS_DATA = [
     "artist": "P. EDUARDO MEANA",
     "composer": "P. EDUARDO MEANA",
     "spotify": "https://open.spotify.com/intl-es/track/19Muo6YyQ2E5sdiV0fw9fM?si=9c60520646444d1b",
-    "youtube": "https://www.youtube.com/watch?v=_QWrbu-LjXw",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1426,9 +1426,9 @@ const SONGS_DATA = [
       "JESÚS",
       "PASCUA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "19Muo6YyQ2E5sdiV0fw9fM",
-    "ytId": "_QWrbu-LjXw"
+    "ytId": ""
   },
   {
     "id": "en-sus-manos",
@@ -1436,7 +1436,7 @@ const SONGS_DATA = [
     "artist": "PABLO MARTÍNEZ",
     "composer": "PABLO MARTÍNEZ",
     "spotify": "https://open.spotify.com/intl-es/track/62FXuQTwCANmXKlEUCTLAJ?si=1f598fbc724e422e",
-    "youtube": "https://www.youtube.com/watch?v=20SdtFQ73_4",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1447,9 +1447,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "62FXuQTwCANmXKlEUCTLAJ",
-    "ytId": "20SdtFQ73_4"
+    "ytId": ""
   },
   {
     "id": "en-t-permanecer",
@@ -1457,7 +1457,7 @@ const SONGS_DATA = [
     "artist": "VERÓNICA SANFILIPPO",
     "composer": "VERÓNICA SANFILIPPO",
     "spotify": "https://open.spotify.com/intl-es/track/7cNgZb6x1po2yWL3YIbQIK?si=165340f64335496b",
-    "youtube": "https://www.youtube.com/watch?v=3ySl8zY8tms",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1469,9 +1469,9 @@ const SONGS_DATA = [
       "VOCACIONAL",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "7cNgZb6x1po2yWL3YIbQIK",
-    "ytId": "3ySl8zY8tms"
+    "ytId": ""
   },
   {
     "id": "enciendeme",
@@ -1479,7 +1479,7 @@ const SONGS_DATA = [
     "artist": "HAKUNA GROUP MUSIC",
     "composer": "HAKUNA GROUP MUSIC",
     "spotify": "https://open.spotify.com/intl-es/track/14dKlVmsq73wjMrDtJhuoc?si=1eaccbe56dca4d6c",
-    "youtube": "https://www.youtube.com/watch?v=tj6jkdiJI2Y",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1494,9 +1494,9 @@ const SONGS_DATA = [
       "VOCACIONAL",
       "SALIDA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "14dKlVmsq73wjMrDtJhuoc",
-    "ytId": "tj6jkdiJI2Y"
+    "ytId": ""
   },
   {
     "id": "ens-ame-a-orar",
@@ -1504,7 +1504,7 @@ const SONGS_DATA = [
     "artist": "ARIEL GLASER",
     "composer": "ARIEL GLASER",
     "spotify": "https://open.spotify.com/intl-es/track/72vrQ3sEWoVV8RwYlBuCZ2?si=766aa437ee294764",
-    "youtube": "https://www.youtube.com/watch?v=5IyRj-s8dnQ",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1515,9 +1515,9 @@ const SONGS_DATA = [
       "ESPÍRITU SANTO",
       "ADORACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "72vrQ3sEWoVV8RwYlBuCZ2",
-    "ytId": "5IyRj-s8dnQ"
+    "ytId": ""
   },
   {
     "title": "ENTRE ANESTESIAS",
@@ -1545,7 +1545,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "SCHOENSTATT",
     "spotify": "https://open.spotify.com/intl-es/track/2Pp6xm4XCjsNsNgWHvKIsC?si=f54108f2bee94f07",
-    "youtube": "https://www.youtube.com/watch?v=Eisw3N0sb1U",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1557,9 +1557,9 @@ const SONGS_DATA = [
       "JESÚS",
       "PASCUA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "2Pp6xm4XCjsNsNgWHvKIsC",
-    "ytId": "Eisw3N0sb1U"
+    "ytId": ""
   },
   {
     "id": "esto-que-soy-eso-te-doy",
@@ -1567,7 +1567,7 @@ const SONGS_DATA = [
     "artist": "P. EDUARDO MEANA",
     "composer": "P. EDUARDO MEANA",
     "spotify": "https://open.spotify.com/intl-es/track/3NjWZnoXVyuGPA40WTX0IE?si=d63503b31005461d",
-    "youtube": "https://www.youtube.com/watch?v=xjBtQtiLoOI&pp=ygUdbWVhbmEgZXN0byBxdWUgc295IGVzbyB0ZSBkb3k%3D",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1579,9 +1579,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "OFRENDA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "3NjWZnoXVyuGPA40WTX0IE",
-    "ytId": "xjBtQtiLoOI"
+    "ytId": ""
   },
   {
     "id": "estoy-con-vos",
@@ -1589,7 +1589,7 @@ const SONGS_DATA = [
     "artist": "JOVENES CATEDRAL SAN ISIDRO",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/09mDvWYTRkQ5lFzTa1g150?si=b58cea626684447f",
-    "youtube": "https://www.youtube.com/watch?v=MOqQRwe-Cm0",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1599,9 +1599,9 @@ const SONGS_DATA = [
     "tags": [
       "ADORACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "09mDvWYTRkQ5lFzTa1g150",
-    "ytId": "MOqQRwe-Cm0"
+    "ytId": ""
   },
   {
     "title": "EUCARISTÍA",
@@ -1610,8 +1610,8 @@ const SONGS_DATA = [
     "key": "C",
     "spotify": "https://open.spotify.com/intl-es/track/2zH9SeyhDltPw3UMLSZybw?si=12eb7dcbd4a14c08",
     "spId": "2zH9SeyhDltPw3UMLSZybw",
-    "youtube": "https://www.youtube.com/watch?v=ME9CXEzXvl4",
-    "ytId": "ME9CXEzXvl4",
+    "youtube": "",
+    "ytId": "",
     "content": "@@ C      G     Am\nHay un río de vida\n@@          Dm              C          G\nA dónde vuelvo siempre que tengo sed\n@@E7                    Am\nEs el mismo que me invita\n@@      F                    G\nA su mesa para darme de comer\n\n@@   C               G           Am\nAquí es donde encuentro yo la calma\n@@       Dm               C           G\nDónde la tormenta empieza a mermar\n@@          E7                Am\nDónde el sol alumbra el horizonte\n@@      Bb                       G\nPara que todos los puedan divisar \n\n\n@@   C\nMirarte a Ti \n@@                 G\nY en tus brazos descansar\n@@       F\nTengo la seguridad\n@@        Dm               G\nDe que nada me va a pasar\n\n@@    C \nSeguirte Jesús \n@@            G\nY Tu amor contemplar\n@@        F                             \nYa no quiero otra cosa\n@@       Dm           G\nYa no busco otro lugar\n@@                F Em Am F G C\nQue no sea en Ti",
     "tags": [
       "ADORACIÓN",
@@ -1632,7 +1632,7 @@ const SONGS_DATA = [
     "artist": "BIENAVENTURADOS",
     "composer": "PAZ Y SANTIAGO IUDICA",
     "spotify": "https://open.spotify.com/intl-es/track/6njddTjpLD616cc9AFha6Y?si=a3826879517f486b",
-    "youtube": "https://www.youtube.com/watch?v=SOApCLsPx3o",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1645,9 +1645,9 @@ const SONGS_DATA = [
       "VOCACIONAL",
       "MISIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "6njddTjpLD616cc9AFha6Y",
-    "ytId": "SOApCLsPx3o"
+    "ytId": ""
   },
   {
     "id": "frente-a-tu-trono",
@@ -1655,7 +1655,7 @@ const SONGS_DATA = [
     "artist": "MAXI LARGHI",
     "composer": "MAXI LARGHI",
     "spotify": "https://open.spotify.com/intl-es/track/5dl6AXTnOeV35Y8lsmo1PN?si=edb862d79f894da9",
-    "youtube": "https://www.youtube.com/watch?v=ridIR5Pvta4",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1669,9 +1669,9 @@ const SONGS_DATA = [
       "JESÚS",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "5dl6AXTnOeV35Y8lsmo1PN",
-    "ytId": "ridIR5Pvta4"
+    "ytId": ""
   },
   {
     "id": "fruto-nuevo-de-tu-cielo",
@@ -1679,7 +1679,7 @@ const SONGS_DATA = [
     "artist": "METANOIA",
     "composer": "MARTÍN DUARTE",
     "spotify": "https://open.spotify.com/intl-es/track/1MLdyLtHkAkF3ZOPMwYAJe?si=3bf309d263d34649",
-    "youtube": "https://www.youtube.com/watch?v=2Fji9PkAhbg",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1691,9 +1691,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "ACCIÓN DE GRACIAS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "1MLdyLtHkAkF3ZOPMwYAJe",
-    "ytId": "2Fji9PkAhbg"
+    "ytId": ""
   },
   {
     "id": "fue-jes-s",
@@ -1701,7 +1701,7 @@ const SONGS_DATA = [
     "artist": "MAXI LARGHI, ATHENAS",
     "composer": "MAXI LARGHI",
     "spotify": "https://open.spotify.com/intl-es/track/1VOngMyIWWWERMNayDlbW8?si=55349c6ec821420f",
-    "youtube": "https://www.youtube.com/watch?v=hO7dJE3Zj2Q&pp=ygUVZnVlIGplc3VzIG1heGkgbGFyZ2hp",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1713,9 +1713,9 @@ const SONGS_DATA = [
       "JESÚS",
       "PASCUA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "1VOngMyIWWWERMNayDlbW8",
-    "ytId": "hO7dJE3Zj2Q"
+    "ytId": ""
   },
   {
     "id": "fuego-santo",
@@ -1724,7 +1724,7 @@ const SONGS_DATA = [
     "composer": "MATT CROCKETT",
     "key": "A",
     "spotify": "https://open.spotify.com/intl-es/track/6hc4HryeKB2uh5wm8W9hPQ?si=42ec9c57bb8443b8",
-    "youtube": "https://www.youtube.com/watch?v=uJIhk1viRlY",
+    "youtube": "",
     "content": "(Original: Bb)\n@@ A                    D\nPorque se que vivo estás\n@@          A     D\nMe diste la eternidad\n@@          A            D\nPor siempre quiero alabar\n@@               A        D\nTu nombre oh Dios, glorificar\n\n@@  A              D              \nFuego de Dios, fuego de Dios\n@@F#m  E     D             \nConsumenos, (te anhelamos)\n@@  A              D                    \nFuego de Dios, fuego de Dios\n@@F#m  E     D\nConsumenos\n\n@@  A           D\nFuego Santo, quema en mi (quema en mi)\n@@A         D\nEl deseo, de aquello\n@@         A              D\nQue no viene de Vos, sino de mi\n@@        F#m      E      D\nQuiero más de Vos, menos de mi\n\n@@F#m E  D\nVaciame\n@@F#m E  D\nVaciame\n@@  F#m    E                                      D            \nLlena (llena) que Vos me llenes (que vos me llenes)\n@@    F#m  E   D\nDe Vos, de Vos. (x2)\n\n@@ A              D               \nFuego de Dios, fuego de Dios\n@@F#m  E     D\nConsumenos (x2)\n",
     "srcTag": "base",
     "source": "",
@@ -1735,9 +1735,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "ALABANZA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "6hc4HryeKB2uh5wm8W9hPQ",
-    "ytId": "uJIhk1viRlY"
+    "ytId": ""
   },
   {
     "title": "GLORIA (CATENA)",
@@ -1764,7 +1764,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/7oPnA1yUoxhjOTKdS6ZHJv?si=1a68d848e9634f33",
-    "youtube": "https://www.youtube.com/watch?v=nZs8NDwSl8o",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1777,9 +1777,9 @@ const SONGS_DATA = [
       "COMUNIDAD",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "7oPnA1yUoxhjOTKdS6ZHJv",
-    "ytId": "nZs8NDwSl8o"
+    "ytId": ""
   },
   {
     "id": "haci-ndote-pan",
@@ -1787,7 +1787,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "P. EDUARDO MEANA",
     "spotify": "https://open.spotify.com/intl-es/track/2nU5XdQRIipiD72gIYrgg2?si=3025c2b67dfe4a09",
-    "youtube": "https://www.youtube.com/watch?v=NlvuDUdh6jk",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1797,9 +1797,9 @@ const SONGS_DATA = [
     "tags": [
       "COMUNIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "2nU5XdQRIipiD72gIYrgg2",
-    "ytId": "NlvuDUdh6jk"
+    "ytId": ""
   },
   {
     "id": "hasta-la-locura",
@@ -1807,7 +1807,7 @@ const SONGS_DATA = [
     "artist": "PABLO MARTÍNEZ",
     "composer": "PABLO MARTÍNEZ",
     "spotify": "https://open.spotify.com/intl-es/track/4ovCyuMTQ7EwXeXaryCxdZ?si=09f9ca8cb5ec4b62",
-    "youtube": "https://www.youtube.com/watch?v=X-lAbmacu4E&list=RDX-lAbmacu4E&start_radio=1&pp=oAcB",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1819,9 +1819,9 @@ const SONGS_DATA = [
       "JESÚS",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "4ovCyuMTQ7EwXeXaryCxdZ",
-    "ytId": "X-lAbmacu4E"
+    "ytId": ""
   },
   {
     "id": "he-vuelto-a-nacer",
@@ -1829,7 +1829,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN ROSARIO",
     "composer": "MATT MAHER",
     "spotify": "https://open.spotify.com/intl-es/track/7x6bbXDOE84kDXgGEEaKLt?si=dc0f79b2ec764e92",
-    "youtube": "https://www.youtube.com/watch?v=Q07TDznbQjQ",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1841,9 +1841,9 @@ const SONGS_DATA = [
       "VOCACIONAL",
       "PASCUA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "7x6bbXDOE84kDXgGEEaKLt",
-    "ytId": "Q07TDznbQjQ"
+    "ytId": ""
   },
   {
     "id": "hijo-amado",
@@ -1851,7 +1851,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/1rEEbfzOZnw1e4jMKkZQq8?si=939566d31f1143fd",
-    "youtube": "https://www.youtube.com/watch?v=kKgtxWZlplM",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1864,9 +1864,9 @@ const SONGS_DATA = [
       "ACCIÓN DE GRACIAS",
       "COMUNIDAD"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "1rEEbfzOZnw1e4jMKkZQq8",
-    "ytId": "kKgtxWZlplM"
+    "ytId": ""
   },
   {
     "id": "hurac-n",
@@ -1874,7 +1874,7 @@ const SONGS_DATA = [
     "artist": "HAKUNA GROUP MUSIC",
     "composer": "HAKUNA GROUP MUSIC",
     "spotify": "https://open.spotify.com/intl-es/track/4QgQabkpEzVvTflLhiYtun?si=8cba211cd6f94734",
-    "youtube": "https://www.youtube.com/watch?v=P2Kf8RsxuiA",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1884,9 +1884,9 @@ const SONGS_DATA = [
     "tags": [
       "ADORACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "4QgQabkpEzVvTflLhiYtun",
-    "ytId": "P2Kf8RsxuiA"
+    "ytId": ""
   },
   {
     "title": "HÁBLAME SEÑOR",
@@ -1895,8 +1895,8 @@ const SONGS_DATA = [
     "key": "A",
     "spotify": "https://open.spotify.com/intl-es/track/76Kgb4pYBXzAfpVhUYiRi6?si=6730d6b4eae04057",
     "spId": "76Kgb4pYBXzAfpVhUYiRi6",
-    "youtube": "https://www.youtube.com/watch?v=Zw2M3SHKN5I",
-    "ytId": "Zw2M3SHKN5I",
+    "youtube": "",
+    "ytId": "",
     "content": "(Original: Bb mayor)\n@@ A                              Bm\nHáblame Señor que tu siervo escucha\n@@E                     A\nEn el silencio está Tu voz.\n@@ A                              Bm\nHáblame Señor que tu siervo escucha\n@@E                   A\nTe entrego mi corazón.\n\n@@ A                              Bm\nHáblame Señor que tu siervo escucha\n@@E                     A\nEn el silencio está Tu voz.\n@@ A                              Bm\nHáblame Señor que tu siervo escucha\n@@E                   A\nTe entrego mi corazón.\n\n\n@@      F#m                 Bm\nEn la intimidad de mi corazón\n@@ E                             A\nHay tantas preguntas y confusión\n@@F#m                       Bm\nHay un anhelo en mi corazón\n@@C#7                          F#m E \nPoder escucharte sin distracción\n\n\n@@ A                              Bm\nHáblame Señor que tu siervo escucha\n@@E                     A\nEn el silencio está Tu voz.\n@@ A                              Bm\nHáblame Señor que tu siervo escucha\n@@E                   A\nTe entrego mi corazón.",
     "tags": [],
     "source": "",
@@ -1912,7 +1912,7 @@ const SONGS_DATA = [
     "artist": "VERÓNICA SANFILIPPO",
     "composer": "VERÓNICA SANFILIPPO",
     "spotify": "https://open.spotify.com/intl-es/track/1bOPbCiJaCiCSQzXUGLJ1y?si=97b14da3a3d244f1",
-    "youtube": "https://www.youtube.com/watch?v=ZzlGZjigGX0",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1925,9 +1925,9 @@ const SONGS_DATA = [
       "ENTREGA",
       "ACCIÓN DE GRACIAS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "1bOPbCiJaCiCSQzXUGLJ1y",
-    "ytId": "ZzlGZjigGX0"
+    "ytId": ""
   },
   {
     "id": "in-ndame",
@@ -1935,7 +1935,7 @@ const SONGS_DATA = [
     "artist": "ATHENAS",
     "composer": "ATHENAS, TOBÍAS BUTELER",
     "spotify": "https://open.spotify.com/intl-es/track/6OLWTt7jiGW8EKkcIqFiiH?si=cadc7d219b0c4ede",
-    "youtube": "https://www.youtube.com/watch?v=dmM1YZ-hZrY",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1946,9 +1946,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "ESPÍRITU SANTO"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "6OLWTt7jiGW8EKkcIqFiiH",
-    "ytId": "dmM1YZ-hZrY"
+    "ytId": ""
   },
   {
     "id": "jes-s",
@@ -1956,7 +1956,7 @@ const SONGS_DATA = [
     "artist": "VERÓNICA SANFILIPPO",
     "composer": "VERÓNICA SANFILIPPO",
     "spotify": "https://open.spotify.com/intl-es/track/5RPZUymwQCTawHWntf5IPm?si=b75725473a024c35",
-    "youtube": "https://www.youtube.com/watch?v=N7cSaCdn_9k",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1969,9 +1969,9 @@ const SONGS_DATA = [
       "JESÚS",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "5RPZUymwQCTawHWntf5IPm",
-    "ytId": "N7cSaCdn_9k"
+    "ytId": ""
   },
   {
     "id": "jes-s-estoy-aqu",
@@ -1979,7 +1979,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN TUCUMÁN",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/0L5PoLeue1mQJC4C3PmwL3?si=5e4fe303c6b24960",
-    "youtube": "https://www.youtube.com/watch?v=s13uDFy9yHI",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -1991,9 +1991,9 @@ const SONGS_DATA = [
       "ACCIÓN DE GRACIAS",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "0L5PoLeue1mQJC4C3PmwL3",
-    "ytId": "s13uDFy9yHI"
+    "ytId": ""
   },
   {
     "id": "jes-s-eucarist-a",
@@ -2001,7 +2001,7 @@ const SONGS_DATA = [
     "artist": "MAYRA ALEJANDRA BARAJAS",
     "composer": "JONATAN NARVÁEZ",
     "spotify": "https://open.spotify.com/intl-es/track/62y9J5OhF5tDkF7LPBiqWz?si=dc734b6e98dc469c",
-    "youtube": "https://www.youtube.com/watch?v=XV-6cwAxBws",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2013,9 +2013,9 @@ const SONGS_DATA = [
       "JESÚS",
       "ACCIÓN DE GRACIAS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "62y9J5OhF5tDkF7LPBiqWz",
-    "ytId": "XV-6cwAxBws"
+    "ytId": ""
   },
   {
     "id": "jes-s-mi-alegr-a",
@@ -2062,7 +2062,7 @@ const SONGS_DATA = [
     "artist": "ÍTALA RODRÍGUEZ",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/1pFIBmLqu8VFPaPlvKs2rs?si=b684175672204ad0",
-    "youtube": "https://www.youtube.com/watch?v=RBQJeG84nbo",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2072,9 +2072,9 @@ const SONGS_DATA = [
     "tags": [
       "MARÍA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "1pFIBmLqu8VFPaPlvKs2rs",
-    "ytId": "RBQJeG84nbo"
+    "ytId": ""
   },
   {
     "title": "LA LUZ DE JESÚS",
@@ -2103,7 +2103,7 @@ const SONGS_DATA = [
     "artist": "VERÓNICA SANFILIPPO",
     "composer": "JONATAN NARVÁEZ",
     "spotify": "https://open.spotify.com/intl-es/track/3hzauQZ0vSfKfphe5iDpwW?si=5881d2f8d0c74bf0",
-    "youtube": "https://www.youtube.com/watch?v=T5crWDK8QKY&list=OLAK5uy_lrMq4GkuToLgRNh55vvldBS4rLMOTOCew&index=6&pp=8AUB",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2115,9 +2115,9 @@ const SONGS_DATA = [
       "PASCUA",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "3hzauQZ0vSfKfphe5iDpwW",
-    "ytId": "T5crWDK8QKY"
+    "ytId": ""
   },
   {
     "id": "libertad",
@@ -2125,7 +2125,7 @@ const SONGS_DATA = [
     "artist": "HAKUNA GROUP MUSIC",
     "composer": "HAKUNA GROUP MUSIC",
     "spotify": "https://open.spotify.com/intl-es/track/7uMc1kuRnm1eF9dASDN2Sc?si=81bb6fb346e24929",
-    "youtube": "https://www.youtube.com/watch?v=94AmBap4yqc",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2138,9 +2138,9 @@ const SONGS_DATA = [
       "COMUNIDAD",
       "SALIDA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "7uMc1kuRnm1eF9dASDN2Sc",
-    "ytId": "94AmBap4yqc"
+    "ytId": ""
   },
   {
     "id": "lo-bueno-que-hay-en-vos",
@@ -2148,7 +2148,7 @@ const SONGS_DATA = [
     "artist": "MARTÍN VALVERDE",
     "composer": "P. EDUARDO MEANA",
     "spotify": "https://open.spotify.com/intl-es/track/28QrSlnQUeDGmH368yGuZk?si=338dbf1b846c4ab0",
-    "youtube": "https://www.youtube.com/watch?v=nRAULe_AMNE",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2156,9 +2156,9 @@ const SONGS_DATA = [
     "fav": false,
     "content": "@@ C                     G     \nTe cuento que en un invierno, \n@@ Am                E7\nalgún invierno del alma, ya sabés\n@@ F                      E7\nen que peleás con vos mismo\n@@    F                  G               C\nen que te anulás, y en vos nada bueno ves.\n\n@@ C                     G\nVino al rescate un hermano, \n@@ Am                 E7\nviéndome ciego de mí, se compadeció\n@@ F                    E7\n\"dejá a los otros -me dijo-\n@@         F                   G                 C\nque encuentren y tomen lo bueno que hay en vos\"\n\n\n\n@@C                     G \nLo bueno que hay en vos, \n@@Am          Em\nese milagro único que sos\n@@F            E7         \nmisterio que hay en vos, \n@@ F                    G            C\ntu manantial que nos fluye desde Dios.\n\n@@C                     G         \nLo bueno que hay en vos, \n@@      Am          Em\nque a veces está oculto para vos.\n@@ F                E7          \nLo hermoso que hay en vos, \n@@ F                  G                 C\ndeja que tomen lo bueno que hay en vos.\n@@G             Am Em         F    G           C\nLo bueno que hay, en cada cual, en mí y en vos.\n\n\n\nHerida y sin aceptarse, \ntu alma baja a su sótano, y allí\nolvida el bien de su vida.\nNo hay nada digno de ser amado en mí.\nAmnesia autodestructiva\nque el amor y la memoria podrán curar,\nmemoria de tantos bienes\namor que se alegra y comparte la vida que hay.\n\n\nCuando esa niebla te pierda\ncuando parezca que sólo, a tu alrededor\nsea lícito el pesimismo\ny vale muy poco la vida y ya no es un don.\nDejame ir a tu rescate, \ncuando esa nada ahogue tu corazón,\nsean mis ojos tu espejo \ny vuelvas a ver lo valioso que hay en vos.",
     "tags": [],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "28QrSlnQUeDGmH368yGuZk",
-    "ytId": "nRAULe_AMNE"
+    "ytId": ""
   },
   {
     "title": "LO PEQUEÑO",
@@ -2187,7 +2187,7 @@ const SONGS_DATA = [
     "artist": "VERÓNICA SANFILIPPO",
     "composer": "VERÓNICA SANFILIPPO",
     "spotify": "https://open.spotify.com/intl-es/track/08NaP0cEd5stF6H6K1MjKP?si=408f342a58cd43c5",
-    "youtube": "https://www.youtube.com/watch?v=6yzhiM2rQCQ",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2198,9 +2198,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "08NaP0cEd5stF6H6K1MjKP",
-    "ytId": "6yzhiM2rQCQ"
+    "ytId": ""
   },
   {
     "id": "l-grimas-de-vida",
@@ -2208,7 +2208,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/5ywcQGCvxTbpF7iGt9R2qz?si=2fea225d5903408b",
-    "youtube": "https://www.youtube.com/watch?v=YfMFWBypp2c",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2220,9 +2220,9 @@ const SONGS_DATA = [
       "JESÚS",
       "ACCIÓN DE GRACIAS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "5ywcQGCvxTbpF7iGt9R2qz",
-    "ytId": "YfMFWBypp2c"
+    "ytId": ""
   },
   {
     "id": "madero-de-amor",
@@ -2230,7 +2230,7 @@ const SONGS_DATA = [
     "artist": "BIENAVENTURADOS",
     "composer": "TERESA TERAN OLAYA",
     "spotify": "https://open.spotify.com/intl-es/track/123JkL0V1Fw0QWNzvFsc2N?si=873a68bebe8b4007",
-    "youtube": "https://www.youtube.com/watch?v=_UxlM2Soy_c",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2242,9 +2242,9 @@ const SONGS_DATA = [
       "JESÚS",
       "PASCUA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "123JkL0V1Fw0QWNzvFsc2N",
-    "ytId": "_UxlM2Soy_c"
+    "ytId": ""
   },
   {
     "id": "madre",
@@ -2252,7 +2252,7 @@ const SONGS_DATA = [
     "artist": "CORO HNO JAVIER",
     "composer": "SCHOENSTATT",
     "spotify": "https://open.spotify.com/intl-es/track/4MukaveRJJDpY4cI3t5gpL?si=6593d74b5818493c",
-    "youtube": "https://www.youtube.com/watch?v=kzXccdo_mZ8",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2263,9 +2263,9 @@ const SONGS_DATA = [
       "MARÍA",
       "ACCIÓN DE GRACIAS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "4MukaveRJJDpY4cI3t5gpL",
-    "ytId": "kzXccdo_mZ8"
+    "ytId": ""
   },
   {
     "id": "manda-tu-esp-ritu",
@@ -2273,7 +2273,7 @@ const SONGS_DATA = [
     "artist": "VERÓNICA SANFILIPPO",
     "composer": "VERÓNICA SANFILIPPO",
     "spotify": "https://open.spotify.com/intl-es/track/0MaGutTmEj5SnI92E4JaW7?si=504ab7d978514a6a",
-    "youtube": "https://www.youtube.com/watch?v=R52PmAZHk1g",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2284,9 +2284,9 @@ const SONGS_DATA = [
       "ESPÍRITU SANTO",
       "ADORACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "0MaGutTmEj5SnI92E4JaW7",
-    "ytId": "R52PmAZHk1g"
+    "ytId": ""
   },
   {
     "id": "maranath",
@@ -2294,7 +2294,7 @@ const SONGS_DATA = [
     "artist": "ARIEL GLASER",
     "composer": "ARIEL GLASER",
     "spotify": "https://open.spotify.com/intl-es/track/3l2aRbFZl4k85HDzA7RR9p?si=f92323eae4b644c2",
-    "youtube": "https://www.youtube.com/watch?v=O8-dnfJWm8I&pp=ygUhdmVuIGVzcGlyaXR1IGRlIGRpb3MgYXJpZWwgZ2xhc2Vy0gcJCToLAYcqIYzv",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2305,9 +2305,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "ESPÍRITU SANTO"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "3l2aRbFZl4k85HDzA7RR9p",
-    "ytId": "O8-dnfJWm8I"
+    "ytId": ""
   },
   {
     "id": "maria",
@@ -2316,7 +2316,7 @@ const SONGS_DATA = [
     "composer": "VERÓNICA SANFILIPPO",
     "key": "C",
     "spotify": "https://open.spotify.com/intl-es/track/7guP600YdiDXKLGBLFCqDY?si=cd0fa5bb3927452b",
-    "youtube": "https://www.youtube.com/watch?v=vd76TvN6jFE",
+    "youtube": "",
     "content": "@@C       G                                    \nElla conoce mis flaquezas \n@@     Dm                F\ny mi pobre corazón y aún así me llama\n@@   C          G                    \nEstrella, que guía en la tormenta \n@@   Dm                  F\ny apaga el temor, nos llena de su gracia\n\n@@Am                  Dm \nSolo un paso debo dar \n@@Am                  Dm\nsi con Ella quiero estar\n@@Am                Dm      \nNo me soltaré jamás, \n@@      F            G        Gsus4 G\ncon Ella al Cielo quiero llegar.\n\n\n\n@@        C           \nDe su mano voy \n@@          G               Dm F\nhasta la puesta del sol, María\n@@        C               \nElla es fiel estrella \n@@       G                Dm F\nque guía hacia Dios, María\n@@        C               \nSu promesa regala \n@@     G                  Dm F\nen nombre del amor, María\n@@      Am           G     F   G     C\nQue jamás perecerá un hijo de María.\n\n\n\n@@C         G       Dm        F\nElla es la luz que guía mi camino\n@@C          G       Dm                F\nSeguro estoy que siempre está conmigo\n@@  C          G     \nSiento su amor, \n@@      Dm               F\npues ella es Madre de la creación\n@@     Am         G\nTransforma mi corazón\n@@ Dm                     F     G      C  G Dm F               \nCuida de sus hijos, los vuelve hacia Dios.\n\n\n\n@@        C           \nDe su mano voy \n@@          G               Dm F\nhasta la puesta del sol, María\n@@        C               \nElla es fiel estrella \n@@       G                Dm F\nque guía hacia Dios, María\n@@        C               \nSu promesa regala \n@@     G                  Dm F\nen nombre del amor, María\n@@      Am           G     F   G     C\nQue jamás perecerá un hijo de María.",
     "srcTag": "base",
     "source": "",
@@ -2326,9 +2326,9 @@ const SONGS_DATA = [
       "MARÍA",
       "ANIMACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "7guP600YdiDXKLGBLFCqDY",
-    "ytId": "vd76TvN6jFE"
+    "ytId": ""
   },
   {
     "id": "memorial",
@@ -2337,7 +2337,7 @@ const SONGS_DATA = [
     "composer": "SANTO TOMÁS DE AQUINO",
     "key": "C",
     "spotify": "https://open.spotify.com/intl-es/track/2xdwtXAFEwOHHmPa9vlPqW?si=bd5ba78d40ce4d3a",
-    "youtube": "https://www.youtube.com/watch?v=b18E6j2BFdA",
+    "youtube": "",
     "content": "@@     C           G            Am\nTe adoro con fervor, Deidad oculta\n@@       F              G             C  \nQue estás bajo éstas formas escondida\n@@  F          E7            Am G F\nA Ti mi corazón se rinde entero\n@@    Dm                  G\nY desfallece todo si te mira.\n\n@@      C             G                Am\nSe engaña en Ti, la vista, el tacto, el gusto  \n@@     F             G            C\nMas Tu Palabra engendra fe rendida\n@@    F              E7            Am F\nCuanto el Hijo de Dios ha dicho creo                          \n@@      Dm                 F           G\nPues no hay verdad cual la Verdad Divina\n\n\n@@     F           G             Am\n¡Oh memorial de la pasion de Cristo!\n@@     F                 G             Am           \n¡Oh pan santo que al hombre das la vida!\n@@     F           E7         Am G F\nConcede que de Ti viva mi alma\n@@    Dm         F          G\nY guste de tus ocultas delicias.\n\n\n@@   C            G           Am\nJesús, a quien ahora miro oculto\n@@  F                G               C             \nCumple, Señor, lo que mi pecho ansía\n@@         F        E7             Am  G  F\nQue a cara descubierta contemplándote\n@@ Dm                F           G  \nGoce por siempre de tu clara vista.\n\n@@   C              G          Am\nJesús mí ayer mí hoy y mí mañana \n@@      F               G            C\nLos pongo entre tus manos sin medida\n@@     F          E7           Am G F\nConcédeme la gracia de adorarte\n@@  Dm            F         G\nY entregarte mí sí toda la vida.\n\n@@F G  Am          \nAmén  \n@@F G Am\nAmén   \n@@F E7 Am Dm G C\nAmén.   \n",
     "srcTag": "base",
     "source": "",
@@ -2348,9 +2348,9 @@ const SONGS_DATA = [
       "COMUNIÓN",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "2xdwtXAFEwOHHmPa9vlPqW",
-    "ytId": "b18E6j2BFdA"
+    "ytId": ""
   },
   {
     "id": "mi-100",
@@ -2358,7 +2358,7 @@ const SONGS_DATA = [
     "artist": "MAXI LARGHI",
     "composer": "MAXI LARGHI",
     "spotify": "https://open.spotify.com/intl-es/track/0ZbzDQGSzHAIaPDVkbno26?si=ce1f5e2207d04d38",
-    "youtube": "https://www.youtube.com/watch?v=TsPHhZeIKmI",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2369,9 +2369,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "0ZbzDQGSzHAIaPDVkbno26",
-    "ytId": "TsPHhZeIKmI"
+    "ytId": ""
   },
   {
     "id": "mi-sol-en-esta-noche",
@@ -2379,7 +2379,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN ROSARIO",
     "composer": "SOFIA ANDRIEU",
     "spotify": "https://open.spotify.com/intl-es/track/5Xcb7couQKuVWmSvHckout?si=d5d55fc3adab4af8",
-    "youtube": "https://www.youtube.com/watch?v=1ye107pdMoQ",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2391,9 +2391,9 @@ const SONGS_DATA = [
       "VOCACIONAL",
       "PASCUA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "5Xcb7couQKuVWmSvHckout",
-    "ytId": "1ye107pdMoQ"
+    "ytId": ""
   },
   {
     "id": "mirada",
@@ -2401,7 +2401,7 @@ const SONGS_DATA = [
     "artist": "HAKUNA GROUP MUSIC",
     "composer": "HAKUNA GROUP MUSIC",
     "spotify": "https://open.spotify.com/intl-es/track/0YlKwGPhm6ciZSoyNrsRbY?si=f1c82cb43f5940d4",
-    "youtube": "https://www.youtube.com/watch?v=mtMx1XR_eVA",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2417,9 +2417,9 @@ const SONGS_DATA = [
       "COMUNIDAD",
       "ACCIÓN DE GRACIAS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "0YlKwGPhm6ciZSoyNrsRbY",
-    "ytId": "mtMx1XR_eVA"
+    "ytId": ""
   },
   {
     "id": "movimiento",
@@ -2427,7 +2427,7 @@ const SONGS_DATA = [
     "artist": "PABLO MARTÍNEZ",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/1nyyDXkVpaLgBlWU4Bkx41?si=5c917b01bdcb4bd1",
-    "youtube": "https://www.youtube.com/watch?v=WUSlFf-vGvM",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2438,9 +2438,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "ESPÍRITU SANTO"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "1nyyDXkVpaLgBlWU4Bkx41",
-    "ytId": "WUSlFf-vGvM"
+    "ytId": ""
   },
   {
     "id": "nada",
@@ -2449,7 +2449,7 @@ const SONGS_DATA = [
     "composer": "HAKUNA GROUP MUSIC",
     "key": "C",
     "spotify": "https://open.spotify.com/intl-es/track/2SkPhCOPbTO5tjJS0bPvkG?si=94e88f224a1147b6",
-    "youtube": "https://www.youtube.com/watch?v=TcVPy1H66A8",
+    "youtube": "",
     "content": "@@C                    \nDeja de herirte, \n@@     Am\ndeja de poner en mi boca\n@@               F     G\npalabras que nunca dije.\n@@             C                                  \nDeja de pensar que estoy enfadado, \n@@          Am\ndeja de decir\n@@         F                          G\nque soy Yo el que se está alejando de ti.\n@@                    Am  \nY es que aún no lo ves \n@@      G/B       C\nme entrego por ti una y otra vez,\n@@    F                    G\ntú siempre serás mi favorito,\n@@            Am G/B C \nnunca te dejaré, \n@@          Dm  G\nnunca te dejaré.\n\n\n\n@@C                                  \nY es que no hay nada, \n@@            Am\nnada, nada, nada\n@@             F                  \nque puedas hacer \n@@             G\npara que te deje de querer.\n@@                 C                  \nY es que no hay nada, \n@@              Am\nhagas lo que hagas,\n@@       F             G                          \npor favor, deja de decir \n@@                       C\nque no eres amado por mí.\n\n\n\n@@C           \nNo hay nada en tu alma\n@@                 Am\nque haga que en ti deje de pensar,\n@@       F \nestos muros que te destrozan\n@@           G\nson entre tú y tu libertad.\n@@    Am                \nHazme caso hijo mío \n@@    G/B   C\nyo solo quiero verte feliz,\n@@    F                      G                        \ntú siempre tendrás mi perdón, \n@@                   Am  G\nte falta perdonarte a ti.\n\n\n\n@@C                                  \nY es que no hay nada, \n@@            Am\nnada, nada, nada\n@@             F                  \nque puedas hacer \n@@             G\npara que te deje de querer.\n@@                 C                  \nY es que no hay nada, \n@@              Am\nhagas lo que hagas,\n@@       F             G                          \npor favor, deja de decir \n@@                       C\nque no eres amado por mí.\n\n\n\n@@                Am                             \nEs que, aunque peques y me cambies \n@@         G\npor las cosas terrenales\n@@            F                                     \naunque te alejes y me olvides \n@@      G  \ny me borres de tus planes.\n@@           Am        \nAunque te rindas y te caigas \n@@      G\ny no sepas levantarte, \n@@            F             G\nsi estás perdido pide ayuda.\n\n@@                C            \nEs que, aunque peques y me cambies \n@@        Bb\npor las cosas terrenales\n@@            F                                             \naunque te alejes y me olvides \n@@       G\ny me borres de tus planes.\n@@            C                                   \nAunque te rindas y te caigas \n@@     Bb\ny no sepas levantarte, \n@@            F            G\nsi estás perdido pide ayuda.",
     "srcTag": "base",
     "source": "",
@@ -2459,9 +2459,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "2SkPhCOPbTO5tjJS0bPvkG",
-    "ytId": "TcVPy1H66A8"
+    "ytId": ""
   },
   {
     "id": "nada-te-turbe",
@@ -2469,7 +2469,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/3ANbr70hwT1fWh44VjfWjX?si=b510953da5d14413",
-    "youtube": "https://www.youtube.com/watch?v=43095GlHrsY",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2480,9 +2480,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "ACCIÓN DE GRACIAS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "3ANbr70hwT1fWh44VjfWjX",
-    "ytId": "43095GlHrsY"
+    "ytId": ""
   },
   {
     "id": "nadie-te-ama-como-yo",
@@ -2491,7 +2491,7 @@ const SONGS_DATA = [
     "composer": "MARTÍN VALVERDE",
     "key": "C",
     "spotify": "https://open.spotify.com/intl-es/track/0t9wX3RRNTFbB1nToGeUjm?si=8a07439d64e140fa",
-    "youtube": "https://www.youtube.com/watch?v=MY9zu_E2920&pp=ygUkbmFkaWUgdGUgYW1hIGNvbW8geW8gbWFydGluIHZhbHZlcmRl",
+    "youtube": "",
     "content": "@@   C            G             Am \nCuánto he esperado este momento, \n@@F              Dm              G\ncuánto he esperado que estuvieras así,\n@@   C            G               Am\nCuánto he esperado que me hablaras,\n@@F              Dm           G\ncuánto he esperado que vinieras a mí.\n\n@@ C     G               Am\nYo sé bien lo qué has vivido, \n@@ F       Dm                G\nsé también por qué has llorado,\n@@ C     G                Am\nYo sé bien lo que has sufrido, \n@@ F                       Gsus4 G\npues de tu lado no me he ido\n\n\n\n@@               C  G       Am   \nPues nadie te ama como yo, \n@@               F          G\npues nadie te ama como yo.\n@@         C          G               Am\nMira la cruz, esa es mi más grande prueba\n@@ F                   G\nNadie te ama como yo.\n\n@@               C  G       Am   \nPues nadie te ama como yo, \n@@               F          G\npues nadie te ama como yo.\n@@        C           G                Am\nMira la cruz, fue por ti, fue porque te amo\n@@F                G   C\nNadie te ama como yo.\n\n\n\n@@C      G              Am\nYo sé bien lo que me dices,\n@@ F                      G \naunque a veces no me hablas.\n@@ C  G                Am\nSé bien lo que en ti sientes,\n@@ F                     G \naunque nunca lo compartas.\n\n@@ C      G           Am\nYo a tu lado he caminado,\n@@F                       G\njunto a ti yo siempre he ido,\n@@   C     G             Am\nY aún a veces te he cargado, \n@@ F                 Gsus4  G\nyo he sido tu mejor amigo.",
     "srcTag": "base",
     "source": "",
@@ -2503,9 +2503,9 @@ const SONGS_DATA = [
       "JESÚS",
       "PASCUA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "0t9wX3RRNTFbB1nToGeUjm",
-    "ytId": "MY9zu_E2920"
+    "ytId": ""
   },
   {
     "id": "necesito-de-tu-amor",
@@ -2513,7 +2513,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "P. EDUARDO MEANA",
     "spotify": "https://open.spotify.com/intl-es/track/1FsKOekuFNMRPljB2gUGMQ?si=71d5d3e9257f425b",
-    "youtube": "https://www.youtube.com/watch?v=-xfwWhh3wFE&pp=ygUgbmVjZXNpdG8gZGUgdHUgYW1vciBwYXNjdWEgam92ZW4%3D",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2524,9 +2524,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "SANACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "1FsKOekuFNMRPljB2gUGMQ",
-    "ytId": "-xfwWhh3wFE"
+    "ytId": ""
   },
   {
     "id": "no-est-s-solo",
@@ -2534,7 +2534,7 @@ const SONGS_DATA = [
     "artist": "FRUTO DEL MADERO",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/5tb0zDdE7iEd4S4pFGzA9i?si=1147bf83fd234ebd",
-    "youtube": "https://www.youtube.com/watch?v=WLViO1FOhiQ",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2545,9 +2545,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "5tb0zDdE7iEd4S4pFGzA9i",
-    "ytId": "WLViO1FOhiQ"
+    "ytId": ""
   },
   {
     "id": "no-tenemos-miedo",
@@ -2555,7 +2555,7 @@ const SONGS_DATA = [
     "artist": "FILOCALIA",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/1kOjLugWMQuTP3L4B3sf9z?si=eb032fcb33604650",
-    "youtube": "https://www.youtube.com/watch?v=g08T95dhErU&list=PLS0dRMWK6Asgl4u8rMrbaia5t2Q-r5mqe&index=1&pp=iAQB8AUB",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2571,9 +2571,9 @@ const SONGS_DATA = [
       "COMUNIDAD",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "1kOjLugWMQuTP3L4B3sf9z",
-    "ytId": "g08T95dhErU"
+    "ytId": ""
   },
   {
     "id": "no-tengo-miedo",
@@ -2582,7 +2582,7 @@ const SONGS_DATA = [
     "composer": "EFFETÁ",
     "key": "D",
     "spotify": "https://open.spotify.com/intl-es/track/5shZNIbllFQ1HNXawrJv1W?si=d13c2a20a3334f84",
-    "youtube": "https://www.youtube.com/watch?v=lNMxQK-Jvtg",
+    "youtube": "",
     "content": "(Original: G mayor)\n@@D          A          Bm      G\nCristo, tu cruz es respuesta real\n@@            D                A\nPara este mundo, para este tiempo\n@@                 G  A\nQue huye en temores\n@@            D             A          G  A\nTú eres Camino, eres Verdad, eres la Vida\n\n\n\n@@           D               A\nNo tengo miedo de la libertad\n@@           Bm                G\nNo tengo miedo, Señor de la Vida\n@@                 D\nMe quiero entregar\n@@           A                    Bm\nToma mis manos mi voz y mi andar\n@@         G         Em                   A\nY yo alzaré alto la cruz derramada de amor\n@@                  D               A\nPara que sea bandera de la juventud\n@@           Bm                    G\nTu triunfo santo que junto a mi canto\n@@                 D\nSe harán fuerte luz\n@@           A               Bm\nPara que vean tu rostro, Jesús\n@@               G\nHombres con sed\n@@             Em                    A           D\nHombres valientes que quieran seguir tu caminar.\n\n\n\nAl verte herido reinando en la cruz\nDices mi nombre\nSuenan tambores al escucharte\nOigo las voces de aquellos hombres que tienen hambre\n\n\n\nSanta María, me acojo a tu amor\nPido tu fuego que arde de ruegos hoy por tus hijos\nVirgen María, rosa del cielo, oye mi canto.",
     "srcTag": "base",
     "source": "",
@@ -2596,9 +2596,9 @@ const SONGS_DATA = [
       "VOCACIONAL",
       "ENTREGA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "5shZNIbllFQ1HNXawrJv1W",
-    "ytId": "lNMxQK-Jvtg"
+    "ytId": ""
   },
   {
     "id": "noche",
@@ -2606,7 +2606,7 @@ const SONGS_DATA = [
     "artist": "HAKUNA GROUP MUSIC",
     "composer": "HAKUNA GROUP MUSIC",
     "spotify": "https://open.spotify.com/intl-es/track/7F481UYKoaLYLsUCADbtf2?si=ca630c7865af4500",
-    "youtube": "https://www.youtube.com/watch?v=0-e3B-EKnbQ",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2618,9 +2618,9 @@ const SONGS_DATA = [
       "VOCACIONAL",
       "MISIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "7F481UYKoaLYLsUCADbtf2",
-    "ytId": "0-e3B-EKnbQ"
+    "ytId": ""
   },
   {
     "id": "ofrenda-permanente",
@@ -2628,7 +2628,7 @@ const SONGS_DATA = [
     "artist": "MARTIN VALVERDE",
     "composer": "MARTIN VALVERDE",
     "spotify": "https://open.spotify.com/intl-es/track/0QQ3vhWM6VJd4YuhZsp81m?si=9d7fb982bb714c21",
-    "youtube": "https://www.youtube.com/watch?v=_hNkgaAkCNE",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2636,9 +2636,9 @@ const SONGS_DATA = [
     "fav": false,
     "content": "@@ D               Bm          Em\nTomame en tus brazos y prepárame Jesús,\n@@D               E         A\nDame de tu Espíritu para abrazar tu cruz,\n@@Bm            A     Bm              A\nTe ofrezco mi vida, sé tú Señor mi guía.\n\n@@D              Bm          Em\nLa noche pasa rápido y mañana he de morir\n@@ D          E             A\nPero como siempre Tu calor yo siento en mi\n@@Bm                 A      Bm                A\nme pongo en tus manos, descanso en tus brazos\n\n\n\n@@              D    Bm           G             A\nHoy vengo a darte todo lo que hay dentro de mí\n@@               D    Bm    G           A\nVengo a entregarte todo por lo que viví\n@@         Bm    F#              Bm7 E7 A\nMi juventud Señor está en tu altar, recíbela.\n@@          D           Bm      G          A\nHoy digo si hoy te respondo con sinceridad\n@@          D             Bm      G            A\nEstoy dispuesto y me arriesgo, este paso a dar\n@@        Bm    F#             G  A  D       C G A\nAquí estoy Señor, hágase en mí, Tu voluntad,\n@@    D       C G A\nTu voluntad\n\n\n@@D                Bm         Em\nTu has sido bien claro sobre lo que debo dar\n@@D                    E       A\nY hoy me has concedido mi vida ofrendar.\n@@Bm            A    Bm           A\nQuedate conmigo quiero ser testigo,\n@@ G             E               A\nDel inmenso amor que hay en Ti;\n\n\n\n@@              D    Bm           G             A\nHoy vengo a darte todo lo que hay dentro de mí\n@@               D    Bm    G           A\nVengo a entregarte todo por lo que viví\n@@         Bm    F#              Bm7 E7 A\nMi juventud Señor está en tu altar, recíbela.\n@@          D           Bm      G          A\nHoy digo si hoy te respondo con sinceridad\n@@          D             Bm      G            A\nEstoy dispuesto y me arriesgo, este paso a dar\n@@        Bm    F#             G  A  D       C G A\nAquí estoy Señor, hágase en mí, Tu voluntad,\n@@    D       C G A\nTu voluntad\n\n\n@@     Bb\nVolveré para decirles,\n@@        D\nQue morir vale la pena\n@@       Esus4     E\nPor la verdadera vida,\n@@          A\nQue es la vida eterna.\n\n\n\n@@         Bm    F#              Bm7 E7 A\nMi juventud Señor está en tu altar, recíbela.\n@@          D           Bm      G          A\nHoy digo si hoy te respondo con sinceridad\n@@          D             Bm      G            A\nEstoy dispuesto y me arriesgo, este paso a dar\n@@        Bm    F#             G  A  D       C G A\nAquí estoy Señor, hágase en mí, Tu voluntad,\n@@    D       C G A\nTu voluntad\n",
     "tags": [],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "0QQ3vhWM6VJd4YuhZsp81m",
-    "ytId": "_hNkgaAkCNE"
+    "ytId": ""
   },
   {
     "title": "ORACIÓN DE CONFIANZA",
@@ -2647,8 +2647,8 @@ const SONGS_DATA = [
     "key": "C",
     "spotify": "https://open.spotify.com/intl-es/track/5cVHODyWMSYQDNNbDe5MhN?si=2bf90142119049e0",
     "spId": "5cVHODyWMSYQDNNbDe5MhN",
-    "youtube": "https://www.youtube.com/watch?v=vBpBNRwJE4w",
-    "ytId": "vBpBNRwJE4w",
+    "youtube": "",
+    "ytId": "",
     "content": "@@ C            Dm         G\n/No hay nada imposible para Dios, \n@@       C   F             C\nnada hay fuera de su amor. \n@@       Am         Em  F            C  E7 \nTodo puedo en Aquel que me conforta, \n@@   Am D F         G\nJesús,   confío en Ti./ x2\n\n\n@@   E7     Am F             C\nEspero en Ti, duermo tranquilo, \n@@ Dm         Em          F    D   G\nconfiado espero el día que vendrás. \n\n@@E7 Am Dm     C      E7\nEn Ti está la paz Señor, \n@@   Am F         C            G\nen Ti mi alma puede descansar.\n\n\n@@ C           Dm         G\nNo hay nada imposible para Dios, \n@@       C   F             C\nnada hay fuera de su amor. \n@@       Am         Em  F            C  E7 \nTodo puedo en Aquel que me conforta, \n@@   Am D F         G\nJesús,   confío en Ti.\n\n\n@@    E7     Am F          C\nYo creo en Ti, Tu eres mi roca, \n@@Dm      Em           F  D      G\nrefugio firme contra la tempestad.\n\n@@E7 Am F        C      E7\nEn Ti   está la paz Señor, \n@@   Am F          C            G\nen Ti   la noche brilla como el sol.\n\n\n@@C            Dm         G\n/No hay nada imposible para Dios, \n@@       C   F             C\nnada hay fuera de su amor. \n@@       Am         Em  F            C  E7 \nTodo puedo en Aquel que me conforta, \n@@   Am D F         G\nJesús,   confío en Ti./ x2",
     "tags": [
       "ADORACIÓN",
@@ -2668,7 +2668,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/5wXgGCclUKn9aohBxNZ13n?si=10a0c34c6a3640b4",
-    "youtube": "https://www.youtube.com/watch?v=0LP8PSKVFso",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2680,9 +2680,9 @@ const SONGS_DATA = [
       "JESÚS",
       "PASCUA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "5wXgGCclUKn9aohBxNZ13n",
-    "ytId": "0LP8PSKVFso"
+    "ytId": ""
   },
   {
     "id": "para-darlo-a-los-dem-s",
@@ -2690,7 +2690,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "P. MANUEL LÓPEZ NAÓN",
     "spotify": "https://open.spotify.com/intl-es/track/3TBqr8hjqONayRn0xFtSFM?si=ec5c51348aaa4e09",
-    "youtube": "https://www.youtube.com/watch?v=Il0KhU_zw4s",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2700,9 +2700,9 @@ const SONGS_DATA = [
     "tags": [
       "ADORACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "3TBqr8hjqONayRn0xFtSFM",
-    "ytId": "Il0KhU_zw4s"
+    "ytId": ""
   },
   {
     "id": "para-tu-gloria",
@@ -2733,7 +2733,7 @@ const SONGS_DATA = [
     "artist": "HAKUNA GROUP MUSIC",
     "composer": "HAKUNA GROUP MUSIC",
     "spotify": "https://open.spotify.com/intl-es/track/2H2zjZuR4Ty395ArBqXZpS?si=85c129eb4a234d38",
-    "youtube": "https://www.youtube.com/watch?v=vlYClW8-1Bk",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2745,9 +2745,9 @@ const SONGS_DATA = [
       "JESÚS",
       "SANACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "2H2zjZuR4Ty395ArBqXZpS",
-    "ytId": "vlYClW8-1Bk"
+    "ytId": ""
   },
   {
     "id": "perd-n",
@@ -2755,7 +2755,7 @@ const SONGS_DATA = [
     "artist": "HELENA",
     "composer": "HELENA PÉREZ MENDOZA",
     "spotify": "https://open.spotify.com/intl-es/track/1qw4AwLR6pAlXiE1pK44IS?si=513bafc7953c42ca",
-    "youtube": "https://www.youtube.com/watch?v=oI7muT07lKk",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2766,9 +2766,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "PENITENCIAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "1qw4AwLR6pAlXiE1pK44IS",
-    "ytId": "oI7muT07lKk"
+    "ytId": ""
   },
   {
     "id": "permanecer-en-ti",
@@ -2777,7 +2777,7 @@ const SONGS_DATA = [
     "composer": "MANUEL LORCA",
     "key": "G",
     "spotify": "https://open.spotify.com/intl-es/track/0kEVRt0f1GSKI26N2FGvw6?si=390dc12425804025",
-    "youtube": "https://www.youtube.com/watch?v=7XUgErUm904",
+    "youtube": "",
     "content": "(Original: Bb mayor)\n@@   G                     C\nJesús, contigo quiero estar\n@@       G                 C\nMe regalas la paz del corazón\n@@   G                      C\nSeñor, no soy digno de tenerte\n@@      G                       C\nPero Tú a mi casa quieres entrar\n\n@@   G                    C\nJesús, no hay nada que yo\n@@        G                             C\nPueda continuar anhelando, sino tu amor\n@@    G                    C\nSeñor, no hay mayor alegría\n@@        G                        C\nQue poder compartir mi vida contigo\n\n@@ Am7            Bm7     C\nQuiero permanecer en Ti\n@@Am7             Bm7        C\nY que Tú permanezcas en mí\n\n\n\n@@  G        D          C \nCristo, mi paz, mi alegría \n@@  G     D        C \nEres la luz de mi vida \n@@ G      D             C \nEres amor que permanece \n@@Am7        Bm7 \nGozo del alma, \n@@ C         D          G\nfuente de Vida y Verdad.\n\n\n\nJesús, compañero del camino\nEnséñame a amar a los demás\nSeñor, alimento que se entrega\nInscríbeme en tu corazón\n\nQuiero permanecer en Ti\nY que Tú permanezcas en mí\n",
     "srcTag": "base",
     "source": "",
@@ -2788,9 +2788,9 @@ const SONGS_DATA = [
       "VOCACIONAL",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "0kEVRt0f1GSKI26N2FGvw6",
-    "ytId": "7XUgErUm904"
+    "ytId": ""
   },
   {
     "id": "puerta-del-cielo",
@@ -2818,7 +2818,7 @@ const SONGS_DATA = [
     "artist": "LUISPO, TRIGO 13",
     "composer": "LUISPO",
     "spotify": "https://open.spotify.com/intl-es/track/5AtX4XafdSrfCh3URioEjS?si=21698e1fd9ef4a37",
-    "youtube": "https://www.youtube.com/watch?v=LuaKOlKLqfQ",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2830,9 +2830,9 @@ const SONGS_DATA = [
       "ESPÍRITU SANTO",
       "COMUNIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "5AtX4XafdSrfCh3URioEjS",
-    "ytId": "LuaKOlKLqfQ"
+    "ytId": ""
   },
   {
     "id": "recibe-mi-coraz-n",
@@ -2840,7 +2840,7 @@ const SONGS_DATA = [
     "artist": "VERÓNICA SANFILIPPO",
     "composer": "ATHENAS",
     "spotify": "https://open.spotify.com/intl-es/track/2xySNqQujPmTSbVrtjEhnx?si=5e307d17bb894d3b",
-    "youtube": "https://www.youtube.com/watch?v=QQXZ9bJU5jE",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2851,9 +2851,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "2xySNqQujPmTSbVrtjEhnx",
-    "ytId": "QQXZ9bJU5jE"
+    "ytId": ""
   },
   {
     "id": "renace-la-vida-y-el-coraz-n",
@@ -2861,7 +2861,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/1lsYIp6sBoRVQdmQmOVllk?si=a72f6f711b374a6b",
-    "youtube": "https://www.youtube.com/watch?v=B21uKDrVGdM&list=RDB21uKDrVGdM&start_radio=1",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2871,9 +2871,9 @@ const SONGS_DATA = [
     "tags": [
       "PASCUA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "1lsYIp6sBoRVQdmQmOVllk",
-    "ytId": "B21uKDrVGdM"
+    "ytId": ""
   },
   {
     "id": "rompe-esas-cadenas",
@@ -2882,7 +2882,7 @@ const SONGS_DATA = [
     "composer": "STAME",
     "key": "D",
     "spotify": "https://open.spotify.com/intl-es/track/7nFyYbr75YM9VN7Q6iszRN?si=a9ace9946d7f440d",
-    "youtube": "https://www.youtube.com/watch?v=VFHWktYT3I8",
+    "youtube": "",
     "content": "@@ D                       G\nRompe esas cadenas Espíritu\n@@ D                  G\nEsas que no dejan concentrar\n@@ D                    G      D  G\nPara que yo pueda rezar en paz\n\n@@ D                      G\nQue nada me impida estar acá\n@@  D                     G\nQue nada me importe, nada más\n@@         D                        G\nQue sentirme protegido, acompañado\n@@                 D   G\nAmado y perdonado\n\n\n\n@@         D G    D        G\nPor eso ven, Espíritu Santo ven (x2)",
     "srcTag": "base",
     "source": "",
@@ -2891,9 +2891,9 @@ const SONGS_DATA = [
     "tags": [
       "ESPÍRITU SANTO"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "7nFyYbr75YM9VN7Q6iszRN",
-    "ytId": "VFHWktYT3I8"
+    "ytId": ""
   },
   {
     "id": "sal-y-luz",
@@ -2901,7 +2901,7 @@ const SONGS_DATA = [
     "artist": "MAXI LARGHI",
     "composer": "MAXI LARGHI",
     "spotify": "https://open.spotify.com/intl-es/track/3GykddLFzP5y2iXfDt8RRi?si=c6af8dae3b174839",
-    "youtube": "https://www.youtube.com/watch?v=Eosehf6PWPc&pp=ygUVTWF4aSBrYXJnaGkgc2FsIHkgbHV6",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2916,9 +2916,9 @@ const SONGS_DATA = [
       "VOCACIONAL",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "3GykddLFzP5y2iXfDt8RRi",
-    "ytId": "Eosehf6PWPc"
+    "ytId": ""
   },
   {
     "id": "salmo-115-alzar-la-copa-de-la-salvaci-n",
@@ -2926,7 +2926,7 @@ const SONGS_DATA = [
     "artist": "CORO HNO JAVIER",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/4SlsK5EGA7fjlDhwlEnflI?si=2afcef92d2434b64",
-    "youtube": "https://www.youtube.com/watch?v=aOeBQNxzsuU",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2938,9 +2938,9 @@ const SONGS_DATA = [
       "SALMO",
       "ACCIÓN DE GRACIAS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "4SlsK5EGA7fjlDhwlEnflI",
-    "ytId": "aOeBQNxzsuU"
+    "ytId": ""
   },
   {
     "id": "salmo-117-este-es-el-d-a-que-hizo-el-se-or",
@@ -2948,7 +2948,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/5Ub5ojVVA2AQGejPL9DI0b?si=2324539035334d7d",
-    "youtube": "https://www.youtube.com/watch?v=-jnlmy1hVIE",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2961,9 +2961,9 @@ const SONGS_DATA = [
       "ANIMACIÓN",
       "ALABANZA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "5Ub5ojVVA2AQGejPL9DI0b",
-    "ytId": "-jnlmy1hVIE"
+    "ytId": ""
   },
   {
     "id": "salmo-18-yo-te-amo-se-or",
@@ -2971,7 +2971,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/27M824b60RQ2X9IVOo0f0Y?si=4937580f37f24a40",
-    "youtube": "https://www.youtube.com/watch?v=ZcSqxIBHmr4",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -2982,9 +2982,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "SALMO"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "27M824b60RQ2X9IVOo0f0Y",
-    "ytId": "ZcSqxIBHmr4"
+    "ytId": ""
   },
   {
     "id": "salmo-23-el-senor-es-mi-pastor",
@@ -2993,7 +2993,7 @@ const SONGS_DATA = [
     "composer": "",
     "key": "",
     "spotify": "https://open.spotify.com/intl-es/track/2BpF9yOYc6drLLdSA4iECs?si=ac109460978a43b9",
-    "youtube": "https://www.youtube.com/watch?v=VxNOIL1sAU0",
+    "youtube": "",
     "content": "@@     G            D              Em    \nEl Señor es mi pastor, nada me falta. \n@@     C      Am     D\nEl Señor es mi pastor.\n@@     G            D              Em    \nEl Señor es mi pastor, nada me falta. \n@@     C      D     G\nEl Señor es mi pastor.\n\n\n@@       G                             \nEn praderas reposa mi alma, \n@@        Em\nen su agua descansa mi sed.\n@@       C                  G/B\nEl me guía por senderos justos \n@@      Am                   D\npor amor, por amor de su nombre.\n\n@@         G\nAunque pase por valles oscuros, \n@@       Em\nningún mal, ningún mal temeré\n@@         C                     G/B\nporque sé que el Señor va conmigo, \n@@     Am                D\nsu cayado sostiene mi fe.\n\n\n@@     G            D              Em    \nEl Señor es mi pastor, nada me falta. \n@@     C      Am     D\nEl Señor es mi pastor.\n@@     G            D              Em    \nEl Señor es mi pastor, nada me falta. \n@@     C      D     G\nEl Señor es mi pastor.\n\n@@       G\nTú preparas por mí una mesa \n@@           Em\nfrente a aquellos que buscan mi mal\n@@      C                 G/B\nCon aceite me ungiste, Señor \n@@      Am             D\ny mi copa rebosa de Tí.\n\n@@          G\nGloria a Dios, Padre omnipotente \n@@       Em\ny a su Hijo Jesús, el Señor\n@@       C                      G/B\ny al Espíritu que habita en el mundo \n@@        Am               D\npor los siglos eternos. Amén.\n\n\n@@     G            D              Em    \nEl Señor es mi pastor, nada me falta. \n@@     C      Am     D\nEl Señor es mi pastor.\n@@     G            D              Em    \nEl Señor es mi pastor, nada me falta. \n@@     C      D     G\nEl Señor es mi pastor.",
     "srcTag": "base",
     "source": "",
@@ -3005,9 +3005,9 @@ const SONGS_DATA = [
       "DIOS PADRE",
       "ACCIÓN DE GRACIAS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "2BpF9yOYc6drLLdSA4iECs",
-    "ytId": "VxNOIL1sAU0"
+    "ytId": ""
   },
   {
     "id": "salmo-29-rendid-a-yahveh",
@@ -3015,7 +3015,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/0uVsr2WcGBqpVfmWBYzuEh?si=d3dfe08ac577437e",
-    "youtube": "https://www.youtube.com/watch?v=Z65-_IHsgG4",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3027,9 +3027,9 @@ const SONGS_DATA = [
       "ANIMACIÓN",
       "SALMO"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "0uVsr2WcGBqpVfmWBYzuEh",
-    "ytId": "Z65-_IHsgG4"
+    "ytId": ""
   },
   {
     "title": "SALVE REINA DE LOS CIELOS",
@@ -3038,8 +3038,8 @@ const SONGS_DATA = [
     "key": "Em",
     "spotify": "https://open.spotify.com/intl-es/track/1T6n7EqUH0IH3yOdCk3ii9?si=20968d9f9eb749bf",
     "spId": "1T6n7EqUH0IH3yOdCk3ii9",
-    "youtube": "https://www.youtube.com/watch?v=HFUuF9I0NV0",
-    "ytId": "HFUuF9I0NV0",
+    "youtube": "",
+    "ytId": "",
     "content": "@@ Em                Bm\nSalve, Reina de los Cielos\n@@C               G\ny Señora de los ángeles;\n@@Am     B7        Em  A\nsalve raíz, salve puerta,\n@@ C                     Dsus D\nque dio paso a nuestra luz.\n\n@@  Em               Bm\nAlégrate, Virgen gloriosa,\n@@ C                  G\nentre todas la más bella;\n@@Am         B7       Em  A \nsalve, agraciada doncella,\n@@  C                   D\nruega a Cristo por nosotros. \n@@C   G  Am  D   G\nAmén, aaaaamén.",
     "tags": [
       "MARÍA"
@@ -3057,7 +3057,7 @@ const SONGS_DATA = [
     "artist": "ATHENAS",
     "composer": "ATHENAS",
     "spotify": "https://open.spotify.com/intl-es/track/6iAkt3n8ws4mFulwLzRDK9?si=446311c1437a4baf",
-    "youtube": "https://www.youtube.com/watch?v=p2N79YwcBsI",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3069,9 +3069,9 @@ const SONGS_DATA = [
       "ALABANZA",
       "ESPÍRITU SANTO"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "6iAkt3n8ws4mFulwLzRDK9",
-    "ytId": "p2N79YwcBsI"
+    "ytId": ""
   },
   {
     "title": "SANTO (LOS TOLDOS)",
@@ -3117,7 +3117,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/5nDw1Sffkz91hVRwqSTvPW?si=151e17fbd05c4062",
-    "youtube": "https://www.youtube.com/watch?v=W-a3WLfTxPs",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3129,9 +3129,9 @@ const SONGS_DATA = [
       "ACCIÓN DE GRACIAS",
       "ADORACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "5nDw1Sffkz91hVRwqSTvPW",
-    "ytId": "W-a3WLfTxPs"
+    "ytId": ""
   },
   {
     "id": "se-llama-mar-a",
@@ -3139,7 +3139,7 @@ const SONGS_DATA = [
     "artist": "MAXI LARGHI",
     "composer": "MAXI LARGHI",
     "spotify": "https://open.spotify.com/intl-es/track/65u5ps7fJTEbETnFn6DpR9?si=cce44ca720b04116",
-    "youtube": "https://www.youtube.com/watch?v=C8ufPXi_K-0",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3149,9 +3149,9 @@ const SONGS_DATA = [
     "tags": [
       "MARÍA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "65u5ps7fJTEbETnFn6DpR9",
-    "ytId": "C8ufPXi_K-0"
+    "ytId": ""
   },
   {
     "id": "sencillamente",
@@ -3159,7 +3159,7 @@ const SONGS_DATA = [
     "artist": "HAKUNA GROUP MUSIC",
     "composer": "HAKUNA GROUP MUSIC",
     "spotify": "https://open.spotify.com/intl-es/track/1t7i3ZQgjhU341Il43ijW8?si=4d886be69d984251",
-    "youtube": "https://www.youtube.com/watch?v=dWbjPRB7O1w",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3172,9 +3172,9 @@ const SONGS_DATA = [
       "ACCIÓN DE GRACIAS",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "1t7i3ZQgjhU341Il43ijW8",
-    "ytId": "dWbjPRB7O1w"
+    "ytId": ""
   },
   {
     "id": "sentidos",
@@ -3182,7 +3182,7 @@ const SONGS_DATA = [
     "artist": "MAXI LARGHI",
     "composer": "MAXI LARGHI",
     "spotify": "https://open.spotify.com/intl-es/track/2z95K9iHbUXEUkL04vWriD?si=7d3ccf5244a94387",
-    "youtube": "https://www.youtube.com/watch?v=rAuavN3TDSQ",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3195,9 +3195,9 @@ const SONGS_DATA = [
       "VOCACIONAL",
       "MISIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "2z95K9iHbUXEUkL04vWriD",
-    "ytId": "rAuavN3TDSQ"
+    "ytId": ""
   },
   {
     "id": "ser-fiel-a-su-llamado",
@@ -3206,7 +3206,7 @@ const SONGS_DATA = [
     "composer": "VERÓNICA SANFILIPPO",
     "key": "G",
     "spotify": "https://open.spotify.com/intl-es/track/71FF85itDM6ArHuBaWNyah?si=be9bfcf2995b4d4f",
-    "youtube": "https://www.youtube.com/watch?v=oSb-TD1f9Rk&list=RDoSb-TD1f9Rk&start_radio=1",
+    "youtube": "",
     "content": "(Original: A mayor, transporte en 2do)\n@@              G    C                    G      C\nDesde el principio, cuando Dios te pensó, \n@@           Em   Am                  G    C\nquiso regalarte un hermoso plan de amor.\n\n@@                  G    C                  G  C\nPensó en cada detalle de tu vida y de tu ser,\n@@                        Em     \ntrazó una historia interesante \n@@ Am                 G\nque quiere verte recorrer.\n\n@@            G     C            G  C\nQuiso entregarte un precioso don, \n@@                       Em   Am           G\npara que lleves su mensaje por toda la creación.\n\n\n\n@@                  Em       \nY no guardes para ti \n@@C                           G  D\nesa misión que El te ha confiado, \n@@             Em \nÉl espera de ti \n@@C                    G  D\nque fructifique su regalo, \n@@              Em\ndando a conocer \n@@C                    G  D\nla grandeza de ser amado \n@@        Am                        D\npor un Dios que te confía más y más \n@@                   G\nsi eres fiel a su llamado.\n\n\n\n@@                  G\nÉl quiere que se cumpla \n@@C        G \nen ti su plan de amor \n@@             D           Em\npara que al verte cara a cara \n@@Am                      G\npueda expresar a viva voz: \n@@ Dsus  D            G\n«Servidor bueno y fiel, \n@@C                    G       C\nya que respondiste siendo fiel,\n@@                Em \nven entra en tu casa \n@@Am                G Dsus D\na gozar con tu Señor»\n\n\n\n@@                  Em       \nY no guardes para ti \n@@C                           G  D\nesa misión que El te ha confiado, \n@@             Em \nÉl espera de ti \n@@C                    G  D\nque fructifique su regalo, \n@@              Em\ndando a conocer \n@@C                    G  D\nla grandeza de ser amado \n@@        Am                        D\npor un Dios que te confía más y más \n@@                   G\nsi eres fiel a su llamado.",
     "srcTag": "base",
     "source": "",
@@ -3216,9 +3216,9 @@ const SONGS_DATA = [
       "VOCACIONAL",
       "MISIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "71FF85itDM6ArHuBaWNyah",
-    "ytId": "oSb-TD1f9Rk"
+    "ytId": ""
   },
   {
     "id": "ser-dios",
@@ -3226,7 +3226,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "SCHOENSTATT",
     "spotify": "https://open.spotify.com/intl-es/track/73bzF5NJuyebpnzHLofzt9?si=beb605db6aa24e19",
-    "youtube": "https://www.youtube.com/watch?v=lW0IyYzH-U8",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3238,9 +3238,9 @@ const SONGS_DATA = [
       "ACCIÓN DE GRACIAS",
       "DIOS PADRE"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "73bzF5NJuyebpnzHLofzt9",
-    "ytId": "lW0IyYzH-U8"
+    "ytId": ""
   },
   {
     "id": "senor-aqui-estoy",
@@ -3269,7 +3269,7 @@ const SONGS_DATA = [
     "artist": "HERMANA GLENDA",
     "composer": "HERMANA GLENDA",
     "spotify": "https://open.spotify.com/intl-es/track/0zBe6Xu4ggrp9ycQQ3ccCX?si=879e9f839a0744fd",
-    "youtube": "https://www.youtube.com/watch?v=_7qS2fRxASM",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3279,9 +3279,9 @@ const SONGS_DATA = [
     "tags": [
       "ADORACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "0zBe6Xu4ggrp9ycQQ3ccCX",
-    "ytId": "_7qS2fRxASM"
+    "ytId": ""
   },
   {
     "id": "si-quieres-te-acompa-o-en-el-camino",
@@ -3289,7 +3289,7 @@ const SONGS_DATA = [
     "artist": "BERIT",
     "composer": "P. EDUARDO MEANA",
     "spotify": "https://open.spotify.com/intl-es/track/4gPRmjYf6n1BtIaGmRm4Gk?si=7250c21dd5574f9f",
-    "youtube": "https://www.youtube.com/watch?v=mkVTsrcIqQg",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3302,9 +3302,9 @@ const SONGS_DATA = [
       "JESÚS",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "4gPRmjYf6n1BtIaGmRm4Gk",
-    "ytId": "mkVTsrcIqQg"
+    "ytId": ""
   },
   {
     "id": "si-rasgaras-los-cielos",
@@ -3312,7 +3312,7 @@ const SONGS_DATA = [
     "artist": "CORO HNO JAVIER",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/2YN3zePLSbICmu6gRblO3r?si=c95f1c6dfb694c1f",
-    "youtube": "https://www.youtube.com/watch?v=WqFc-K1xJSY",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3322,9 +3322,9 @@ const SONGS_DATA = [
     "tags": [
       "ADORACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "2YN3zePLSbICmu6gRblO3r",
-    "ytId": "WqFc-K1xJSY"
+    "ytId": ""
   },
   {
     "id": "si-t-no-vienes",
@@ -3332,7 +3332,7 @@ const SONGS_DATA = [
     "artist": "P. CRISTOBAL FONES",
     "composer": "P. EDUARDO MEANA",
     "spotify": "https://open.spotify.com/intl-es/track/7AhG3CMxP7s6eVQXt603Bb?si=6e4aab5d2f664c9c",
-    "youtube": "https://www.youtube.com/watch?v=J0DbB3Ri-NI",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3344,9 +3344,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "COMUNIDAD"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "7AhG3CMxP7s6eVQXt603Bb",
-    "ytId": "J0DbB3Ri-NI"
+    "ytId": ""
   },
   {
     "id": "siempre-imagin",
@@ -3354,7 +3354,7 @@ const SONGS_DATA = [
     "artist": "HAKUNA GROUP MUSIC",
     "composer": "HAKUNA GROUP MUSIC",
     "spotify": "https://open.spotify.com/intl-es/track/6WpBT6BHecwSrt41c5i9gK?si=e24e19a1c8bb4b99",
-    "youtube": "https://www.youtube.com/watch?v=PM7fWcQsnUw",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3365,9 +3365,9 @@ const SONGS_DATA = [
       "ANIMACIÓN",
       "COMUNIDAD"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "6WpBT6BHecwSrt41c5i9gK",
-    "ytId": "PM7fWcQsnUw"
+    "ytId": ""
   },
   {
     "id": "siempre-me-amaste",
@@ -3375,7 +3375,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "STAME",
     "spotify": "https://open.spotify.com/intl-es/track/5HvjCSh0j2NL2Q4yr9Ui8t?si=55a46ccc31084110",
-    "youtube": "https://www.youtube.com/watch?v=9ogXRLxUU-0",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3385,9 +3385,9 @@ const SONGS_DATA = [
     "tags": [
       "ADORACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "5HvjCSh0j2NL2Q4yr9Ui8t",
-    "ytId": "9ogXRLxUU-0"
+    "ytId": ""
   },
   {
     "id": "siempre-nuestro-amigo",
@@ -3395,7 +3395,7 @@ const SONGS_DATA = [
     "artist": "P. EDUARDO MEANA",
     "composer": "P. EDUARDO MEANA",
     "spotify": "https://open.spotify.com/intl-es/track/6M4vj2LoWy4SPHwS6wPaqP?si=72a52528ee354476",
-    "youtube": "https://www.youtube.com/watch?v=m4mxF0a4LPM",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3407,9 +3407,9 @@ const SONGS_DATA = [
       "ACCIÓN DE GRACIAS",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "6M4vj2LoWy4SPHwS6wPaqP",
-    "ytId": "m4mxF0a4LPM"
+    "ytId": ""
   },
   {
     "id": "siempre-te-amar",
@@ -3417,7 +3417,7 @@ const SONGS_DATA = [
     "artist": "ATHENAS",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/45j3FTJcsgQD7Dp1fub1Yo?si=e2e0f9dce54d427c",
-    "youtube": "https://www.youtube.com/watch?v=i4nJYy_Xge4",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3428,9 +3428,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "DIOS PADRE"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "45j3FTJcsgQD7Dp1fub1Yo",
-    "ytId": "i4nJYy_Xge4"
+    "ytId": ""
   },
   {
     "id": "signos-de-amor",
@@ -3438,7 +3438,7 @@ const SONGS_DATA = [
     "artist": "CORO DE SCHOENSTATT",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/7oZJ0gKUXuPwUGGdHXFzM6?si=7c7852d350714a12",
-    "youtube": "https://www.youtube.com/watch?v=9ikteaE-whE",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3450,9 +3450,9 @@ const SONGS_DATA = [
       "ACCIÓN DE GRACIAS",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "7oZJ0gKUXuPwUGGdHXFzM6",
-    "ytId": "9ikteaE-whE"
+    "ytId": ""
   },
   {
     "id": "silencio-fecundo",
@@ -3460,7 +3460,7 @@ const SONGS_DATA = [
     "artist": "BERIT",
     "composer": "SCHOENSTATT",
     "spotify": "https://open.spotify.com/intl-es/track/1pH8hegajVWgUjCETRzhe5?si=4b552908b2db4973",
-    "youtube": "https://www.youtube.com/watch?v=A0qpI2tcVQA",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3472,9 +3472,9 @@ const SONGS_DATA = [
       "VOCACIONAL",
       "ACCIÓN DE GRACIAS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "1pH8hegajVWgUjCETRzhe5",
-    "ytId": "A0qpI2tcVQA"
+    "ytId": ""
   },
   {
     "id": "sobre-el-mar",
@@ -3482,7 +3482,7 @@ const SONGS_DATA = [
     "artist": "BERIT",
     "composer": "SCHOENSTATT",
     "spotify": "https://open.spotify.com/intl-es/track/5qx9Y32YrJ7xyd9VsogMJO?si=91869e58ae4e49ce",
-    "youtube": "https://www.youtube.com/watch?v=vCuqDM3Nsag",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3494,9 +3494,9 @@ const SONGS_DATA = [
       "ACCIÓN DE GRACIAS",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "5qx9Y32YrJ7xyd9VsogMJO",
-    "ytId": "vCuqDM3Nsag"
+    "ytId": ""
   },
   {
     "id": "sopla-sobre-m",
@@ -3504,7 +3504,7 @@ const SONGS_DATA = [
     "artist": "ESTEFANÍA INZEO",
     "composer": "ESTEFANÍA INZEO",
     "spotify": "https://open.spotify.com/intl-es/track/5TrmMhylXPFVCcAVgfawJv?si=e716bd52b23548a6",
-    "youtube": "https://www.youtube.com/watch?v=hHOMxyzUcyw&list=PLPk8GhKuEHQIlqI3QorYvrqdAN_C5h0K0",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3515,9 +3515,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "ESPÍRITU SANTO"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "5TrmMhylXPFVCcAVgfawJv",
-    "ytId": "hHOMxyzUcyw"
+    "ytId": ""
   },
   {
     "id": "soplo-de-dios",
@@ -3526,7 +3526,7 @@ const SONGS_DATA = [
     "composer": "MAXI LARGHI",
     "key": "D",
     "spotify": "https://open.spotify.com/intl-es/track/5eOLqE8cY6SJ1BJ3NqaRGb?si=5e70f81d26754aac",
-    "youtube": "https://www.youtube.com/watch?v=7WzSWHe4qak",
+    "youtube": "",
     "content": "@@ D        Bm          C G         D\nSoplo de Dios, dame vida, dame vida. (x2)\n\n\n@@G                  A  \nSuave brisa de la paz, \n@@                   Bm   A\ntu rumor me trae calma\n@@             G\nFrente a los terremotos\n@@Em                    A      \nMi manto cubrirá mi rostro, \n@@               Bm          A\nmanténme de pie en la entrada,\n@@           G       E\nYo quiero oír tu Palabra.\n\n\n\n@@ D        Bm          C G         D\nSoplo de Dios, dame vida, dame vida. (x2)\n\n\n\n@@G                 A\nViento de la Libertad\n@@                 Bm   A             G\nNo sé de dónde vienes, ni a dónde vas\n@@Em                       A\nPero te oigo y sé que estás,\n@@            Bm       A\nComo Nicodemo, Señor,\n@@            G           E\nQuisiera nacer de tu aliento.\n\n\n\n@@ D        Bm          C G         D\nSoplo de Dios, dame vida, dame vida. (x2)\n\n\n\n@@G                 A \nRáfaga de eternidad\n@@                    Bm \nFuerte como la Verdad, \n@@A              G\nresuena en mi casa,\n@@Em              A\nEnséñame a expresar,\n@@                  Bm       A \nQue yo hable tu idioma Señor\n@@             G           E\nYo quiero hablar con Tu Voz\n\n\n\n@@ D        Bm          C G         D\nSoplo de Dios, dame vida, dame vida. (x4)\n\n\n\n@@D                       Am                                   \n/Sopla Espíritu Santo tu Amor, \n@@                         C                        \nSopla Espíritu Santo tu Amor, \n@@                         G   A\nSopla Espíritu Santo tu Amor/ x2\n\n@@D                   Am    \n/Sin Vos no tiene sentido mi voz, \n@@            G                        Asus4      A\nno tiene sentido sin Vos, no tengo sentido sin Dios./ x4",
     "srcTag": "base",
     "source": "",
@@ -3537,9 +3537,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "ALABANZA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "5eOLqE8cY6SJ1BJ3NqaRGb",
-    "ytId": "7WzSWHe4qak"
+    "ytId": ""
   },
   {
     "id": "soy-amado",
@@ -3547,7 +3547,7 @@ const SONGS_DATA = [
     "artist": "ROGELIO CASASOLA",
     "composer": "ROGELIO CASASOLA",
     "spotify": "https://open.spotify.com/intl-es/track/3XoepHkkMlMwZyeXDSmfav?si=ca4844b3a3a84caa",
-    "youtube": "https://www.youtube.com/watch?v=2nCAy_yaeGE",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3558,9 +3558,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "MARÍA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "3XoepHkkMlMwZyeXDSmfav",
-    "ytId": "2nCAy_yaeGE"
+    "ytId": ""
   },
   {
     "id": "soy-libre",
@@ -3568,7 +3568,7 @@ const SONGS_DATA = [
     "artist": "HAKUNA GROUP MUSIC",
     "composer": "HAKUNA GROUP MUSIC",
     "spotify": "https://open.spotify.com/intl-es/track/35sx4rk6TGum93jIZettPj?si=e4579f644503491d",
-    "youtube": "https://www.youtube.com/watch?v=vtSjNBXs1h8",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3579,9 +3579,9 @@ const SONGS_DATA = [
       "PASCUA",
       "ADORACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "35sx4rk6TGum93jIZettPj",
-    "ytId": "vtSjNBXs1h8"
+    "ytId": ""
   },
   {
     "id": "surge-valent-a",
@@ -3589,7 +3589,7 @@ const SONGS_DATA = [
     "artist": "BERIT",
     "composer": "SCHOENSTATT",
     "spotify": "https://open.spotify.com/intl-es/track/1FnT5Cn1zIDaYyQtJE2FrY?si=25be2df16f3242a5",
-    "youtube": "https://www.youtube.com/watch?v=f9VHrL8-QlA&list=PL8VWokoLw37xYmQ6vvl4w90iWIjnhvoGi&index=8",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3600,9 +3600,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "1FnT5Cn1zIDaYyQtJE2FrY",
-    "ytId": "f9VHrL8-QlA"
+    "ytId": ""
   },
   {
     "title": "SURJA DIOS",
@@ -3611,8 +3611,8 @@ const SONGS_DATA = [
     "key": "Am",
     "spotify": "https://open.spotify.com/intl-es/track/19O5rytHZFDR9yMUig6oih?si=d6c09a9f2d1e4ba6",
     "spId": "19O5rytHZFDR9yMUig6oih",
-    "youtube": "https://www.youtube.com/watch?v=9MC2kuUPfno",
-    "ytId": "9MC2kuUPfno",
+    "youtube": "",
+    "ytId": "",
     "content": "(Original: Cm)\n@@ Am        Em\nSurja Dios Padre\n@@ F     G             Am  Em\nse dispersen sus enemigos\n@@F  G               C  Am\nY huyan de Su presencia\n@@ F  G          Am \nAquellos que lo odian.\n\n@@ Am        Em\nSurja Dios Hijo\n@@ F     G             Am  Em\nse dispersen sus enemigos\n@@F  G               C  Am\nY huyan de Su presencia\n@@ F  G          Am \nAquellos que lo odian.\n\n@@ Am           Em\nSurja Dios Espíritu\n@@ F     G             Am  Em\nse dispersen sus enemigos\n@@F  G               C  Am\nY huyan de Su presencia\n@@ F  G          Am \nAquellos que lo odian.\n\n@@ C           G          F\nDios vive en mí, y yo en Él.\n@@        G\nY yo en Él.\n@@ C           G          F\nDios vive en mí, y yo en Él.\n@@        G\nY yo en Él.\n\n\n@@ Am        Em\nSurja Dios Trino\n@@ F     G             Am  Em\nse dispersen sus enemigos\n@@F  G               C  Am\nY huyan de Su presencia\n@@ F  G           Am \nAquellos que lo odian.\n\n\n@@ C           G          F\nDios vive en mí, y yo en Él.\n@@        G\nY yo en Él.\n@@ C           G          F\nDios vive en mí, y yo en Él.\n@@        G\nY yo en Él.\n\n\n@@Am        Em\nEn Tu presencia voy,\n@@Am        Em\nEn Tu presencia voy,\n@@Am        Em              F  E7\nEn Tu presencia voy, Dios Trino.\n\n@@Am        Em\nEn Tu presencia voy,\n@@Am        Em\nEn Tu presencia voy,\n@@Am        Em              F  E7\nEn Tu presencia voy, Dios Trino.\n\n\n@@ C           G          F\nDios vive en mí, y yo en Él.\n@@        G\nY yo en Él.\n@@ C           G          F\nDios vive en mí, y yo en Él.\n@@        G\nY yo en Él.",
     "tags": [
       "ALABANZA",
@@ -3636,7 +3636,7 @@ const SONGS_DATA = [
     "artist": "EUGENIA GAMBELÍN",
     "composer": "EUGENIO JORGE",
     "spotify": "https://open.spotify.com/intl-es/track/4Ps76YTJ8vlrAa9wiQ5ZKx?si=c4280080eea84c5a",
-    "youtube": "https://www.youtube.com/watch?v=EAGuQhBs5CM",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3648,9 +3648,9 @@ const SONGS_DATA = [
       "JESÚS",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "4Ps76YTJ8vlrAa9wiQ5ZKx",
-    "ytId": "EAGuQhBs5CM"
+    "ytId": ""
   },
   {
     "id": "tan-pobre-y-tan-rico",
@@ -3658,7 +3658,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/1HImRLRp9t9u6AoGUoSKYL?si=9e0b1a15e5bc4277",
-    "youtube": "https://www.youtube.com/watch?v=O10bju18Kyw",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3670,9 +3670,9 @@ const SONGS_DATA = [
       "ACCIÓN DE GRACIAS",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "1HImRLRp9t9u6AoGUoSKYL",
-    "ytId": "O10bju18Kyw"
+    "ytId": ""
   },
   {
     "title": "TE ADORO MI JESÚS",
@@ -3701,7 +3701,7 @@ const SONGS_DATA = [
     "artist": "MARTÍN VALVERDE",
     "composer": "MARTÍN VALVERDE",
     "spotify": "https://open.spotify.com/intl-es/track/6h9OCTgGHmlWUXKoPDyOCh?si=dec3ed708f824346",
-    "youtube": "https://www.youtube.com/watch?v=uVbWCVSPEtI",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3712,9 +3712,9 @@ const SONGS_DATA = [
       "ALABANZA",
       "ADORACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "6h9OCTgGHmlWUXKoPDyOCh",
-    "ytId": "uVbWCVSPEtI"
+    "ytId": ""
   },
   {
     "id": "te-digo-que-s",
@@ -3722,7 +3722,7 @@ const SONGS_DATA = [
     "artist": "VERÓNICA SANFILIPPO",
     "composer": "VERÓNICA SANFILIPPO, NICO CABRERA, THE VIGIL PROYECT",
     "spotify": "https://open.spotify.com/intl-es/track/2HqDqSq5mDTT3zC3ufSi3q?si=d866e86a02c84ada",
-    "youtube": "https://www.youtube.com/watch?v=1AZ9rY6KuT8",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3734,9 +3734,9 @@ const SONGS_DATA = [
       "ANIMACIÓN",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "2HqDqSq5mDTT3zC3ufSi3q",
-    "ytId": "1AZ9rY6KuT8"
+    "ytId": ""
   },
   {
     "title": "TE ESTABA ESPERANDO",
@@ -3745,8 +3745,8 @@ const SONGS_DATA = [
     "key": "A",
     "spotify": "https://open.spotify.com/intl-es/track/4wNSqtzjaqfQgZy5FKldQc?si=918a95d0c7c84eb6",
     "spId": "4wNSqtzjaqfQgZy5FKldQc",
-    "youtube": "https://www.youtube.com/watch?v=YaFIBm-Ro20",
-    "ytId": "YaFIBm-Ro20",
+    "youtube": "",
+    "ytId": "",
     "content": "(Original: C# mayor)\n@@                A\nTe estaba esperando\n@@       D                        A\nCon anhelo de encontrarme contigo\n@@      D                Bm\nPara poder abrazarte, amigo\n@@ C#m                      Esus4 E\nCurar tus heridas con mis manos\n\n@@          A\nEn este silencio\n@@     D                        A\nBendito que es refugio de alegría\n@@        D   \nQue renueva el corazón\n@@           Bm\nFuente de vida\n@@       C#m\nPara el alma dormida\n@@          D                     Esus4 E\nQuiero abrir, entrar, quedarme contigo\n\n@@        F#dim   C#7    F#m\nCuando seguías lejos corrí hacia ti\n@@Bm7               Esus4         E\nNo me resistí a tu anhelo de volver\n\n\n@@  A         D\nQuédate aquí\n@@ E                   A             F#m\nPermanezcamos en este abrazo de luz\n@@          Bm7   E\nQue nos hace felices\n@@  A          D\nQuédate en mí\n@@        F#dim    C#7   F#m\nYa no importa lo que pasó\n@@               Bm\nTe estaba esperando\n@@ Esus4 E    A Bm A E    F#\nQuédate aquí\n\n\n@@      B\nHe venido\n@@      E                  B\nA quitar para siempre el pecado\n@@          E\nPara que brille el amor\n@@        C#m\nTe he llamado\n@@       D#m  \nA anunciar que estoy vivo\n@@           E               F#sus4 F#\nQue comparto la mesa del pobre\n\n@@        G#dim    D#7   G#m\nCuando seguías lejos corrí hacia ti\n@@C#m                F#sus4      F#\nNo me resistí a tu anhelo de volver\n\n\n@@  B         E\nQuédate aquí\n@@ F#                   B             G#m\nPermanezcamos en este abrazo de luz\n@@          C#m7   F#\nQue nos hace felices\n@@  B          E\nQuédate en mí\n@@        G#dim    D#7   G#m\nYa no importa lo que pasó\n@@               C#m    A  F#\nTe estaba esperando\n\n@@  B         E\nQuédate aquí\n@@ F#                   B             G#m\nPermanezcamos en este abrazo de luz\n@@          C#m7   F#\nQue nos hace felices\n@@  B          E\nQuédate en mí\n@@        G#dim    D#7   G#m\nYa no importa lo que pasó\n@@               C#m    \nTe estaba esperando\n@@F#sus4 F#   G\nQuédate aquí\n@@  F#         B \nQuédate en mi.\n",
     "tags": [
       "ADORACIÓN",
@@ -3765,7 +3765,7 @@ const SONGS_DATA = [
     "artist": "MARTÍN VALVERDE",
     "composer": "MARTÍN VALVERDE",
     "spotify": "https://open.spotify.com/intl-es/track/5jLmeh6dGL7R4zuxV63c9v?si=2a85f9dd7b864426",
-    "youtube": "https://www.youtube.com/watch?v=3dsTbHPuDio",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3775,9 +3775,9 @@ const SONGS_DATA = [
     "tags": [
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "5jLmeh6dGL7R4zuxV63c9v",
-    "ytId": "3dsTbHPuDio"
+    "ytId": ""
   },
   {
     "id": "tierra-de-misericordia",
@@ -3786,7 +3786,7 @@ const SONGS_DATA = [
     "composer": "TERESA TERAN OLAYA",
     "key": "D",
     "spotify": "https://open.spotify.com/intl-es/track/5hIm1ls3rIXhjNIIxAdJMr?si=6076af5ccdd945ce",
-    "youtube": "https://www.youtube.com/watch?v=3n6WwL5NRF8",
+    "youtube": "",
     "content": "(Original: transporte en 3ro, F mayor)\n@@D              Bm  F#m   G  \nNos llamaste a la eternidad \n@@D               Bm     F#m     G  \nNos mostraste donde está la paz \n@@Em           A\nDejo todo aquí en mi barca \n@@Em             G  \nPara ir junto a Vos \n\n\n@@A7         D                 Asus2 \nBienaventurados los que te siguen \n@@                  Bm \nLos mansos y humildes \n@@                 G              A7        D \nPorque ellos poseerán la Tierra de Misericordia \n@@             Asus2                 Em \nLos justos y tristes, los más perseguidos \n@@         G       Asus2   G  \nLos que llevan Tu luz, Jesús \n@@          A7 \nLos que llevan Tu luz\n\n\n@@D             Bm      F#m     G  \nEs tu historia, la que transformó \n@@D           Bm     F#m       G  \nCon tu vida la medida del amor \n@@Em         A \nDejo todo mi pasado \n@@Em               G  \nPorque voy con Vos \n\n\n@@A7         D                 Asus2 \nBienaventurados los que te siguen \n@@                  Bm \nLos mansos y humildes \n@@                 G              A7        D \nPorque ellos poseerán la Tierra de Misericordia \n@@             Asus2                 Em \nLos justos y tristes, los más perseguidos \n@@         G       Asus2   G  \nLos que llevan Tu luz, Jesús \n@@          A7 \nLos que llevan Tu luz..\n\n@@      G          D \nY es así como quiero hoy vivir \n@@      Bm             F#m \nEntregarme a los demás \n@@      G            A\nPredicar toda verdad \n@@      G           D \nY es así, como quiero compartir \n@@         Bm           F#m \nPorque creo una vez más \n@@             G           A7 \nQue es con Vos mi realidad…\n",
     "srcTag": "base",
     "source": "",
@@ -3797,9 +3797,9 @@ const SONGS_DATA = [
       "ACCIÓN DE GRACIAS",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "5hIm1ls3rIXhjNIIxAdJMr",
-    "ytId": "3n6WwL5NRF8"
+    "ytId": ""
   },
   {
     "id": "todo",
@@ -3807,7 +3807,7 @@ const SONGS_DATA = [
     "artist": "HAKUNA GROUP MUSIC",
     "composer": "HAKUNA GROUP MUSIC",
     "spotify": "https://open.spotify.com/intl-es/track/32AudWhiMVnj7j4gbdzxTX?si=41fdd183b68f4de7",
-    "youtube": "https://www.youtube.com/watch?v=44YVarFD5A8",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3819,9 +3819,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "ACCIÓN DE GRACIAS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "32AudWhiMVnj7j4gbdzxTX",
-    "ytId": "44YVarFD5A8"
+    "ytId": ""
   },
   {
     "id": "todo-es-tuyo",
@@ -3829,7 +3829,7 @@ const SONGS_DATA = [
     "artist": "ATHENAS",
     "composer": "ATHENAS, TOBÍAS BUTELER",
     "spotify": "https://open.spotify.com/intl-es/track/5l85fh6eobJeIGCG9nPJdV?si=3ba6dbd4dd4841a2",
-    "youtube": "https://www.youtube.com/watch?v=Haj7OJRS8Y4&list=OLAK5uy_nISUNBie6FxmHXOsAB653Sk15CP-qXcCU&index=3",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3841,9 +3841,9 @@ const SONGS_DATA = [
       "ACCIÓN DE GRACIAS",
       "ENTREGA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "5l85fh6eobJeIGCG9nPJdV",
-    "ytId": "Haj7OJRS8Y4"
+    "ytId": ""
   },
   {
     "id": "todo-lo-espero-de-t",
@@ -3851,7 +3851,7 @@ const SONGS_DATA = [
     "artist": "PABLO MARTÍNEZ",
     "composer": "PABLO MARTÍNEZ",
     "spotify": "https://open.spotify.com/intl-es/track/2mDYMuqcVat5m29BVhfqep?si=03e3fd1837a6443d",
-    "youtube": "https://www.youtube.com/watch?v=YFCXa3aw5k4",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3863,9 +3863,9 @@ const SONGS_DATA = [
       "ALABANZA",
       "ACCIÓN DE GRACIAS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "2mDYMuqcVat5m29BVhfqep",
-    "ytId": "YFCXa3aw5k4"
+    "ytId": ""
   },
   {
     "id": "todo-lo-haces-nuevo",
@@ -3874,7 +3874,7 @@ const SONGS_DATA = [
     "composer": "ATHENAS",
     "key": "E",
     "spotify": "https://open.spotify.com/intl-es/track/63MZGHS1p7BwzZfTwJ02XZ?si=e39e1de4766b4f39",
-    "youtube": "https://www.youtube.com/watch?v=yJTmiht-URU",
+    "youtube": "",
     "content": "@@   E                               \nTú obras maravillas con tu gracia, \n@@ A\nnada es imposible en tus manos\n@@ B                 C#m    B     A\nVen, hasta lo más hondo de mi ser\n\n@@    E\nTú obras maravillas con tu gracia, \n@@ A\nnada es imposible en tus manos\n@@ B                C#m    B      A\nVen, hasta lo más hondo de mi ser\n@@ B               C#m      B     A\nVen, creo en Tu Palabra y Tu poder\n@@       B\nPorque…\n\n\n@@                 E\nTodo lo haces nuevo, Jesús\n@@                 A\nTodo lo haces nuevo, Jesús\n@@            B\nMi vida es tuya, Señor\n@@          A\nRenuévame con tu amor\n@@          E\nSeñor Jesús\n\n\n@@E\nLimpia mis heridas con tu gracia, \n@@ A\nquema con tu fuego hoy mi vida\n@@ B                C#m    B      A\nVen, hasta lo más hondo de mi ser. \n@@ B                C#m    B      A\nVen, creo en tu Palabra y tu poder...\n\n\n@@                 E\nTodo lo haces nuevo, Jesús\n@@                 A\nTodo lo haces nuevo, Jesús\n@@            B\nMi vida es tuya, Señor\n@@         A\nRenuévame con tu amor...\n@@                E\nTodo lo haces nuevo, Jesús\n@@                 A\nTodo lo haces nuevo, Jesús\n@@            B\nMi vida es tuya, Señor\n@@          A\nRenuévame con tu amor\n@@          E\nSeñor Jesús.\n\n\n@@E               B                       C#m    \nDejando todo atrás quiero volver a empezar, \n@@          A          E\nrestáurame, renuévame. (x3)",
     "srcTag": "base",
     "source": "",
@@ -3884,9 +3884,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "ACCIÓN DE GRACIAS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "63MZGHS1p7BwzZfTwJ02XZ",
-    "ytId": "yJTmiht-URU"
+    "ytId": ""
   },
   {
     "id": "todo-tuyo",
@@ -3894,7 +3894,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN ROSARIO",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/2GHVULfLqbUTpQX1cngjbR?si=6e5fa9181e1d4892",
-    "youtube": "https://www.youtube.com/watch?v=Rgav054Qagk",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3905,9 +3905,9 @@ const SONGS_DATA = [
       "MARÍA",
       "ANIMACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "2GHVULfLqbUTpQX1cngjbR",
-    "ytId": "Rgav054Qagk"
+    "ytId": ""
   },
   {
     "id": "toma-senor",
@@ -3916,7 +3916,7 @@ const SONGS_DATA = [
     "composer": "",
     "key": "D",
     "spotify": "https://open.spotify.com/intl-es/track/2tPaG5Z7Kbkdm7WnkPnQVX?si=a3ca046b7240407d",
-    "youtube": "https://www.youtube.com/watch?v=8Z5crV40ewU",
+    "youtube": "",
     "content": "(Original: transporte en 2ro, E mayor)\n@@D                Bm   G                      Bm\nToma Señor y recibe toda mi libertad, mi memoria\n@@            G     Em         A\nmi entendimiento y mi voluntad.\n\n\n@@           D                       Bm            \nTodo mi haber y poseer Vos me lo diste \n@@         G      A     \na Vos Señor lo torno.\n@@         D                     Bm\nTodo es tuyo disponé a Tu Voluntad.\n@@           G              A                   D\nDame Tu amor, dame Tu gracia, que esta me basta.\n",
     "srcTag": "base",
     "source": "",
@@ -3928,9 +3928,9 @@ const SONGS_DATA = [
       "ACCIÓN DE GRACIAS",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "2tPaG5Z7Kbkdm7WnkPnQVX",
-    "ytId": "8Z5crV40ewU"
+    "ytId": ""
   },
   {
     "id": "tranquilo",
@@ -3938,7 +3938,7 @@ const SONGS_DATA = [
     "artist": "FRUTO DEL MADERO",
     "composer": "FRUTO DEL MADERO",
     "spotify": "https://open.spotify.com/intl-es/track/4TFgmeIrhHx15xwwfxMY9d?si=25f79d23bda64473",
-    "youtube": "https://www.youtube.com/watch?v=uH0fqCf_fpc",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3950,9 +3950,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "4TFgmeIrhHx15xwwfxMY9d",
-    "ytId": "uH0fqCf_fpc"
+    "ytId": ""
   },
   {
     "id": "transparencia",
@@ -3960,7 +3960,7 @@ const SONGS_DATA = [
     "artist": "P. EDUARDO MEANA",
     "composer": "P. EDUARDO MEANA",
     "spotify": "https://open.spotify.com/intl-es/track/62IPt7M4ZqAgbWPj9tjhde?si=71dc682ee8c54093",
-    "youtube": "https://www.youtube.com/watch?v=x79lZl-77HM",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3971,9 +3971,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "ACCIÓN DE GRACIAS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "62IPt7M4ZqAgbWPj9tjhde",
-    "ytId": "x79lZl-77HM"
+    "ytId": ""
   },
   {
     "id": "treinta-monedas",
@@ -3981,7 +3981,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/37biQ185RLOHoELp6uhNm8?si=b73680c0ec714bf2",
-    "youtube": "https://www.youtube.com/watch?v=_yQby4vEcuE",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -3991,9 +3991,9 @@ const SONGS_DATA = [
     "tags": [
       "PASCUA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "37biQ185RLOHoELp6uhNm8",
-    "ytId": "_yQby4vEcuE"
+    "ytId": ""
   },
   {
     "id": "tu-amor-me-abraza",
@@ -4001,7 +4001,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN ROSARIO",
     "composer": "STAME",
     "spotify": "https://open.spotify.com/intl-es/track/2vXeFRI4rdq7mNfHAri4h8?si=e6f21b5ff0c84047",
-    "youtube": "https://www.youtube.com/watch?v=3n4dX_I5hY8",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -4013,9 +4013,9 @@ const SONGS_DATA = [
       "PASCUA",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "2vXeFRI4rdq7mNfHAri4h8",
-    "ytId": "3n4dX_I5hY8"
+    "ytId": ""
   },
   {
     "id": "tu-llamado",
@@ -4023,7 +4023,7 @@ const SONGS_DATA = [
     "artist": "ARIEL GLASER",
     "composer": "ARIEL GLASER",
     "spotify": "https://open.spotify.com/intl-es/track/2psRxvMQso5o5RYKxaDEIY?si=f1fefcae0d2a467c",
-    "youtube": "https://www.youtube.com/watch?v=KTusDPTfTyg",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -4036,9 +4036,9 @@ const SONGS_DATA = [
       "MISIÓN",
       "COMUNIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "2psRxvMQso5o5RYKxaDEIY",
-    "ytId": "KTusDPTfTyg"
+    "ytId": ""
   },
   {
     "id": "tu-modo",
@@ -4046,7 +4046,7 @@ const SONGS_DATA = [
     "artist": "P. CRISTÓBAL FONES",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/6V2lhU4QThgUyZhQd4in7D?si=e0b5a016a4e74b45",
-    "youtube": "https://www.youtube.com/watch?v=5wXCLdnOQj4",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -4059,9 +4059,9 @@ const SONGS_DATA = [
       "VOCACIONAL",
       "COMUNIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "6V2lhU4QThgUyZhQd4in7D",
-    "ytId": "5wXCLdnOQj4"
+    "ytId": ""
   },
   {
     "id": "tu-reino-en-mi-hogar",
@@ -4069,7 +4069,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/4wM7PvYZyY0py6Nf6blzG9?si=5e3b89b4e8b64dfd",
-    "youtube": "https://www.youtube.com/watch?v=27kduF5GxFU",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -4083,9 +4083,9 @@ const SONGS_DATA = [
       "ACCIÓN DE GRACIAS",
       "ADORACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "4wM7PvYZyY0py6Nf6blzG9",
-    "ytId": "27kduF5GxFU"
+    "ytId": ""
   },
   {
     "id": "tu-reino-entre-los-vivos",
@@ -4093,7 +4093,7 @@ const SONGS_DATA = [
     "artist": "STAME",
     "composer": "STAME",
     "spotify": "https://open.spotify.com/intl-es/track/4Vot5fFHCg1jJqcLChg08R?si=9283e75354d741bd",
-    "youtube": "https://www.youtube.com/watch?v=HIJatBNMdxs",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -4106,9 +4106,9 @@ const SONGS_DATA = [
       "VOCACIONAL",
       "ACCIÓN DE GRACIAS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "4Vot5fFHCg1jJqcLChg08R",
-    "ytId": "HIJatBNMdxs"
+    "ytId": ""
   },
   {
     "title": "TÚ EN MÍ, YO EN TÍ",
@@ -4138,7 +4138,7 @@ const SONGS_DATA = [
     "composer": "",
     "key": "G",
     "spotify": "https://open.spotify.com/intl-es/track/6AkZgnMp66iHKFVrgPHhYq?si=e465303dbc1440bb",
-    "youtube": "https://www.youtube.com/watch?v=X7lsjOGGdBA",
+    "youtube": "",
     "content": "@@G                          D\nTú me conoces mejor que nadie\n@@Em                                C\nMe has visto caer de nuevo en la tentación\n@@G                       D\nTú me perdonas sin sentir rencor\n@@Em                        C\nLo que ni siquiera me perdono yo\n\n@@G                          D\nTu misericordia me hace grande\n@@Em                          C\nMi debilidad me hace pecador\n@@G                                D\nCuando lloro hasta que se hace tarde\n@@Em                          C\nTú estás ahí sintiendo mi dolor\n\n\n@@C               D           G         D      Em\nSe que no soy digno de recibir lo que Tú me das\n@@C                D                 G\nY hoy vengo a pedirte perdón de nuevo\n@@C             D                   G      D   Em\nSólo con Tu amor eres quien me puede consolar\n@@C                  D                G\nEstando en tu presencia estoy completo.\n\n@@C               D             G  D  Em\nPerdóname, Señor porque no fui capaz\n@@C                 D              G\nDe encontrarte a Ti en todas las cosas\n@@C              D                  G  D  Em\nNo supe ver el bien donde otros ven el mal\n@@C              D              G\nAyúdame porque quiero cambiar.\n\n\n@@G                           D\nTengo siempre los mismos miedos\n@@Em                           C\nDudas que me dan inseguridad\n@@G                     D\nPero Tú me miras sonriendo\n@@Em                          C\nPorque hacerme así fue Tu voluntad\n\n@@C               D\nSácame del camino equivocado\n@@          G           D          Em\nPorque a veces me cuesta ver la luz\n@@                      C                         D\nY hoy me postro ante Ti y Tú me acoges en tus brazos\n@@   G      D      Em\nJesús, Jesús, Jesús.\n\n\n@@C               D           G         D      Em\nSe que no soy digno de recibir lo que Tú me das\n@@C                D                 G\nY hoy vengo a pedirte perdón de nuevo\n@@C             D                   G      D   Em\nSólo con Tu amor eres quien me puede consolar\n@@C                  D                G\nEstando en tu presencia estoy completo.\n\n@@C               D             G  D  Em\nPerdóname, Señor porque no fui capaz\n@@C                 D              G\nDe encontrarte a Ti en todas las cosas\n@@C              D                  G  D  Em\nNo supe ver el bien donde otros ven el mal\n@@C              D           Em\nAyúdame porque quiero cambiar.\n@@C              D              G\nAyúdame porque quiero cambiar.\n",
     "srcTag": "base",
     "source": "",
@@ -4149,17 +4149,17 @@ const SONGS_DATA = [
       "PENITENCIAL",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "6AkZgnMp66iHKFVrgPHhYq",
-    "ytId": "X7lsjOGGdBA"
+    "ytId": ""
   },
   {
     "id": "un-nuevo-sol",
     "title": "UN NUEVO SOL",
-    "artist": "JMJ 1987 BUENOS AIRES",
+    "artist": "JMJ",
     "composer": "JMJ",
     "spotify": "https://open.spotify.com/intl-es/track/2I6j1zemyzWldCHicCy7TQ?si=ee780b200c9f4aa7",
-    "youtube": "https://www.youtube.com/watch?v=Q3jdIOyGw6E",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -4171,9 +4171,9 @@ const SONGS_DATA = [
       "COMUNIÓN",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "2I6j1zemyzWldCHicCy7TQ",
-    "ytId": "Q3jdIOyGw6E"
+    "ytId": ""
   },
   {
     "id": "un-segundo",
@@ -4181,7 +4181,7 @@ const SONGS_DATA = [
     "artist": "HAKUNA GROUP MUSIC",
     "composer": "HAKUNA GROUP MUSIC",
     "spotify": "https://open.spotify.com/intl-es/track/6WTdsYUlvy5HX6r8pj2f0r?si=322b0afc43db4b02",
-    "youtube": "https://www.youtube.com/watch?v=abctOsl67iU",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -4192,9 +4192,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "DIOS PADRE"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "6WTdsYUlvy5HX6r8pj2f0r",
-    "ytId": "abctOsl67iU"
+    "ytId": ""
   },
   {
     "id": "vale-la-pena",
@@ -4202,7 +4202,7 @@ const SONGS_DATA = [
     "artist": "BIENAVENTURADOS",
     "composer": "MILAGROS LLERENA",
     "spotify": "https://open.spotify.com/intl-es/track/0qTm17GyjytmoXcw8CVUOo?si=a702e79896074572",
-    "youtube": "https://www.youtube.com/watch?v=gpreX_QZMUE",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -4214,9 +4214,9 @@ const SONGS_DATA = [
       "MISIÓN",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "0qTm17GyjytmoXcw8CVUOo",
-    "ytId": "gpreX_QZMUE"
+    "ytId": ""
   },
   {
     "id": "vasijas-de-barro",
@@ -4224,7 +4224,7 @@ const SONGS_DATA = [
     "artist": "SEMINARIO DIOCESANO SAN PEDRO Y SAN PABLO",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/3W9oJwgfbSRREdzK0ssEZQ?si=5627fd706d034320",
-    "youtube": "https://www.youtube.com/watch?v=iSlmXtEC3s8",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -4235,9 +4235,9 @@ const SONGS_DATA = [
       "VOCACIONAL",
       "OFRENDA"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "3W9oJwgfbSRREdzK0ssEZQ",
-    "ytId": "iSlmXtEC3s8"
+    "ytId": ""
   },
   {
     "id": "vayan-y-hagan",
@@ -4245,7 +4245,7 @@ const SONGS_DATA = [
     "artist": "FILOCALIA",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/7zQYUSdUQ78Gp2OwWr9HGm?si=4733ea37a7894b44",
-    "youtube": "https://www.youtube.com/watch?v=TIJeYg91Gog",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -4256,9 +4256,9 @@ const SONGS_DATA = [
       "ANIMACIÓN",
       "MISIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "7zQYUSdUQ78Gp2OwWr9HGm",
-    "ytId": "TIJeYg91Gog"
+    "ytId": ""
   },
   {
     "id": "ven-se-or-jes-s",
@@ -4266,7 +4266,7 @@ const SONGS_DATA = [
     "artist": "HERMANA GLENDA",
     "composer": "HERMANA GLENDA",
     "spotify": "https://open.spotify.com/intl-es/track/79lnumkzXZCE671uieSv9k?si=f4d84e3f319d4292",
-    "youtube": "https://www.youtube.com/watch?v=hI9PHMLhau4",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -4277,9 +4277,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "79lnumkzXZCE671uieSv9k",
-    "ytId": "hI9PHMLhau4"
+    "ytId": ""
   },
   {
     "id": "ven-y-s-gueme",
@@ -4287,7 +4287,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/6D0bkfzL9dLVhDoli7Bz6M?si=54b1a5978cc44cc2",
-    "youtube": "https://www.youtube.com/watch?v=8KfDzM4nDc4",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -4299,9 +4299,9 @@ const SONGS_DATA = [
       "JESÚS",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "6D0bkfzL9dLVhDoli7Bz6M",
-    "ytId": "8KfDzM4nDc4"
+    "ytId": ""
   },
   {
     "id": "ven-y-ver-s",
@@ -4309,7 +4309,7 @@ const SONGS_DATA = [
     "artist": "PABLO MARTÍNEZ",
     "composer": "PABLO MARTÍNEZ",
     "spotify": "https://open.spotify.com/intl-es/track/3aa8MTB92N5exEl6kgc37t?si=68e8f35b3d04416c",
-    "youtube": "https://www.youtube.com/watch?v=F9hEyQ-M3sw",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -4320,9 +4320,9 @@ const SONGS_DATA = [
       "ANIMACIÓN",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "3aa8MTB92N5exEl6kgc37t",
-    "ytId": "F9hEyQ-M3sw"
+    "ytId": ""
   },
   {
     "id": "ven-y-veras",
@@ -4331,7 +4331,7 @@ const SONGS_DATA = [
     "composer": "MANUEL LORCA",
     "key": "A",
     "spotify": "https://open.spotify.com/intl-es/track/4XlbYtYj3kie1tLogoO0VO?si=5d280d7434d84bf5",
-    "youtube": "https://www.youtube.com/watch?v=F9hEyQ-M3sw",
+    "youtube": "",
     "content": "(Original: E mayor)\n@@A                D\nDesde niño te quiero\n@@A            D\nMi amigo Jesús\n@@A                       D\nMe has amado desde siempre\n@@ A                   D\nCristo, Maestro y Señor\n\n@@A                 D\nCon lo poco que tengo\n@@A             D\nMe miraste a mí\n@@A                       D\nCon tus ojos llenos de amor\n@@       Bm            E\nTraspasaste mi corazón \n\n@@Bm                      E\nHoy me llamas por mi nombre\n@@D              E\n¿Dónde vives Señor?\n\n\n@@  A                   D\nVen con lo poco que tienes\n@@  E                     F#m\nVen con lo mucho que eres\n@@ D                 A\nVen con tu fragilidad\n@@Bm                E        C#7\nVen con tu amor, con tu verdad\n@@F#m       C#m   D            A\nHijo escogido, ven como un niño\n@@Bm       C#m                 D   E\nYo te llevaré de la mano conmigo\n@@          A\n¡Ven y verás!\n\n\n\nQuiero quedarme contigo\nEn tu casa Señor\nAquí me siento acogido\nMe abrazas y me haces feliz\nTu voz escuché y te seguí\n¿Dónde vives Señor?\n",
     "srcTag": "base",
     "source": "",
@@ -4342,9 +4342,9 @@ const SONGS_DATA = [
       "VOCACIONAL",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "4XlbYtYj3kie1tLogoO0VO",
-    "ytId": "F9hEyQ-M3sw"
+    "ytId": ""
   },
   {
     "id": "vengo-ante-t",
@@ -4352,7 +4352,7 @@ const SONGS_DATA = [
     "artist": "PABLO MARTÍNEZ",
     "composer": "PABLO MARTÍNEZ",
     "spotify": "https://open.spotify.com/intl-es/track/6H7jNxw2QEhTWUyobRZrd7?si=1db362fd7ed2422d",
-    "youtube": "https://www.youtube.com/watch?v=rblVU9J5oUA",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -4362,9 +4362,9 @@ const SONGS_DATA = [
     "tags": [
       "ADORACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "6H7jNxw2QEhTWUyobRZrd7",
-    "ytId": "rblVU9J5oUA"
+    "ytId": ""
   },
   {
     "id": "vida-en-abundancia",
@@ -4372,7 +4372,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN SAN ISIDRO",
     "composer": "MECHI RUIZ LUQUE",
     "spotify": "https://open.spotify.com/intl-es/track/7oMgpX0X6TnxXdADuAz7Sc?si=6b205fe5128747f1",
-    "youtube": "https://www.youtube.com/watch?v=YjEiDYCK_a8",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -4386,9 +4386,9 @@ const SONGS_DATA = [
       "VOCACIONAL",
       "JESÚS"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "7oMgpX0X6TnxXdADuAz7Sc",
-    "ytId": "YjEiDYCK_a8"
+    "ytId": ""
   },
   {
     "title": "VIVIR AMANDO",
@@ -4397,8 +4397,8 @@ const SONGS_DATA = [
     "key": "E",
     "spotify": "https://open.spotify.com/intl-es/track/0YEziLegD8eS4GIh9hlzOL?si=a736106964064583",
     "spId": "0YEziLegD8eS4GIh9hlzOL",
-    "youtube": "https://www.youtube.com/watch?v=hp9n9VjVH6g",
-    "ytId": "hp9n9VjVH6g",
+    "youtube": "",
+    "ytId": "",
     "content": "@@   E                    A\nOjalá tuviera más que darte\n@@      C#m          B\npero solo mi vida tengo.\n@@      A          Am         E C#m\nY ya no, pues es tuya para Ti.\n@@      F#m          B         E\nVívela Tú, pues es tuya para Ti.\n\n@@            A           E      \nNo es más fácil porque sufro.\n@@        F#m               B         \nEs mas fácil porque soy feliz.\n\n\n@@      E        C#m\nSi viviré hasta morir, \n@@         A     B\nquiero vivir amando.\n@@        G#m       A\nHasta morir, de amor\n@@          D   B    E\ny eternamente amar.\n\n@@ E                           A\n¿Cómo responder a tanto amor?\n@@     C#m                   B\nSino con mi pequeño corazón\n@@          A        Am        E C#m\nque no quiere latir sino para Ti.\n@@          A            B                         E\nPues yo soy para mi amado y mi amado es para mi.\n\n@@            A                       E\nNo es mas fácil, debo hacerme pequeño.\n@@        F#m                   B\nEs mas fácil, solo aquí yo soy pleno.\n\n@@      E        C#m\nSi viviré hasta morir, \n@@         A     B\nquiero vivir amando.\n@@        G#m       A\nHasta morir, de amor\n@@ F#m           B               A\nVivir amando hasta morir de amor\n@@         D     B   A E\ny eternamente amar.\n",
     "tags": [
       "VOCACIONAL",
@@ -4418,7 +4418,7 @@ const SONGS_DATA = [
     "artist": "PASCUA JOVEN MORÓN",
     "composer": "",
     "spotify": "https://open.spotify.com/intl-es/track/3fP7nhe5twvDyVNEZ3BYYg?si=4d2b987b92dc41ee",
-    "youtube": "https://www.youtube.com/watch?v=u5H09aXfikI",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -4429,9 +4429,9 @@ const SONGS_DATA = [
       "ANIMACIÓN",
       "VOCACIONAL"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "3fP7nhe5twvDyVNEZ3BYYg",
-    "ytId": "u5H09aXfikI"
+    "ytId": ""
   },
   {
     "id": "vuelve-a-darme-vida",
@@ -4440,7 +4440,7 @@ const SONGS_DATA = [
     "composer": "",
     "key": "G",
     "spotify": "https://open.spotify.com/intl-es/track/12I75SmL3Tx9dxARd7Xm7Z?si=4278413741624c15",
-    "youtube": "https://www.youtube.com/watch?v=wUWo8ZfOLdo",
+    "youtube": "",
     "content": "@@ G                                       \nRecuerdo los tiempos antiguos \n@@         D\nmedito todas tus promesas\n@@     C                   Am                 G D\nHe visto tu obrar y Tu Espíritu soplar sobre mí.\n\n@@  G                         D\nAmaba tus mandatos tu discípulo yo era\n@@           C                     Am            G D\nY no importaba que quisieras de mí ni a dónde ir.\n\n@@            C                                     G\nPero se enfrió mi corazón, me acostumbré a nombrarte\n@@            C                             G\nA hablar de Tí a los demás pero ya no contigo\n@@           C                               G\nDe manantial me convertí en cisterna agrietada\n@@            Am         C        D           G  D\nMi alma en tierra agostada, cansada y sin agua\n\n\n@@                  G\nVuelve a darme vida en tu costado abierto\n@@              D                                            \nde los manantiales de tu amor eterno                      \n@@                C   Am                G   D   \nQuémame por dentro, sopla con Tu aliento\n\n@@                  G\nVuelve a darme vida en tu costado abierto\n@@              D                                            \nde los manantiales de tu amor eterno                      \n@@                C                    D   \nQuémame por dentro, sopla con Tu aliento\n\n\n@@  G          D\n/Dame vida, dame amor\n@@        C Am       G        D\nQuémame con Tu fuego Señor/ x2\n",
     "srcTag": "base",
     "source": "",
@@ -4451,9 +4451,9 @@ const SONGS_DATA = [
       "JESÚS",
       "ADORACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "12I75SmL3Tx9dxARd7Xm7Z",
-    "ytId": "wUWo8ZfOLdo"
+    "ytId": ""
   },
   {
     "id": "ya-no-eres-pan-y-vino",
@@ -4461,7 +4461,7 @@ const SONGS_DATA = [
     "artist": "ATHENAS",
     "composer": "JORGE LUIS BOHORQUEZ",
     "spotify": "https://open.spotify.com/intl-es/track/2EPDHHtdQS1Iz9owtiXdbH?si=cd1510f4c3a0434d",
-    "youtube": "https://www.youtube.com/watch?v=W0FweLRo920",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -4472,9 +4472,9 @@ const SONGS_DATA = [
       "ADORACIÓN",
       "COMUNIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "2EPDHHtdQS1Iz9owtiXdbH",
-    "ytId": "W0FweLRo920"
+    "ytId": ""
   },
   {
     "id": "yo-soy-el-mar",
@@ -4482,7 +4482,7 @@ const SONGS_DATA = [
     "artist": "SANTIAGO ABELLA",
     "composer": "SCHOENSTATT",
     "spotify": "https://open.spotify.com/intl-es/track/6Bkynvfuqeg2s9y9jkyk8a?si=1aaf1fdff0d84835",
-    "youtube": "https://www.youtube.com/watch?v=ik7GQ_hhQkE",
+    "youtube": "",
     "source": "",
     "srcTag": "base",
     "srcColor": "#9e9e9e",
@@ -4493,9 +4493,9 @@ const SONGS_DATA = [
       "VOCACIONAL",
       "ADORACIÓN"
     ],
-    "thumbnailHint": "youtube",
+    "thumbnailHint": "spotify",
     "spId": "6Bkynvfuqeg2s9y9jkyk8a",
-    "ytId": "ik7GQ_hhQkE"
+    "ytId": ""
   },
   {
     "title": "ÉL SALE A TU ENCUENTRO",
@@ -4504,8 +4504,8 @@ const SONGS_DATA = [
     "key": "Am",
     "spotify": "https://open.spotify.com/intl-es/track/5Pfhi4Hwr9lIeGMtTI5psD?si=1dac6943eef74a60",
     "spId": "5Pfhi4Hwr9lIeGMtTI5psD",
-    "youtube": "https://www.youtube.com/watch?v=r_MMCR7Mu7c",
-    "ytId": "r_MMCR7Mu7c",
+    "youtube": "",
+    "ytId": "",
     "content": "(Original: C#m)\n@@Am\nCaminando tantas veces\n@@Em \npierdes la ruta\n@@F\nla culpa brota como una carga\n\n@@Am                         Em\nQuisieras volver, pero no puedes\n@@          F \nluces aparentes te ciegan\n\n@@G            Am           F \nEl te da libertad para perderte\n@@      G              F\npero no deja de buscarte\n\n@@               C\nÉl sale a tu encuentro\n@@          G\npara abrazarte\n@@          Am\nÉl no se ofende\n@@              F\npor tu pequeñez\n@@             C\nÉl se compadece\n@@            G\ny quiere salvarte\n@@        Am\nÉl es tu Padre\n@@           F\ntú eres su hijo\n@@                  C\nÉl es el Dios del amor\n@@             G\nde la misericordia\n@@                 Am\nte reviste con Su luz\n@@                 F\ncon su traje de fiesta\n\n\n@@ Am                    Em\nNunca dejará de perdonarte\n@@       F \nde sentarse a la mesa contigo\n@@Am                 Em\nha venido para liberarte\n@@              F\ndéjate encontrar, déjate mirar\n\n@@G            Am           F \nEl te da libertad para perderte\n@@      G              F\npero no deja de buscarte\n\n@@               C\nÉl sale a tu encuentro\n@@          G\npara abrazarte\n@@          Am\nÉl no se ofende\n@@              F\npor tu pequeñez\n@@             C\nÉl se compadece\n@@            G\ny quiere salvarte\n@@        Am\nÉl es tu Padre\n@@           F\ntú eres su hijo\n@@                  C\nÉl es el Dios del amor\n@@             G\nde la misericordia\n@@                 Am\nte reviste con Su luz\n@@                 F\ncon su traje de fiesta.",
     "tags": [
       "ANIMACIÓN",
@@ -4518,5 +4518,213 @@ const SONGS_DATA = [
     "fav": false,
     "id": "el-sale-a-tu-encuentro",
     "thumbnailHint": "youtube"
+  },
+  {
+    "title": "VIVA CRISTO REY",
+    "artist": "JÉSED",
+    "composer": "",
+    "key": "G",
+    "spotify": "https://open.spotify.com/intl-es/track/3hkJS7EfrDVUJI28yxOTEM?si=d0996cc1faed48cb",
+    "spId": "3hkJS7EfrDVUJI28yxOTEM",
+    "youtube": "https://www.youtube.com/watch?v=_QXfJOmFSEY",
+    "ytId": "_QXfJOmFSEY",
+    "content": "@@    G\nUn grito de guerra\n@@       D              \nSe escucha en la faz \n@@      C                 D\nde la tierra y en todo lugar\n@@      G\nLos prestos guerreros\n@@    D\nEmpuñan su espada\n@@        C             D\nY se enlistan para pelear\n@@       G       D       Em\nPara eso han sido entrenados\n@@ C                 D\nDefenderan la verdad\n@@   G       D        Em\nY no les será arrebatado\n@@    C                        D\nEl fuego que en su sangre está\n\n\n@@             G        D     Em\nViva Cristo Rey, Viva Cristo Rey\n@@    C              \nEl grito de guerra \n@@        D            G\nque enciende la tierra\n@@       D     Em  \nViva Cristo Rey, \n@@   C                    D\nnuestro soberano y Señor\n@@  C                      D\nNuestro capitán y campeón\n@@    C        D\nPelear por El, \n@@               G\nes todo un honor\n\n\n@@G                \nSabemos que esta \n@@   D\nbatalla no es fácil\n@@    C                   D\nY muchos se acobardarán\n@@ G                \nY bajo los dardos \n@@      D\nde nuestro enemigo\n@@     C           D\nSin duda perecerán\n\n@@ G         D            Em\nYo tendre mi espada en alto\n@@  C                 D\nComo la usa mi Señor\n@@   G         D       Em\nA El nada lo ha derrotado\n@@    C               D\nSu fuerza es la de Dios\n\n\n@@             G        D     Em\nViva Cristo Rey, Viva Cristo Rey\n@@    C              \nEl grito de guerra \n@@        D            G\nque enciende la tierra\n@@       D     Em  \nViva Cristo Rey, \n@@   C                    D\nnuestro soberano y Señor\n@@  C                      D\nNuestro capitán y campeón\n@@    C        D\nPelear por El, \n@@               G\nes todo un honor\n\n@@ G                  D\nNo conocemos mayor alegria\n@@      C                  D\nNo existe mas honroso afán\n@@      G                    \nQue con mis hermanos \n@@   D\nestar en la linea\n@@   C                  D\nY juntos la vida entregar\n\n@@  G         D       Em\nA El que merece la gloria\n@@   C                 D\nY nos recluto por amor\n@@      G      D      Em\nAnte El la rodilla se dobla\n@@      C             D\nY se postra el corazón\n\n\n@@             G        D     Em\nViva Cristo Rey, Viva Cristo Rey\n@@    C              \nEl grito de guerra \n@@        D            G\nque enciende la tierra\n@@       D     Em  \nViva Cristo Rey, \n@@   C                    D\nnuestro soberano y Señor\n@@  C                      D\nNuestro capitán y campeón\n@@    C        D\nPelear por El, \n@@               G\nes todo un honor",
+    "tags": [
+      "VOCACIONAL",
+      "ENTRADA",
+      "ANIMACIÓN",
+      "COMUNIDAD",
+      "SALIDA"
+    ],
+    "source": "",
+    "srcTag": "base",
+    "srcColor": "#9e9e9e",
+    "fav": false,
+    "id": "viva-cristo-rey"
+  },
+  {
+    "title": "COMUNIÓN",
+    "artist": "VERÓNICA SANFILIPPO",
+    "composer": "",
+    "key": "E",
+    "spotify": "https://open.spotify.com/intl-es/track/48AetunU6zLFomugir22TV?si=e6885df8de104951",
+    "spId": "48AetunU6zLFomugir22TV",
+    "youtube": "https://www.youtube.com/watch?v=rXRxTqlnn2E",
+    "ytId": "rXRxTqlnn2E",
+    "content": "@@E                   A       B\nCada vez que te recibo, Señor\n@@                      E\nAlgo grande pasa en mí\n@@                        A\nCada vez que estoy contigo, mi Dios\n@@      B                    E\nMe acerco un poco más a Ti\n\n@@               A\nPorque en la hostia estás\n@@      B\nMi Jesús de verdad\n@@            E        B     C#m\nEstoy a un paso del cielo aquí\n@@    B       A        B    E\nEstoy a un paso del cielo, sí\n\n@@    A                B\nDe tanto amor, te entregarás\n@@        E      B   C#m\nEn la cruz y en el altar\n@@     A               B\nTu Cuerpo está, Tu Sangre das\n@@           E    B  C#m  B\nTu Alma y Tu Divinidad\n@@          A         B           \nTodo un Dios escondido \n@@        E\nen un pan\n\n\n@@E                   A       B\nCada vez que te recibo, Señor\n@@                      E\nAlgo grande pasa en mí\n@@                        A\nCada vez que estoy contigo, mi Dios\n@@      B                    E\nMe acerco un poco más a Ti\n\n@@               A\nPorque en la hostia estás\n@@      B\nMi Jesús de verdad\n@@            E        B     C#m\nEstoy a un paso del cielo aquí\n@@    B       A        B    E\nEstoy a un paso del cielo, sí\n\n@@    A              B\nAl comulgar, me abrazará\n@@           E     B   C#m  B\nJesús en Santa Trinidad\n@@     A           B\nMe inundará, me amará\n@@                E    B  C#m  B  \nCon Su Alma y Su Divinidad\n@@          A         B       E  B\nTodo un Dios para mí en el pan\n\n\n@@E                   A       B\nCada vez que te recibo, Señor\n@@                      E\nAlgo grande pasa en mí\n@@                        A\nCada vez que estoy contigo, mi Dios\n@@      B                    E\nMe acerco un poco más a Ti\n\n@@               A\nPorque en la hostia estás\n@@      B\nMi Jesús de verdad\n@@            E        B     C#m\nEstoy a un paso del cielo aquí\n@@    B       A        B    E\nEstoy a un paso del cielo, sí\n",
+    "tags": [
+      "COMUNIÓN",
+      "JESÚS",
+      "ACCIÓN DE GRACIAS"
+    ],
+    "source": "",
+    "srcTag": "base",
+    "srcColor": "#9e9e9e",
+    "fav": false,
+    "id": "comunion"
+  },
+  {
+    "title": "SOMOS UNA MISIÓN",
+    "artist": "PABLO MARTÍNEZ",
+    "composer": "PABLO MARTÍNEZ",
+    "key": "G",
+    "spotify": "https://open.spotify.com/intl-es/track/0oUNflNf4ZwHV4OQN5TYjY?si=f87b90ea1db74936",
+    "spId": "0oUNflNf4ZwHV4OQN5TYjY",
+    "youtube": "https://www.youtube.com/watch?v=l0UBKaqDEKY",
+    "ytId": "l0UBKaqDEKY",
+    "content": "@@ G                            D\nNo estamos aquí por casualidad\n@@                         G\nÉl desde siempre nos soñó\n@@                       D\nSomos valiosos para Dios\n@@                        Em D\nQue nos llamó y nos eligió.\n@@              C\nNo somos mejores\n@@              G\nNi somos perfectos\n@@             Am7\nHemos saboreado\n@@                D\nDe Su amor inmenso\n\n\n@@ G              D          Em\nSomos una misión en esta tierra\n@@C                          D\nSomos un proyecto por vivir\n@@ G           D               Em \nSomos el regalo que Dios ha dado\n@@   C         D       G\nÉl vive y nos hace vivir\n@@   C         D       G\nÉl vive y nos hace vivir.\n\n\n@@ G                         D\nPongamos voz a esta canción\n@@                          G\nCon nuestra vida y vocación\n@@ G                          D\nHay otros sueños por mostrar\n@@                      Em D\nHay esperanza para dar.\n@@            C\nEs una alegría\n@@                G\nQue no se compara\n@@             Am7\nEs un fuego dentro\n@@               D\nPone en movimiento\n\n@@ G              D          Em\nSomos una misión en esta tierra\n@@C                          D\nSomos un proyecto por vivir\n@@ G           D               Em \nSomos el regalo que Dios ha dado\n@@   C         D       G\nÉl vive y nos hace vivir\n@@   C         D       G\nÉl vive y nos hace vivir.\n\n\n@@ G                       D\nSomos el Cuerpo del Señor\n@@                            G\nSomos el Pueblo que escogió\n@@                          D\nVayan y anuncien nos pidió\n@@                  Em D\nA los confines envió\n@@             C\nCaminemos juntos\n@@               G\nEl Señor nos mueva\n@@            Am7\nY que todos entren\n@@                D\nNadie queda afuera.\n\n@@ G              D          Em\nSomos una misión en esta tierra\n@@C                          D\nSomos un proyecto por vivir\n@@ G           D               Em \nSomos el regalo que Dios ha dado\n@@   C         D       G\nÉl vive y nos hace vivir\n@@   C         D       G\nÉl vive y nos hace vivir.\n\n@@ G              D          Em\nSomos una misión en esta tierra\n@@C                          D\nSomos un proyecto por vivir\n@@ G           D               Em \nSomos el regalo que Dios ha dado\n@@   C         D       G\nÉl vive y nos hace vivir\n@@   C         D        G\nÉl vive y nos hace... vivir.",
+    "tags": [
+      "VOCACIONAL",
+      "ANIMACIÓN",
+      "COMUNIDAD",
+      "SALIDA"
+    ],
+    "source": "",
+    "srcTag": "base",
+    "srcColor": "#9e9e9e",
+    "fav": false,
+    "id": "somos-una-mision"
+  },
+  {
+    "title": "JESÚS AMIGO",
+    "artist": "JAIRE",
+    "composer": "",
+    "key": "Am",
+    "spotify": "https://open.spotify.com/intl-es/track/5UEMcfvDScb835m1eNuMnw?si=975a853175664e6e",
+    "spId": "5UEMcfvDScb835m1eNuMnw",
+    "youtube": "https://www.youtube.com/watch?v=AXv1c3sQIpo",
+    "ytId": "AXv1c3sQIpo",
+    "content": "@@                  Am                   \nHoy te quiero contar \n@@         G\nJesús amigo\n@@         F           G\nQue contigo estoy feliz\n@@                Am                          \nSi tengo tu amistad \n@@         G\nlo tengo todo\n@@         F             G\nPues estás dentro de mí.\n\n@@                    C\nDespués de comulgar \n@@           G\nme haces como Tú,\n@@    F            G\nMe llenas de Tu paz.\n@@              C\nEn cada pedacito \n@@          G\nde este pan\n@@              F          G\nCompleto estás y así te das.\n\n@@              Am\nEstás ahí por mí \n@@           G\nporque conoces\n@@        F            G\nQue sin Ti pequeño soy.\n@@                 C\nDe ahora en adelante \n@@       G         F\nnada nos separará\n@@         G\nYa lo verás.\n\n\n@@                    C\nTe escondes en el pan\n@@       F                G\nY aunque no te puedo ver\n@@    E7             Am\nTe puedo  acompañar\n@@         F       G \nEs mi lugar preferido  \n\n@@                   C\nHoy quiero comulgar, \n@@   F            G\nAbrirte mi corazón\n@@ E7           Am\nAsí de par en par \n@@         F       G\nEres mi mejor amigo\n\n\n@@                Am\nDos mil años atrás \n@@        G\na tus amigos\n@@    F         G\nInvitaste a cenar,\n@@                Am\nY ahí les prometiste\n@@         G\nque con ellos\n@@     F                G\nPor siempre ibas a estar\n\n@@               C\nY ahora cada vez \n@@             G\nque el sacerdote\n@@         F          G\nEleva el pan en el altar\n@@                 C \nMe pongo de rodillas \n@@        G\nporque se\n@@             F           G\nQue en esa hostia Tú estás.\n\n\n@@                    C\nTe escondes en el pan\n@@       F                G\nY aunque no te puedo ver\n@@    E7             Am\nTe puedo  acompañar\n@@         F       G \nEs mi lugar preferido  \n\n@@                   C\nHoy quiero comulgar, \n@@   F            G\nAbrirte mi corazón\n@@ E7           Am\nAsí de par en par \n@@         F       G\nEres mi mejor amigo\n\n@@                 C\nMe vuelves a salvar \n@@    F                  G\ncomo lo hiciste en la Cruz, \n@@    E7        Am\nen cada Misa Tú, \n@@         F     G\nrevives Tu sacrificio. ",
+    "tags": [
+      "COMUNIÓN"
+    ],
+    "source": "",
+    "srcTag": "base",
+    "srcColor": "#9e9e9e",
+    "fav": false,
+    "id": "jesus-amigo"
+  },
+  {
+    "title": "QUEREMOS OFRECERTE",
+    "artist": "CANTARES",
+    "composer": "",
+    "key": "",
+    "spotify": "",
+    "spId": "",
+    "youtube": "https://www.youtube.com/watch?v=YnC48XGMAWs",
+    "ytId": "YnC48XGMAWs",
+    "content": "@@D               Bm   \nQueremos ofrecerte \n@@G                 A\ncon nuestra oración,\n@@D                Bm  \njunto al pan y al vino \n@@G             A\nnuestro corazón.\n\n@@       D            Bm\nTe ofrecemos la alegría \n@@      G           A\nde vivir en Tu presencia,\n@@      D            Bm\nla dicha de congregarnos \n@@       G               A\nnuevamente hoy a Tu mesa.\n\n\n@@D                 Bm    \nTe ofrecemos Señor, \n@@G     A           D\ntodo, todo lo que somos. (x2)\n\n\n@@ D             Bm\nNuestro pan y vino \n@@G           A\nse convertirán,\n@@D               Bm\nen tu Cuerpo y Sangre \n@@ G            A\nque nos salvará.\n\n@@       D            Bm\nAl comer hoy de tu Cuerpo, \n@@       G            A\nbeber Tu preciosa Sangre,\n@@       D             Bm\nCrecerá en nuestras vidas \n@@       G         A\nla Gracia Santificante.\n\n\n@@D                 Bm    \nTe ofrecemos Señor, \n@@G     A           D\ntodo, todo lo que somos. (x2)\n",
+    "tags": [
+      "OFRENDA"
+    ],
+    "source": "",
+    "srcTag": "base",
+    "srcColor": "#9e9e9e",
+    "fav": false,
+    "id": "queremos-ofrecerte"
+  },
+  {
+    "title": "GLORIA",
+    "artist": "ENCUENTRO EUCARÍSTICO NACIONAL",
+    "composer": "",
+    "key": "Dm",
+    "spotify": "",
+    "spId": "",
+    "youtube": "https://www.youtube.com/watch?v=iQX49UQFSLQ",
+    "ytId": "iQX49UQFSLQ",
+    "content": "@@Dm                 Gm      \nGloria a Dios en el cielo, \n@@  C            F  \ny en la tierra paz\n@@Dm          Gm     \na todos los hombres \n@@      A7       Dm \nque ama el Señor.\n@@ D7             Gm    C     F        \nPor tu inmensa gloria te alabamos, \n@@Dm       Gm     A7        Dm A7\nte bendecimos, te adoramos,\n@@         Dm                  \nTe glorificamos, \n@@           Gm         C                              \nte damos gracias, Señor \n@@ C              F\nDios, Rey celestial,\n@@     Dm              Gm       A7    \nDios Padre todopoderoso Señor, \n@@    Dm     \nHijo único, \n@@Gm C F A7 D G D\nJesucristo.\n\n\n@@        D       G        D      \nSeñor Dios, Cordero de Dios, \n@@ A       D\nHijo del Padre;\n@@D                  G          D       \nTú que quitas el pecado del mundo,\n@@G       D   A     D\nten piedad de nosotros;\n@@         D         G          D       \nTú que quitas el pecado del mundo,\n@@  G              A\natiende nuestra súplica;\n@@          D      G     \nTú que estás sentado \n@@       D          A\na la derecha del Padre,\n@@ G      D   A7        Dm\nten piedad de nosotros;\n\n\n@@             Gm  C    F \nPorque sólo Tú eres Santo,\n@@Dm         Gm   A7      Dm    \nsólo Tú Señor, sólo Tú Altísimo, \n@@Gm C F A7 Dm\nJesucristo,\n@@D7       Gm     C  F  \ncon el Espíritu Santo \n@@Dm                  Gm                   \nen la gloria de Dios Padre. \n@@A7  Dm\nAmén \n@@Gm C F A7 D\nAmén.\n",
+    "tags": [
+      "GLORIA"
+    ],
+    "source": "",
+    "srcTag": "base",
+    "srcColor": "#9e9e9e",
+    "fav": false,
+    "id": "gloria"
+  },
+  {
+    "title": "AMOR DE DIOS PUESTO EN ACCIÓN",
+    "artist": "FILOCALIA",
+    "composer": "",
+    "key": "E",
+    "spotify": "https://open.spotify.com/intl-es/track/3UG3dTyra0vqJQUaRkpu6I?si=0b229493ec2749a7",
+    "spId": "3UG3dTyra0vqJQUaRkpu6I",
+    "youtube": "https://www.youtube.com/watch?v=XYzt66ktphA",
+    "ytId": "XYzt66ktphA",
+    "content": "@@E                         B       \nSueño de Jesús para el mundo \n@@            C#m         A\nmoción del soplo creador \n@@  E           B        A           \nFiesta de cristianos audaces, \n@@          E                  B\nAmor de Dios puesto en acción. \n@@E                      B          \nPrimavera del compromiso \n@@       C#m           A\namanecer de la oración \n@@   E        B          A    \nRetazo del cielo en mi vida, \n@@          E                  B\nAmor de Dios puesto en acción \n\n\n@@              A   \nServicio y Pasión \n@@       E        B\npor amar por vivir \n@@G#7    C#m        A\nEl evangelio en la vida \n@@F#m                     \nAbriendo el corazón \n@@ A                   E          \nProclama la paz de Cristo \n@@E      B        A\nen el reino de Cristo \n@@            E      \nLa paz de Cristo \n@@      B        A\nen el reino de Cristo \n\n\n@@E                          B\nMano hacia los pobres tendida \n@@           C#m            A\npaso incansable en la misión\n@@ E          B          A  \nPalabra de vida en los labios, \n@@           E                 B\nAmor de Dios puesto en acción\n\n@@E                     B \nCasas, aulas, calles y campos \n@@          C#m       A\nfábricas y universidad\n@@  E             B         A \nGuardan algún rastro de cielo \n@@          E                B\ngracias a tu presencia actual. \n\n\n@@              A   \nServicio y Pasión \n@@       E        B\npor amar por vivir \n@@G#7    C#m        A\nEl evangelio en la vida \n@@F#m                     \nAbriendo el corazón \n@@ A                   E          \nProclama la paz de Cristo \n@@E      B        A\nen el reino de Cristo \n@@            E      \nLa paz de Cristo \n@@      B        A\nen el reino de Cristo \n\n\n@@E                        B\nRostro de entrañables amigos\n@@        C#m            A\namistad firme en el Señor,\n@@ E             B                A \nLos que están y los que se fueron \n@@           E             B\npero que guarda el corazón\n@@E                     B \nYo los vi cruzando caminos\n@@         C#m          A\nllevando paz y comunión\n@@ E                B            A \nTras sus huellas descubrí el cielo, \n@@          E                  B\nAmor de Dios puesto en acción \n\n\n@@              A   \nServicio y Pasión \n@@       E        B\npor amar por vivir \n@@G#7    C#m        A\nEl evangelio en la vida \n@@F#m                     \nAbriendo el corazón \n@@ A                   E          \nProclama la paz de Cristo \n@@E      B        A\nen el reino de Cristo \n@@            E      \nLa paz de Cristo \n@@      B        A\nen el reino de Cristo \n\n\n@@E                         B\nBrillan como piedras preciosas \n@@         C#m               A\nSantos y Santas que con vos\n@@E            B         A \nSiguieron la senda de Cristo, \n@@          E                  B\nAmor de Dios puesto en acción\n@@E                          B\nNo te olvides nunca que existes\n@@         C#m         A\npara ser signo del amor\n@@E              B            A \nQue al sol mueve y a las estrellas \n@@            E             B\ny que en la Cruz se derramó. \n\n\n@@              A   \nServicio y Pasión \n@@       E        B\npor amar por vivir \n@@G#7    C#m        A\nEl evangelio en la vida \n@@F#m                     \nAbriendo el corazón \n@@ A                   E          \nProclama la paz de Cristo \n@@E      B        A\nen el reino de Cristo \n@@            E      \nLa paz de Cristo \n@@      B        A\nen el reino de Cristo ",
+    "tags": [
+      "COMUNIÓN",
+      "VOCACIONAL",
+      "COMUNIDAD",
+      "MISIÓN",
+      "SALIDA"
+    ],
+    "source": "",
+    "srcTag": "base",
+    "srcColor": "#9e9e9e",
+    "fav": false,
+    "id": "amor-de-dios-puesto-en-accion"
+  },
+  {
+    "title": "SOBRE TU ALTAR",
+    "artist": "YULI Y JOSH",
+    "composer": "",
+    "key": "Am",
+    "spotify": "https://open.spotify.com/intl-es/track/0vhjSkXHWegRNVwhlEBGYZ?si=63dcb9d483884f8f",
+    "spId": "0vhjSkXHWegRNVwhlEBGYZ",
+    "youtube": "https://www.youtube.com/watch?v=xiIsvhTuIuI",
+    "ytId": "xiIsvhTuIuI",
+    "content": "@@           Am\nSobre tu altar,\n@@                  Am/G\nlo más preciado, Señor\n@@           C\nSobre Tu altar, \n@@                  Csus4\nmi pan y vino de amor\n@@           Dm \nSobre Tu altar, \n@@   F      E7\nmi vida entera\n\n@@     Am\nMi pasado te lo doy\n@@       C\nMi presente con todo mi amor\n@@     Dm\nMi futuro \n@@    F            E7\nlo pongo en tus manos\n\n@@           Am\nSobre Tu altar te dejo mi corazón\n@@            C\nSobre Tu altar te dejo mi voluntad\n@@           Dm \nSobre Tu altar \n@@    F      E7\nmi vida entera\n\n\n@@       C\nConfiaré, no temeré\n@@       G\nConfiaré, me entregaré\n@@       Dm   F     E7\nConfiaré en Tí, Señor\n\n@@          C\nConsagraré mi corazón\n@@       Gm      F       E7\nA Tu amor, mi Dios, mi rey.",
+    "tags": [
+      "OFRENDA",
+      "VOCACIONAL"
+    ],
+    "source": "",
+    "srcTag": "base",
+    "srcColor": "#9e9e9e",
+    "fav": false,
+    "id": "sobre-tu-altar"
+  },
+  {
+    "title": "AL SERVICIO DE AQUEL",
+    "artist": "MISIÓN PAÍS",
+    "composer": "",
+    "key": "C#m",
+    "spotify": "https://open.spotify.com/intl-es/track/2b4ARxC3tYEY4jM8V9xiyi?si=2000293710154897",
+    "spId": "2b4ARxC3tYEY4jM8V9xiyi",
+    "youtube": "https://www.youtube.com/watch?v=qxFzyB1XqMM",
+    "ytId": "qxFzyB1XqMM",
+    "content": "@@C#m           G#m         \nDía a día encerrados \n@@A                 E\nen los muros de hoy\n@@C#m             G#m \nEs el mundo apurado \n@@A                        E\nque a nadie puede esperar\n\n@@C#m          G#m   \nY es fácil perderse \n@@A               E\no dejarse engañar\n@@C#m             G#m          \nNo hay tiempo para pensar, \n@@ A              B       F#m\ndetenerse a un lado y mirar\n@@               A                                          \nQue es mi hermano \n@@                      B\nel que no puede esperar\n\n\n@@  E                G#7       \nNo dejemos que la vida \n@@   C#m                  \nla atrape el mundo de hoy \n@@        C#m/B\nen su vaivén\n@@  F#m     A                           \nOfrecerla es mejor que ser \n@@B\npiezas en un juego de ajedrez\n\n@@E            G#7    \nSi podemos entregar \n@@  C#m                C#m/B\nla vida al servicio de Aquel\n@@ F#m         A                               \nAquel Dios que ha venido \n@@      B\nno a ser servido, sino a servir.\n@@           E         \nSino a servir.\n\n\n@@C#m          G#m\nNo es fácil el caminar \n@@A                   E\ncuando quieres seguir\n@@C#m               G#m\nA ese Rey que su vida dio\n@@ A              B\nGota a gota hasta morir\n\n@@     C#m            B                   \nEse Dios que llama hoy \n@@          A\na ser hermanos\n@@    F#m          A       B\nAl amor, a la alegría de vivir\n\n\n@@E            G#7    \nSi podemos entregar \n@@  C#m                C#m/B\nla vida al servicio de Aquel\n@@ F#m         A                               \nAquel Dios que ha venido \n@@      B\nno a ser servido, sino a servir.\n@@           E         \nSino a servir.",
+    "tags": [
+      "VOCACIONAL",
+      "ACCIÓN DE GRACIAS",
+      "MISIÓN",
+      "COMUNIDAD",
+      "SALIDA"
+    ],
+    "source": "",
+    "srcTag": "base",
+    "srcColor": "#9e9e9e",
+    "fav": false,
+    "id": "al-servicio-de-aquel"
+  },
+  {
+    "title": "DÉJAME NACER DE NUEVO",
+    "artist": "ARIEL GLASER",
+    "composer": "ARIEL GLASER",
+    "key": "C",
+    "spotify": "https://open.spotify.com/intl-es/track/6olXVZFhOJl4o2osyHv5Ye?si=64c36d16f0e24c86",
+    "spId": "6olXVZFhOJl4o2osyHv5Ye",
+    "youtube": "https://www.youtube.com/watch?v=f8-RC7LmMnA",
+    "ytId": "f8-RC7LmMnA",
+    "content": "@@      C\nTú conoces \n@@     F              C\nla dureza en mi sentir\n@@     F        \ny la terquedad \n@@         G          C C7\nque hay en mi corazón.\n@@        F               G \nSon las cosas que me alejaron \n@@    C    Am\nde Ti, Señor,\n@@ F           G          C\nházme renacer en Tu amor.\n\n\n@@            F      G\nDéjame nacer de nuevo,\n@@            C G/B  Am\nDéjame nacer de nuevo\n@@            F      G           C\nDéjame nacer de nuevo, oh Señor\n@@                 F       G\nNo importa la edad que tenga\n@@            C  G/B Am\nTú no lo tienes en cuenta\n@@            F      G           C\nDéjame nacer de nuevo oh Señor.\n\n\n@@      C\nTú conoces \n@@      F                C\nel pecado que hay en mí\n@@        F        G             C\ny el dolor que dejó en mi corazón.\n@@        F                G\nPor la muerte que he causado \n@@         C     Am\nvuelvo a Ti, Señor,\n@@  F          G              C\nDame vida nueva con Tu amor\n\n\n@@            F      G\nDéjame nacer de nuevo,\n@@            C G/B  Am\nDéjame nacer de nuevo\n@@            F      G           C\nDéjame nacer de nuevo, oh Señor\n@@                 F       G\nNo importa la edad que tenga\n@@            C  G/B Am\nTú no lo tienes en cuenta\n@@            F      G           C\nDéjame nacer de nuevo oh Señor.",
+    "tags": [
+      "PENITENCIAL"
+    ],
+    "source": "",
+    "srcTag": "base",
+    "srcColor": "#9e9e9e",
+    "fav": false,
+    "id": "dejame-nacer-de-nuevo"
   }
 ];
