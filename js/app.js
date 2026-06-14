@@ -71,7 +71,7 @@ function openSong(id) {
   const s = songs.find(x => x.id === id);
   if (!s) return;
 
-  if (location.hash !== '#' + id) location.hash = id;
+  if (location.hash !== '#' + id) history.pushState({ song: id }, '', '#' + id);
 
   curId = id;
   sem = 0;
@@ -459,6 +459,9 @@ function showView(v) {
   if (v === 'admin') adminRenderTable();
   const hb = document.getElementById('hamburger');
   if (hb) hb.style.display = 'none';
+  if (v === 'home' || v === 'songs' || v === 'prayers') {
+    history.replaceState(null, '', location.pathname);
+  }
 }
 
 // ═══════════════════════════════════════════════════════
@@ -835,7 +838,7 @@ function shareSong() {
 }
 
 // Navegación con botón Atrás / Adelante del navegador
-window.addEventListener('hashchange', () => {
+function handleNavigation() {
   const hashId = location.hash.replace('#', '').trim();
   if (!hashId) {
     showView('home');
@@ -843,7 +846,10 @@ window.addEventListener('hashchange', () => {
     const exists = songs.find(s => s.id === hashId);
     if (exists) openSong(hashId);
   }
-});
+}
+
+window.addEventListener('hashchange', handleNavigation);
+window.addEventListener('popstate', handleNavigation);
 
 // Cerrar menú ⋮ al hacer clic fuera
 document.addEventListener('click', e => {
